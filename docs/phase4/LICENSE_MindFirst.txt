@@ -1,3 +1,5 @@
+# MindFirst Licence
+
 MindFirst Engine (M1E) Licence  
 Version 1.0 — 2025-11-XX  
 Author: C.L. Gallant
