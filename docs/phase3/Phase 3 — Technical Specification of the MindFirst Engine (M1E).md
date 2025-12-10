@@ -13,7 +13,7 @@
 10. Developer Integration and Evaluation Framework  
 11. Safeguarding Layer and Risk Controls  
 12. Cold-Start Behaviour  
-13. Challenges, Questions, and Validation Roadmap  
+13. Future Work and Extensions
 14. Cold-Start Architecture: Neutral OS-Null Mode  
 15. Structural Pattern Validity and Anti-Correlation Framework  
 16. Evaluation Metrics for Post-Identity Systems  
@@ -1090,30 +1090,7 @@ A fully compliant M1E system must:
 • support inspectable behaviour  
 • produce stable cognitive-aligned output  
 
-This concludes the core technical specification of Phase 3.
 
-Phase 3 — Technical Specification  
-Section 11 — Conclusion
-
-MindFirst (M1E) provides a formal, technical method for shifting AI interaction away from demographic inference and toward cognitive-structural interpretation. The framework achieves this without modifying underlying model weights, without requiring user metadata and without relying on identity categories. Its modules operate as an attachable reasoning architecture that shapes interaction through OS-signals alone.
-
-The specification developed in Phase 3 establishes:
-
-• how the OS Profiler, Interpreter, Stabiliser and API Layer operate  
-• how they exchange information  
-• how they maintain post-identity constraints  
-• how stability and drift are managed  
-• how developers should evaluate and debug integrations  
-• how guardrails and safety boundaries are enforced  
-• how implementations remain compatible with models as small as 7B  
-
-These components form a complete, modular interface between the user and the model’s internal reasoning pathway.
-
-MindFirst does not attempt to correct demographic bias through patching or compensatory layers. Instead, it bypasses the entire category system by defining the user through their OS: the observable structure of their reasoning, pacing, recursion, and communication style. This makes the system resilient to cultural change, demographic imbalance, or the historical distortions embedded in training data.
-
-The result is an interaction framework that is not only more equitable but also more precise. Minds are understood according to how they work, not according to categories inherited from the past. As AI becomes a core communication medium across daily life, MindFirst offers a scalable method for ensuring that models interpret people with clarity, fairness, fidelity, and respect for human individuality.
-
-------------------------------------------------------------
 Phase 3 — Technical Specification
 Section 11 — Safeguarding Layer and Risk Controls
 ------------------------------------------------------------
@@ -1295,34 +1272,7 @@ This section consolidates anticipated questions, critiques, and validation requi
 
 ---
 
-## 12.1 Cold Start Behaviour (OS-Null Mode)
-
-**Challenge:**  
-How does M1E behave in the first 1–3 turns before any structural data exists? Could the baseline accidentally favour certain cognitive styles?
-
-**Response:**  
-M1E begins in **OS-Null Mode**, a neutral structural baseline with:
-
-- medium recursion depth  
-- balanced compression/expansion  
-- neutral pacing  
-- clarification-first conflict style  
-
-Neutrality is validated using the **OS-Null Parity Metric (ONPM)** across diverse structural patterns:
-
-- high vs low recursion  
-- high vs low tangent probability  
-- compressed vs verbose communication  
-- non-native syntax and code-switching  
-- domain-specific jargon  
-- formality shifts  
-
-**Requirement:**  
-Early-turn satisfaction and coherence must show no significant skew across structural patterns.
-
----
-
-## 12.2 Structural Patterns as Proxy for Demographics
+## 12.1 Structural Patterns as Proxy for Demographics
 
 **Challenge:**  
 Even without demographic data, could structural patterns correlate with protected characteristics and reintroduce bias indirectly?
@@ -1349,7 +1299,7 @@ No structural group should experience reduced response quality, stability or coh
 
 ---
 
-## 12.3 Evaluation Framework (Post-Identity Metrics)
+## 12.2 Evaluation Framework (Post-Identity Metrics)
 
 Traditional fairness metrics do not apply. M1E defines structural metrics:
 
@@ -1364,7 +1314,7 @@ M1E must outperform non-adaptive baselines on satisfaction + stability while mai
 
 ---
 
-## 12.4 Persistence vs No Longitudinal Storage
+## 12.3 Persistence vs No Longitudinal Storage
 
 **Challenge:**  
 How does M1E offer user-preferred reasoning styles without long-term behavioural profiling?
@@ -1380,7 +1330,7 @@ Demonstrate improved experience without enabling identity reconstruction.
 
 ---
 
-## 12.5 Privacy, Noise and Re-Identification Risk
+## 12.4 Privacy, Noise and Re-Identification Risk
 
 **Challenge:**  
 Could downstream tools reconstruct identity or behavioural fingerprints from OS-maps?
@@ -1400,7 +1350,7 @@ Repeated sampling must not allow high-resolution behavioural fingerprinting.
 
 ---
 
-## 12.6 Adversarial Robustness
+## 12.5 Adversarial Robustness
 
 **Challenge:**  
 Can users force undesired modes, poison the profiler, or bypass constraints?
@@ -1419,7 +1369,7 @@ Red-team success rate <5% in mode manipulation or poisoning attempts.
 
 ---
 
-## 12.7 Multi-Speaker Sessions
+## 12.6 Multi-Speaker Sessions
 
 **Challenge:**  
 What happens when multiple people use the same session?
@@ -1437,7 +1387,7 @@ M1E must degrade gracefully without misclassification.
 
 ---
 
-## 12.8 User-Facing Transparency
+## 12.7 User-Facing Transparency
 
 **Challenge:**  
 How do users understand their OS-map without feeling judged or pathologised?
@@ -1454,7 +1404,7 @@ Users report increased understanding without negative emotional impact.
 
 ---
 
-## 12.9 Critical Path: From Architecture to Validation
+## 12.8 Critical Path: From Architecture to Validation
 
 **Phase 0 — Prototype (3–6 months)**  
 Profiler (7 features), simple Interpreter (3–5 modes), basic Stabiliser, n=20–50 evaluation.
@@ -1473,7 +1423,7 @@ Each phase resolves one risk category: fairness, stability, privacy, implementat
 
 ---
 
-## 12.10 Purpose of This Section
+## 12.9 Purpose of This Section
 
 This section exists to:
 
@@ -1489,15 +1439,67 @@ This roadmap demonstrates how those challenges are addressed mechanically and em
 # Phase 3 — Section 13  
 ## Future Work and Extensions
 
-This section outlines areas of continued development beyond the scope of Phase 3. It serves as a placeholder for planned extensions that will be explored in later stages, including:
+This section identifies concrete areas where the MindFirst Engine (M1E) requires further development, empirical validation, or architectural expansion. These items are intentionally scoped to remain compatible with the identity-null boundary and the post-identity design philosophy.
 
-- refinement of OS-null baselines  
-- extended validations across structural diversity  
-- formal differential privacy integration  
-- prototype-level implementation studies  
-- API extensions for controlled downstream tooling  
+### 13.1 Formal Differential Privacy Integration
+Current OS-map export noise is heuristic. A future revision will:
+- introduce ε-differential privacy guarantees for OS-map fields,
+- formalise privacy budgets per session,
+- implement enforceable bounds on downstream de-noising attempts.
 
-Content will expand as empirical results and collaborator input become available.
+### 13.2 Cognitive-Pattern Coverage Expansion
+M1E requires structured evaluation across a wider distribution of communication patterns, including:
+- bilingual code-switching,
+- culturally indirect communication styles,
+- domain-dense technical exchanges,
+- trauma-informed or cautious interaction patterns.
+
+These evaluations will feed back into Profiler thresholds and Stabiliser hysteresis parameters.
+
+### 13.3 Multi-User Interaction Models
+M1E currently treats all input as single-speaker unless volatility triggers multi-speaker detection. Future work includes:
+- per-speaker OS-map separation,
+- dynamic routing of Interpreter modes,
+- explicit user-controlled speaker switching.
+
+### 13.4 Robustness Against Structural Adversaries
+Red-team testing will target:
+- steganographic OS-pattern poisoning,
+- forced-mode oscillation attacks,
+- adversarial recursion-depth signalling,
+- synthetic cognitive-pattern spoofs.
+
+Findings will refine the Guardrail Layer and Stabiliser fallback logic.
+
+### 13.5 Cross-Runtime Reference Implementations
+To support reproducibility, M1E requires:
+- a minimal reference implementation for LLaMA/Qwen/Mistral local models,
+- a cloud-scale implementation with identical behavioural constraints,
+- a conformance test suite for verifying post-identity safety.
+
+### 13.6 Longitudinal User-Controlled Profiles
+Opt-in preference persistence requires further specification:
+- versioning for evolving cognitive-style preferences,
+- user-editable profile diffs,
+- secure storage isolated from OS-map session data.
+
+### 13.7 Evaluation Framework for Post-Identity Systems
+Future revisions must integrate:
+- OS-Null Parity Metrics (ONPM),
+- Cognitive Pattern Coverage Metrics (CPC),
+- Stability Oscillation Indices,
+- Adversarial Robustness Scores.
+
+These metrics form the backbone of Phase 4 external auditing.
+
+### 13.8 Governance and Technical Certification
+Extensions will include:
+- a formal definition of “M1E-Compliant” behaviour,
+- automated conformance testing tools,
+- a certification pipeline for downstream systems,
+- versioned governance documents aligned with ethical and regulatory shifts.
+
+---
 
 ## 14 — Cold Start Architecture & Neutral OS-Null Mode
 
