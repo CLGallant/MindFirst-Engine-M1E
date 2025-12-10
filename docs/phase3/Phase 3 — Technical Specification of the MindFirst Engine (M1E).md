@@ -1477,4 +1477,25 @@ This section outlines areas of continued development beyond the scope of Phase 3
 
 Content will expand as empirical results and collaborator input become available.
 
+# Phase 3 — Section 14  
+## Glossary of Core Terms
+
+This section provides definitions for the key structural concepts used throughout the MindFirst Engine (M1E) specification.  
+
+It exists as a placeholder until full definitions are added.  
+Initial terms include:
+
+- OS-map  
+- OS-null mode  
+- recursion depth  
+- compression / expansion index  
+- pacing rhythm  
+- tangent probability  
+- meta-monitoring density  
+- volatility score  
+- continuity envelope  
+- stabiliser hysteresis  
+
+More entries will be added as the specification evolves.
+
 Phase 3 is now complete.
