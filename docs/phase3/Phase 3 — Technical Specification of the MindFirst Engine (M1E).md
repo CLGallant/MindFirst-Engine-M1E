@@ -1560,7 +1560,181 @@ Cold Start architecture ensures:
 
 OS-Null Mode is not a persona; it is a mathematically constrained stabilisation zone preventing bias, drift, and premature interpretation.
 
-# Phase 3 — Section 15  
+## 15 — Structural Pattern Validity & Anti-Correlation Framework
+
+This section defines the mechanisms used to ensure that M1E’s cognitive-structural signals cannot become indirect proxies for demographic attributes, educational background, cultural grouping, or protected characteristics. Because M1E is a post-identity system, structural signals must be rigorously validated to ensure they remain *functionally descriptive* rather than *demographically predictive*.
+
+### 15.1 — The Structural Independence Principle
+
+All OS-signals must satisfy the Structural Independence Principle:
+
+**A structural feature is considered valid only if it:**
+1. describes the mechanics of user communication, and  
+2. does *not* permit reliable prediction of demographic categories, identity traits, or culturally stereotyped behaviours.  
+
+This principle is enforced at:
+• OS-Profiler (feature extraction)  
+• Interpreter (heuristic selection)  
+• Stabiliser (trend analysis)  
+• API Layer (exposure and resolution)  
+
+If a structural field becomes demographically predictive, M1E must reject or redefine it.
+
+---
+
+### 15.2 — Anti-Correlation Checks on OS-Signals
+
+Each OS-signal undergoes systematic anti-correlation analysis.
+
+Signals tested include:
+• recursion_depth  
+• compression_factor  
+• tangent_probability  
+• pacing_rhythm signature  
+• meta_monitoring_density  
+• conflict_style  
+• volatility_score  
+
+For each signal, M1E performs offline validation to ensure:
+1. **Low demographic predictability** (target: ≤ 5% prediction accuracy)  
+2. **Low cultural predictability** (≤ 5% accuracy)  
+3. **Low socio-linguistic clustering** (no stable groupings across datasets)  
+4. **High epistemic function** (the feature is still useful for interpretation)  
+
+If a feature approaches proxy threshold, it must be:
+• modified,  
+• re-normalised, or  
+• replaced entirely.
+
+---
+
+### 15.3 — Proxy Drift Detection
+
+Even neutral features can drift toward identity-like patterns over time.  
+To prevent this, M1E applies periodic *Proxy Drift Tests*:
+
+**Drift indicators include:**
+• increasing mutual information between an OS-signal and identity-labelled corpora  
+• clustering of patterns within sociolect or dialect boundaries  
+• stability of a feature in ways unrelated to cognition  
+• predictive uplift when combined with other features  
+
+If drift is detected:
+1. Stabiliser reduces weight of affected signals  
+2. API Layer reduces exposure resolution  
+3. A redesign or transformation is flagged for the next model version  
+
+This ensures long-term post-identity safety.
+
+---
+
+### 15.4 — Cross-Cultural Structural Parity Tests
+
+Structural cognition varies across cultural communication styles (e.g., direct vs indirect discourse).  
+Since M1E cannot use demographics, fairness is measured using *structural clusters* instead of identity groups.
+
+Structural clusters include:
+• high-context indirect communicators  
+• low-context direct communicators  
+• hierarchical turn-taking patterns  
+• egalitarian turn-taking patterns  
+• high-implication pragmatics  
+• low-implication pragmatics  
+
+**Goal:**  
+Users from all structural clusters must receive equivalent system performance.
+
+Parities measured:
+• Response Structural Integrity (RSI)  
+• Mode-switch stability  
+• Clarification latency  
+• User satisfaction (subjective)  
+
+M1E must score equivalently across all clusters.
+
+---
+
+### 15.5 — Cognitive Diversity Coverage (CDC)
+
+To prevent structural exclusion, M1E evaluates performance across neurodiverse cognitive patterns using *pattern families*:
+
+• high tangent / low tangent (ADHD spectrum)  
+• high precision / low ambiguity tolerance (ASD spectrum)  
+• fragmented or low-literacy structures  
+• non-native syntactic patterns  
+• abrupt pacing shifts  
+
+CDC validation requires:
+• no measurable quality drop across any pattern family  
+• stable heuristic selection  
+• no penalisation for divergent structure  
+
+If performance diverges, heuristic tables must be retrained or re-balanced.
+
+---
+
+### 15.6 — Anti-Proxy Transformations
+
+If an OS-signal is found to correlate with identity or socio-cultural proxies, M1E applies one of the following transformations:
+
+**(T1) Resolution Reduction**  
+Coarsen the feature (e.g., from float to three discrete buckets).
+
+**(T2) Normalisation Against Structural Clusters**  
+Reweight signals so high-context and low-context structures receive equal functional influence.
+
+**(T3) Feature Rebinding**  
+Re-express the feature in terms of direct cognitive mechanics rather than surface cues.
+
+**(T4) Feature Suppression**  
+Remove or zero-weight the feature system-wide.
+
+---
+
+### 15.7 — Adversarial Pattern Probe Defence
+
+M1E prevents manipulation of pattern-sensing through:
+
+**(D1) Sustained Behaviour Requirement**  
+Adaptive mode changes require multiple consistent turns.
+
+**(D2) Variance Testing**  
+Inconsistent features are treated as noise, not signals.
+
+**(D3) Synthetic Pattern Detector**  
+Flags unnatural structural patterns (e.g., repeated forced recursion, deliberate tangential chaos) that attempt to force a mode.
+
+**(D4) Stability Lockout**  
+If adversarial manipulation is suspected, the Stabiliser enters a restricted-adaptation mode for 3–5 turns.
+
+---
+
+### 15.8 — Pattern Validity Review Cycle
+
+Before release of any new M1E version:
+1. Run anti-correlation audits across large structural datasets  
+2. Validate all OS-signals against the Structural Independence Principle  
+3. Perform CDC and CPP stress tests  
+4. Re-tune heuristics if divergence detected  
+5. Document all changes for public transparency  
+
+Patterns must be **functionally interpretable, cognitively aligned, and demographically sterile**.
+
+---
+
+### 15.9 — Summary
+
+This framework ensures that:
+• No structural feature drifts into identity-proxy territory  
+• No cognitive pattern receives preferential treatment  
+• Cultural variation does not reduce system quality  
+• Neurodivergent communication patterns are first-class citizens  
+• Adversarial users cannot weaponise structural cues  
+• M1E remains post-identity at every abstraction layer  
+
+Structural features exist only to understand *how* a user is thinking, not *who* they are.
+
+# Phase 3 — Section 18  
 ## Glossary of Core Terms
 
 This section provides definitions for the key structural concepts used throughout the MindFirst Engine (M1E) specification.  
