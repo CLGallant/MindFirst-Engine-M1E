@@ -1,9 +1,6 @@
 # MindFirst Engine (M1E)
 *A post-identity cognitive interaction framework*
 
-# MindFirst Engine (M1E)
-A post-identity cognitive interaction framework
-
 ---
 
 ## Quick Navigation
