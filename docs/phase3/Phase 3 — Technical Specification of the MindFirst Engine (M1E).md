@@ -1464,4 +1464,17 @@ This section exists to:
 M1E’s approach is novel, but the challenge profiles it faces are known and solvable.  
 This roadmap demonstrates how those challenges are addressed mechanically and empirically.
 
+# Phase 3 — Section 13  
+## Future Work and Extensions
+
+This section outlines areas of continued development beyond the scope of Phase 3. It serves as a placeholder for planned extensions that will be explored in later stages, including:
+
+- refinement of OS-null baselines  
+- extended validations across structural diversity  
+- formal differential privacy integration  
+- prototype-level implementation studies  
+- API extensions for controlled downstream tooling  
+
+Content will expand as empirical results and collaborator input become available.
+
 Phase 3 is now complete.
