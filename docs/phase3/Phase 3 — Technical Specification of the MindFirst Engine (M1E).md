@@ -1922,6 +1922,197 @@ M1E’s evaluation framework replaces demographic fairness metrics with structur
 
 These metrics allow rigorous validation of a post-identity system without violating the identity-null boundary.
 
+## 17 — Efficiency Scaling & Real-Time Constraints
+
+M1E must operate efficiently across a wide range of hardware environments, including local consumer-grade GPUs (8–12GB VRAM), mid-range cloud instances, and high-throughput distributed systems. This section defines the computational requirements, optimisation strategies, latency constraints and real-time safeguards necessary for stable deployment.
+
+### 17.1 — Architectural Efficiency Goals
+
+M1E imposes four primary efficiency targets:
+
+1. **Low-latency inference:**  
+   Additional processing (Profiler → Interpreter → Stabiliser → API) must add <15% overhead to base model latency.
+
+2. **Minimal memory expansion:**  
+   OS-profile fields must remain lightweight (<1 KB/session).
+
+3. **Stable behaviour on small models (7B–13B):**  
+   All M1E components must run on consumer hardware without GPU exhaustion.
+
+4. **Deterministic runtime costs:**  
+   No component may scale unpredictably with conversation length.
+
+---
+
+### 17.2 — Computational Complexity Analysis
+
+**Profiler:**  
+O(n) per user turn, where n = number of tokens in the turn.  
+Extracts structural markers using syntactic/semantic boundary detection and token-level rhythm analysis.
+
+**Interpreter:**  
+O(1) amortised cost.  
+Heuristic lookup tables + deterministic mode selection.
+
+**Stabiliser:**  
+O(w), where w = size of the rolling window (default 3–5 turns).  
+Designed to remain constant-time relative to full conversation length.
+
+**Response Generator (RG) integration:**  
+Negligible overhead — structural templates are precomputed.
+
+Total additional overhead for a single turn:  
+**O(n + w) → effectively O(n)**.
+
+---
+
+### 17.3 — Memory Constraints & Compact Representations
+
+OS-profiles must remain extremely compact to avoid:
+• GPU context bloat  
+• long-session slowdowns  
+• increased API exposure risk  
+
+Representation constraints:
+• float values normalised to ≤ 4 bytes  
+• categorical values mapped to small integers  
+• stability envelope stored as 8–12 fields max  
+• drift markers stored as bitflags  
+
+Maximum size of full M1E state:  
+**≤ 512 bytes** (target), **≤ 1 KB** (hard limit).
+
+---
+
+### 17.4 — Real-Time Profiling Optimisations
+
+To support consumer-grade hardware, the following optimisations are mandatory:
+
+**(O1) Incremental Signal Extraction**  
+Profiler only re-evaluates changed structural markers per turn.
+
+**(O2) Sparse Meta-Monitoring Detection**  
+Meta-monitoring intensity is computed opportunistically (triggered by linguistic cues), not on every token.
+
+**(O3) Tangent Probability via Lightweight Windowing**  
+Tangent scoring relies on 2–3 turn deltas, not full-context embeddings.
+
+**(O4) Pacing Rhythm via Token Histogram Buckets**  
+Histogramming avoids expensive sequence analysis.
+
+**(O5) Volatility Score via Statistical Approximation**  
+Uses exponential moving averages rather than full recalculation.
+
+---
+
+### 17.5 — Interpreter & Stabiliser Low-Gain Modes
+
+To ensure stability under constrained hardware:
+
+**Low-gain mode activates when:**
+• GPU load > 80%  
+• latency spikes > 200ms  
+• conversation length > threshold turns  
+• volatility > volatility_cutoff_V3  
+
+Behaviour in low-gain mode:
+• reduced sensitivity to minor structural changes  
+• slower mode transitions  
+• limited recursion scaling  
+• capped tangent accommodation  
+• delayed drift recalculation (every 2–3 turns instead of every turn)
+
+This preserves stability and responsiveness simultaneously.
+
+---
+
+### 17.6 — Real-Time Safeguards
+
+M1E includes automatic fallback behaviours to prevent slowdowns:
+
+**(RT1) OS-Null Fallback**  
+If latency > 500ms consistently → revert to OS-Null Mode temporarily.
+
+**(RT2) Stabiliser State Freezing**  
+If the Stabiliser becomes overloaded, its state is temporarily frozen and updated only intermittently.
+
+**(RT3) Interpreter Simplification**  
+Switch to compressed reasoning templates during heavy load.
+
+**(RT4) Drift Detection Suspension**  
+If system pressure is high, drift recalibration is postponed unless a critical alignment error is detected.
+
+---
+
+### 17.7 — Scaling Across Model Sizes
+
+**7B–13B models (local/BUNKR case):**  
+• M1E runs fully with <15% overhead  
+• requires 6–12GB VRAM  
+• ideal for development, personal use, accessibility tools
+
+**30B–70B models:**  
+• identical behaviour, but Interpreter may expand available heuristics  
+• RG can enable deeper recursion safely
+
+**Distributed cloud models (70B+):**  
+• enables advanced smoothing, predictive mode-stability analysis  
+• crowd-scale efficiency profiling for research evaluation
+
+All behaviours must remain functionally identical independent of hardware.
+
+---
+
+### 17.8 — Multi-Turn Efficiency Preserving Mechanisms
+
+Long sessions risk pattern bloat and degraded performance.  
+M1E counters this through:
+
+**(L1) Rolling-Windows Instead of Full Histories**  
+Only last w turns retained for structural inference.
+
+**(L2) Heuristic Decay**  
+Interpreter heuristics lose weight over time unless reinforced.
+
+**(L3) Stabiliser Checkpoint Compression**  
+Old checkpoints are merged into low-resolution summaries.
+
+**(L4) Drift Map Normalisation**  
+Prevents drift flags from accumulating indefinitely.
+
+---
+
+### 17.9 — Testing for Real-Time Behaviour
+
+Real-time validation includes:
+
+• latency measurements across 1K–10K turns  
+• GPU utilisation stability  
+• Stabiliser oscillation detection under load  
+• continuous ASI/RSI/IDR tracking  
+• adversarial stress-testing during high system pressure  
+
+Success criteria:
+• ≤ 15% overhead on local hardware  
+• ≤ 5% mode-selection error under load  
+• ≤ 5% drift misalignment  
+• no permanent fallback to OS-Null due to load  
+
+---
+
+### 17.10 — Summary
+
+This efficiency layer ensures that M1E remains:
+
+• hardware-neutral  
+• stable under constrained conditions  
+• responsive in real-time  
+• scalable from personal rigs to distributed deployments  
+• resistant to degradation during long sessions  
+• consistent in behaviour across model sizes  
+
+By constraining complexity and defining deterministic runtime behaviour, M1E becomes suitable both for research-grade fairness studies and practical everyday use on consumer hardware.
+
 # Phase 3 — Section 18  
 ## Glossary of Core Terms
 
