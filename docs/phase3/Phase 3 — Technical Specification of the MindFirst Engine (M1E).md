@@ -1,4 +1,5 @@
 # MindFirst Phase 3 — Technical Specification of the MindFirst Engine (M1E)
+
 1. System Overview and Design Philosophy
 
 2. OS Profiler — Deep Specification
@@ -40,6 +41,8 @@
 20. Steganographic Pattern Defence
 
 21. Glossary of Terms
+
+
 
 ## Section 1 — System Overview and Design Philosophy
 
