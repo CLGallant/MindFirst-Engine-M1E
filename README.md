@@ -1,6 +1,8 @@
 # MindFirst Engine (M1E)
 *A post-identity cognitive interaction framework*
 
+➡️ For a full overview of the repository structure, see the [Repository Map](Repo_Map.md).
+
 MindFirst Engine is an interaction architecture that models users by their **cognitive communication structure**,  
 not their demographic categories. Instead of assuming gender, race, age, or other identity markers,  
 M1E creates a lightweight “OS-map” based solely on how a person thinks, recurses, and processes information.
