@@ -2113,7 +2113,193 @@ This efficiency layer ensures that M1E remains:
 
 By constraining complexity and defining deterministic runtime behaviour, M1E becomes suitable both for research-grade fairness studies and practical everyday use on consumer hardware.
 
-# Phase 3 — Section 18  
+## 18 — Preference Persistence & User-Controlled Profiles
+
+M1E forbids demographic inference and long-term behavioural profiling.  
+However, some users may wish to persist *non-identity-bearing preferences* such as explanation depth, recursion levels, pacing, or formatting style.  
+This section defines a strict, post-identity-safe mechanism for storing user preferences without creating identity anchors, leakage vectors, or long-term behavioural profiles.
+
+### 18.1 — Design Constraints
+
+Preference persistence must satisfy:
+
+1. **Identity-Null Compliance**  
+   Stored preferences must not contain:  
+   • personal traits  
+   • linguistic fingerprints  
+   • historical behavioural patterns  
+   • any data that could be predictive of identity
+
+2. **User Control**  
+   Persistence occurs *only* via explicit opt-in.  
+   Users may delete or reset preferences at any time.
+
+3. **Non-Accumulation Rule**  
+   No preference may evolve automatically over sessions.  
+   Only user-initiated updates are permitted.
+
+4. **Cryptographic Isolation**  
+   Preference profiles must be stored separately from session data and must not include timestamps or usage metadata.
+
+---
+
+### 18.2 — Preference Profile Schema
+
+Persistent profiles store only *structural hints*, not behavioural histories.
+
+Fields:
+{
+“version”: 1.0,
+“preferred_recursion”: “low | medium | high”,
+“preferred_compression”: “compressed | balanced | expanded”,
+“preferred_pacing”: “slow | steady | fast”,
+“tangent_handling”: “restrict | allow | explore”,
+“meta_monitoring_level”: “minimal | moderate | explicit”,
+“formatting_style”: “plain | structured | bullet”,
+“update_token”: “user_confirmed_only”
+}
+Constraints:
+• All fields are categorical  
+• No floats (to avoid behavioural fingerprinting)  
+• No historical patterns  
+• No timestamps  
+• No per-session data  
+
+---
+
+### 18.3 — Preference Activation Model
+
+Preferences *inform* early Interpreter and Stabiliser states but do not override real-time signals.
+
+Activation sequence:
+
+1. Load preference profile (user-approved)  
+2. Interpreter seeds initial heuristic weights  
+3. Stabiliser seeds initial window with expected ranges  
+4. Real-time structural signals override any mismatch  
+
+Thus preferences provide:
+• initial biasing, not controlling  
+• comfort, not constraint  
+• stability, not identity
+
+---
+
+### 18.4 — Preference–Signal Conflict Resolution
+
+If user behaviour contradicts stored preferences:
+
+**Case A: Minor deviation**  
+→ Stabiliser blends preference with structural data.
+
+**Case B: Sustained deviation (≥ 2 turns)**  
+→ Structural signals override persistent preferences.
+
+**Case C: User explicitly requests change**  
+→ Preference profile is updated only after user confirmation.
+
+M1E must never force the user into a mode they are not expressing structurally.
+
+---
+
+### 18.5 — Profile Update Protocol
+
+Updates must require explicit user intent.
+
+Valid update triggers:
+• “Set my default explanation depth to high.”  
+• “I prefer slower pacing in future.”  
+• “Please store this as my default.”
+
+Invalid triggers:
+• implicit patterns  
+• inferred behaviours  
+• frequency analysis  
+• statistical optimisation  
+
+Update steps:
+1. Interpreter identifies candidate preference  
+2. M1E asks user for confirmation  
+3. Only upon “Yes, store this” is profile updated
+
+---
+
+### 18.6 — Privacy Guarantees
+
+Stored preferences must comply with:
+
+**PG1 — Ephemeral Sessions**  
+OS-profile remains session-scoped and never saved.
+
+**PG2 — No Behavioural Trajectory**  
+Preferences do not reflect historical changes or trends.
+
+**PG3 — No Predictive Reconstruction**  
+Stored hints must not enable identity inference by  
+• downstream systems  
+• third-party tools  
+• embedding comparisons  
+• temporal correlation
+
+**PG4 — Zero Metadata Policy**  
+No usage logs, timestamps, or context strings may be attached.
+
+---
+
+### 18.7 — Deletion & Reset Protocol
+
+Users may request:
+
+• “Reset all preferences.”  
+• “Delete my stored profile.”  
+• “Return to defaults.”  
+
+Upon reset:
+• All stored preferences are erased  
+• Interpreter returns to OS-Null defaults on next session  
+• Stabiliser starts from clean baseline
+
+Deletion must be irreversible.
+
+---
+
+### 18.8 — Misuse Prevention
+
+To prevent preference profiles being exploited as identity proxies:
+
+**MP1 — Single-Session Learning Disabled**  
+Preferences cannot auto-update based on user behaviour.
+
+**MP2 — Cross-Session Correlation Disabled**  
+Preference usage cannot be analysed for frequency or pattern.
+
+**MP3 — Narrow Scope Only**  
+Preferences modify only Interpreter and Stabiliser starting conditions.  
+They must not influence:  
+• conflict-style inference  
+• tangent probability estimation  
+• volatility models  
+• safeguarding
+
+**MP4 — Export Limitation**  
+Preferences may not be exposed to downstream tools to avoid re-identification vectors.
+
+---
+
+### 18.9 — Summary
+
+This preference system allows users to benefit from comfort-based personalisation without compromising post-identity integrity.
+
+M1E ensures that:
+• preferences are optional  
+• preferences are explicit  
+• preferences never encode identity  
+• real-time cognition dominates static hints  
+• profiles contain no historical or behavioural data  
+
+Persistent preferences improve usability while preserving the fundamental post-identity guarantees of the MindFirst Engine.
+
+# Phase 3 — Section 19  
 ## Glossary of Core Terms
 
 This section provides definitions for the key structural concepts used throughout the MindFirst Engine (M1E) specification.  
