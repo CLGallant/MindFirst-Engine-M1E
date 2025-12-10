@@ -239,3 +239,5 @@ Appendix G: Reference Structure
 [5] Adaptive Reasoning Systems: Pacing and Personalisation
 
 References are conceptual placeholders representing the areas of literature the whitepaper aligns with. This allows future formal citations without blocking publication.
+
+➡️ Return to Repository Map
