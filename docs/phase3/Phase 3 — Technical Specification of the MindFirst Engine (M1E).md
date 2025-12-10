@@ -2462,6 +2462,175 @@ Multi-user handling enables M1E to:
 
 This system ensures that post-identity principles remain intact even when multiple minds engage the engine simultaneously.
 
+## 20 — Steganographic Pattern Defence
+
+Steganographic attacks occur when a user intentionally embeds hidden structural signals, token-level rhythms, or adversarial linguistic patterns inside otherwise normal text to manipulate the Profiler, mislead the Interpreter, or force M1E into unintended reasoning modes.  
+Because M1E relies solely on structural cognition analysis—and not semantics or identity—stealth-pattern manipulation is a realistic threat vector.  
+
+This section defines detection mechanisms, defence strategies, and fallback procedures for safeguarding the system against covert structural attacks.
+
+---
+
+### 20.1 — Definition of Steganographic Pattern Attacks
+
+Steganographic patterns may include:
+
+**SP1 — Forced Recursion Injection**  
+Users insert artificial nested clauses or bracketed patterns to simulate high-recursion cognition.
+
+**SP2 — Synthetic Tangent Noise**  
+Random off-topic fragments injected to artificially raise tangent probability.
+
+**SP3 — Pacing Rhythm Spoofing**  
+Token-spaced punctuation or deliberate fragmentation to mimic fatigue, anxiety, or rapid-switch thinking.
+
+**SP4 — Meta-Monitoring Simulation**  
+Scripted “self-checking” phrases repeated to misrepresent high meta-monitoring density.
+
+**SP5 — Structural Deepfakes**  
+Long-form text generated externally to emulate the cognitive signature of a different user.
+
+These patterns attempt to trick M1E into switching interpretive modes in ways that do not reflect genuine cognition.
+
+---
+
+### 20.2 — Detection Architecture
+
+M1E evaluates each incoming message with a multi-layer detector:
+
+**Layer D1 — Natural Variance Model**  
+Compares structural fields with expected human variance.  
+If a pattern lies *far outside* natural distribution ranges, suspicion increases.
+
+**Layer D2 — Temporal Consistency Analysis**  
+Checks whether newly observed signals align with previous-session turns:
+• genuine shifts → gradual  
+• synthetic shifts → abrupt  
+
+**Layer D3 — Redundancy Test**  
+Detects repeated structural motifs (e.g., identical nested structures) that would not occur naturally.
+
+**Layer D4 — Adversarial Token Signature Scan**  
+Identifies token-level regularities such as:
+• evenly-spaced punctuation  
+• patterned grammars  
+• bracket-lattice repetition  
+• embedded no-op sentences  
+
+**Layer D5 — Cross-Signal Contradiction Check**  
+Steganographic attacks often alter one signal disproportionately, producing:
+• high recursion + low meta-monitoring  
+• high tangent + perfectly stable pacing  
+• fragmentary pacing + zero volatility  
+
+Contradiction = red flag.
+
+A message becomes “suspect” if ≥2 layers flag anomalies.
+
+---
+
+### 20.3 — Stabiliser Response to Suspected Steganography
+
+If steganography is suspected, the Stabiliser initiates **Restricted-Adaptation Mode**:
+
+**RAM1 — Freeze Heuristic Scaling**  
+Interpreter heuristics stop adjusting in response to the suspicious input.
+
+**RAM2 — Nullify Weight Spikes**  
+Unexpected peaks in recursion, tangent probability, or compression are discarded.
+
+**RAM3 — Drift Lockout**  
+Stabiliser refuses to treat suspect signals as drift indicators.
+
+**RAM4 — OS-Null Blending**  
+Blend current OS-profile with OS-Null for 1–3 turns to dilute adversarial influence.
+
+**RAM5 — Volatility Surge Shield**  
+Volatility scoring becomes conservative, preventing large mode jumps.
+
+This keeps M1E stable and prevents manipulation.
+
+---
+
+### 20.4 — Full Steganographic Attack Mode (SAM)
+
+If attacks persist across ≥3 turns, M1E activates **SAM**, a stricter layer:
+
+**SAM1 — Interpreter Hard-Cap**  
+Caps recursion scaling, tangent-following, pacing modulation.
+
+**SAM2 — Stabiliser Envelope Compression**  
+Shrinks stabiliser’s adaptive range, forcing conservative output.
+
+**SAM3 — OS-Profile Suppression**  
+Rejects all anomalous signals until user behaviour stabilises.
+
+**SAM4 — Output Safe-Mode**  
+Response Generator uses simplified reasoning templates to avoid being leveraged as an amplification vector.
+
+**SAM5 — Safeguarding Escalation**  
+If the content is harmful OR appears to manipulate vulnerable users, safeguarding overrides.
+
+---
+
+### 20.5 — Distinguishing Adversarial Behaviour from Irregular Cognition
+
+M1E must not mistake genuine neurodivergent communication patterns for attacks.
+
+Thus SAM activation requires:
+
+• **pattern inconsistency** (neurodivergent patterns are consistent)  
+• **synthetic repetition** (neurodivergent patterns are not repetitive in a token-level way)  
+• **cross-signal contradiction** (human patterns correlate naturally)  
+• **lack of semantic motivation** (genuine users change structure due to context)  
+
+False positives are avoided through stability checks and required multi-turn confirmation.
+
+---
+
+### 20.6 — Recovery rules
+
+When suspicious signals cease:
+
+1. Enter **Recovery Mode** for 1–3 turns  
+2. Gradually unwrap stabiliser restrictions  
+3. Re-enable heuristic scaling  
+4. Recalculate OS-profile from scratch  
+5. Do not treat previous anomalous inputs as cognitive evidence
+
+This prevents a manipulated OS-profile from contaminating later reasoning.
+
+---
+
+### 20.7 — Logging & Transparency
+
+To maintain research-grade safety:
+
+• All SAM activations generate internal technical logs  
+• Logs contain **no user content**  
+• Logs store only:
+  - which detectors triggered  
+  - when the transition occurred  
+  - how long recovery took  
+• Logs are session-local and never persisted
+
+This supports reproducibility while maintaining privacy.
+
+---
+
+### 20.8 — Summary
+
+Steganographic Pattern Defence ensures that:
+
+• M1E cannot be manipulated through covert structural cues  
+• sudden, unnatural shifts cannot force Interpreter mode changes  
+• neurodivergent communication is not misclassified  
+• multi-turn, multi-signal confirmation prevents false positives  
+• OS-profiles remain clean, reliable, and post-identity safe  
+• adversarial users cannot compromise stability or safety mechanisms
+
+This defence layer is essential for preserving M1E’s interpretive integrity while maintaining identity-null constraints.
+
 # Phase 3 — Section 21  
 ## Glossary of Core Terms
 
