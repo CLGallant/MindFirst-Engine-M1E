@@ -1,6 +1,12 @@
 # MindFirst Engine (M1E)
 *A post-identity cognitive interaction framework*
 
+## Quick Navigation
+- 🗺️ Repository Map: ./Repo_Map.md  
+- 📘 Public Overview: ./Public_Overview.md  
+- 📐 Technical Specification (Phase 3): ./phase3  
+- 🛡️ Governance & Safety (Phase 4): ./phase4  
+
 ---
 ➡️ Repository Map (root): ../Repo_Map.md
 ___
