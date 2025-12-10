@@ -1,6 +1,23 @@
 # MindFirst Engine (M1E)
 *A post-identity cognitive interaction framework*
 
+## What This Repository Contains
+
+This repository provides the complete technical and governance specification for the MindFirst Engine (M1E).  
+It includes:
+
+- the formal architecture (Profiler, Interpreter, Stabiliser, Response Generator, API Layer)  
+- the post-identity safety constraints  
+- the safeguarding and compliance framework  
+- the evaluation and validation plan  
+- the public, non-technical overview  
+- a repository map to help new contributors navigate the structure
+
+M1E is currently a **concept-to-specification framework**.  
+The next stage is prototype implementation and empirical validation.
+
+Contributions from researchers, engineers, and practitioners interested in post-identity interaction are welcomed.
+
 ➡️ For a full overview of the repository structure, see the [Repository Map](Repo_Map.md).
 
 ➡️ Public Overview (non-technical summary): docs/Public_Overview.md
