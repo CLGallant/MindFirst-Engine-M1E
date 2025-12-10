@@ -648,3 +648,5 @@ Removing demographic inference does not weaken models; it strengthens their abil
 MindFirst represents a shift away from historical bias and toward a future where AI adapts to human minds instead of fitting people into categories inherited from the past.
 
 This completes Section 6 and concludes Phase 4.
+
+➡️ Return to Repository Map
