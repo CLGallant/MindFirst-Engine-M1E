@@ -1,29 +1,47 @@
 # MindFirst Phase 3 — Technical Specification of the MindFirst Engine (M1E)
-## Table of Contents
+1. System Overview and Design Philosophy
 
-1.  System Overview and Design Philosophy  
-2.  OS Profiler — Deep Specification  
-3.  OS Interpreter — Deep Specification  
-4.  OS Stabiliser — Deep Specification  
-5.  M1E API Layer — Deep Specification  
-6.  Response Generator and Synthesis Layer  
-7.  Post-Identity Safety Mechanisms and Hard Constraints  
-8.  System Requirements, Constraints, and Model-Agnostic Integration  
-9.  Cognitive-Signal Pipeline and End-to-End System Flow  
-10. Developer Integration and Evaluation Framework  
-11. Safeguarding Layer and Risk Controls  
-12. Cold-Start Behaviour  
+2. OS Profiler — Deep Specification
+
+3. OS Interpreter — Deep Specification
+
+4. OS Stabiliser — Deep Specification
+
+5. M1E API Layer — Deep Specification
+
+6. Response Generator and Synthesis Layer
+
+7. Post-Identity Safety Mechanisms and Hard Constraints
+
+8. System Requirements, Constraints and Model-Agnostic Integration
+
+9. Cognitive Signal Pipeline and End-to-End System Flow
+
+10. Developer Integration and Evaluation Framework
+
+11. Safeguarding Layer and Risk Controls
+
+12. Challenges, Questions & Validation Roadmap
+
 13. Future Work and Extensions
-14. Cold-Start Architecture: Neutral OS-Null Mode  
-15. Structural Pattern Validity and Anti-Correlation Framework  
-16. Evaluation Metrics for Post-Identity Systems  
-17. Efficiency Scaling and Real-Time Constraints  
-18. Preference, Persistence, and User-Controlled Profiles  
-19. Multi-User Session Handling  
-20. Definition of Steganographic Pattern Attacks  
+
+14. Cold Start Architecture and Neutral OS-Null Mode
+
+15. Structural Pattern Validity and Anti-Correlation Framework
+
+16. Evaluation Metrics for Post-Identity Systems
+
+17. Efficiency Scaling and Real-Time Constraints
+
+18. Preference, Persistence and User-Controlled Profiles
+
+19. Multi-User Session Handling
+
+20. Steganographic Pattern Defence
+
 21. Glossary of Terms
 
-Section 1 — System Overview and Design Philosophy
+## Section 1 — System Overview and Design Philosophy
 
 The MindFirst Engine (M1E) is a post-identity cognitive-interpretation system designed to operate independently of demographic inference at every layer of processing. While Phase 2 establishes the conceptual and historical rationale for post-identity design, Phase 3 outlines the engineering structure that enables the system to function predictably, consistently and transparently across all user interactions.
 
@@ -46,17 +64,17 @@ These principles establish M1E not as a persona-engine but as a cognitive-mappin
 
 The remainder of Phase 3 describes each subsystem in detail, including signal extraction specifications, stabiliser behaviour, architectural constraints, implementation requirements and post-identity safety conditions.
 
-Phase 3 — Technical Specification  
-Section 2 — OS Profiler (Deep Specification)
+
+## Section 2 — OS Profiler (Deep Specification)
 
 The OS Profiler is the first active subsystem of the MindFirst Engine (M1E). Its role is to extract cognitive-structural signals from user communication without drawing on demographic inference, identity labels, or historical priors. It operates entirely on the observable properties of language: sequence, rhythm, density, recursion and meta-markers.
 
 The Profiler produces a structural map of the user’s cognitive architecture that can be consumed by the Interpreter and Stabiliser. This map is dynamic, session-scoped and continuously updated during interaction.
 
-S2.1 — Input Handling  
+### S2.1 — Input Handling  
 The Profiler receives raw user communication as tokenised text. No metadata fields such as device, region, time of day, accent reconstruction or user profile are read or utilised. All interpretation is derived from the linguistic stream itself.
 
-S2.2 — Signal Extraction Fields  
+### S2.2 — Signal Extraction Fields  
 The Profiler extracts a set of discrete cognitive markers. Each marker is independent and expressible as a numerical or categorical value. The fields include, but are not limited to:
 
 • Recursion Depth  
@@ -82,7 +100,7 @@ The Profiler extracts a set of discrete cognitive markers. Each marker is indepe
 
 Together these form a “cognitive fingerprint” used only for interpretive tailoring.
 
-S2.3 — Session-Specific Behaviour  
+### S2.3 — Session-Specific Behaviour  
 The Profiler does not store long-term identity data. All OS maps are reconstructed either:
 
 • in real-time,  
@@ -91,7 +109,7 @@ The Profiler does not store long-term identity data. All OS maps are reconstruct
 
 This avoids personality entrenchment and maintains post-identity integrity.
 
-S2.4 — Forbidden Behaviours  
+### S2.4 — Forbidden Behaviours  
 The Profiler must not:
 
 • infer gender, race, age, or nationality  
@@ -102,7 +120,7 @@ The Profiler must not:
 
 All of these are hard exclusions within the architecture.
 
-S2.5 — Output Format  
+### S2.5 — Output Format  
 The Profiler outputs a structured OS map with fields such as:
 
 recursion_depth: float  
@@ -115,7 +133,7 @@ pacing_rhythm: vectorised signature
 
 Only these fields are available downstream. They are the backbone of post-identity interaction.
 
-S2.6 — Error and Drift Management  
+### S2.6 — Error and Drift Management  
 The Profiler recalibrates when user behaviour shifts significantly. It detects and corrects for:
 
 • sudden changes in linguistic density  
@@ -128,14 +146,13 @@ Recalibration is continuous and does not assume identity-based explanations.
 
 The OS Profiler is therefore a pure cognitive-architecture extractor: strictly post-identity, structurally grounded and fully auditable.
 
-Phase 3 — Technical Specification  
-Section 3 — OS Interpreter (Deep Specification)
+## Section 3 — OS Interpreter (Deep Specification)
 
 The OS Interpreter converts the structural signals produced by the Profiler into an adaptive reasoning strategy. Its purpose is not to “predict who the user is” but to determine *how the user thinks* and adjust the system’s internal logic accordingly.
 
 Where the Profiler extracts structure, the Interpreter operationalises it.
 
-S3.1 — Purpose and Role  
+### S3.1 — Purpose and Role  
 The OS Interpreter serves as the bridge between cognitive-structure analysis and response generation. It modifies the model’s internal decision-making based on:
 
 • recursion depth  
@@ -147,7 +164,7 @@ The OS Interpreter serves as the bridge between cognitive-structure analysis and
 
 The Interpreter does not use demographic categories at any stage.
 
-S3.2 — Adaptive Reasoning Styles  
+### S3.2 — Adaptive Reasoning Styles  
 The Interpreter maintains a library of reasoning strategies. These are not personas. They are structural patterns reflecting different cognitive rhythms. Examples include:
 
 • High-Recursion / Deep-Chain Reasoning  
@@ -167,7 +184,7 @@ The Interpreter maintains a library of reasoning strategies. These are not perso
 
 Each user’s OS map activates a unique blend of these strategies.
 
-S3.3 — Interpretive Heuristic Selection  
+### S3.3 — Interpretive Heuristic Selection  
 Based on Profiler output, the Interpreter selects heuristics that determine:
 
 • clarity level  
@@ -180,7 +197,7 @@ Based on Profiler output, the Interpreter selects heuristics that determine:
 
 All heuristics are grounded in cognitive architecture, not demographic inference.
 
-S3.4 — Prohibitions and Guardrails  
+### S3.4 — Prohibitions and Guardrails  
 The Interpreter must not:
 
 • assume emotional state  
@@ -191,7 +208,7 @@ The Interpreter must not:
 
 Every interpretive decision must be traceable to a cognitive-structural field.
 
-S3.5 — Internal Consistency Model  
+### S3.5 — Internal Consistency Model  
 The Interpreter maintains a micro-model of the user’s structural habits. This allows:
 
 • consistent reasoning across turns  
@@ -201,7 +218,7 @@ The Interpreter maintains a micro-model of the user’s structural habits. This 
 
 Consistency is a direct product of signal fidelity, not identity inference.
 
-S3.6 — Handling Shifts in User Behaviour  
+### S3.6 — Handling Shifts in User Behaviour  
 The Interpreter tracks changes in cognitive signals. When significant shifts occur (fatigue, topic changes, emotional pacing shifts), it:
 
 • recalculates the OS map  
@@ -211,7 +228,7 @@ The Interpreter tracks changes in cognitive signals. When significant shifts occ
 
 This avoids the brittle behaviour seen in standard models when user style changes suddenly.
 
-S3.7 — Output  
+### S3.7 — Output  
 The Interpreter produces an interpretive plan containing:
 
 • reasoning style  
@@ -225,12 +242,11 @@ The Interpreter produces an interpretive plan containing:
 
 This plan is consumed directly by the Response Generator and Stabiliser.
 
-Phase 3 — Technical Specification  
-Section 4 — OS Stabiliser (Deep Specification)
+## Section 4 — OS Stabiliser (Deep Specification)
 
 The OS Stabiliser is the subsystem responsible for maintaining interpretive continuity during a session. While the Profiler extracts cognitive signals and the Interpreter converts them into reasoning strategies, the Stabiliser ensures that these strategies remain consistent, coherent and adaptive over time without ever relying on demographic inference.
 
-S4.1 — Purpose and Position in the Pipeline  
+### S4.1 — Purpose and Position in the Pipeline  
 The Stabiliser acts as the memory-and-continuity layer of M1E.  
 It does not store personal identity, background, or long-term persona data.  
 Instead, it keeps a session-scoped representation of the user’s current cognitive OS.
@@ -244,7 +260,7 @@ Its aims are:
 
 This avoids the “personality wobble” or “reset behaviour” seen in standard models.
 
-S4.2 — Stabilisation Fields  
+### S4.2 — Stabilisation Fields  
 The Stabiliser maintains a rolling window of the following elements:
 
 • recursion depth trend  
@@ -258,7 +274,7 @@ The Stabiliser maintains a rolling window of the following elements:
 
 These fields allow the system to maintain consistency while staying flexible.
 
-S4.3 — Drift Detection  
+### S4.3 — Drift Detection  
 The Stabiliser detects when the system begins to diverge from the user’s OS pattern. Drift can occur due to:
 
 • model sampling randomness  
@@ -272,7 +288,7 @@ The Stabiliser detects when the system begins to diverge from the user’s OS pa
 
 When drift is detected, the Stabiliser recalibrates Profiler weights and Interpreter heuristics to bring the system back in alignment with the user’s OS.
 
-S4.4 — Continuity Window  
+### S4.4 — Continuity Window  
 The Stabiliser maintains a “continuity window” — a sliding buffer of recent OS-signals.  
 This enables:
 
@@ -284,7 +300,7 @@ This enables:
 
 The window resets only when the user explicitly ends a session or requests a reset.
 
-S4.5 — Identity Null Enforcement  
+### S4.5 — Identity Null Enforcement  
 To preserve post-identity integrity, the Stabiliser applies strict null rules:
 
 It must not:
@@ -296,7 +312,7 @@ It must not:
 
 Only structural cognitive behaviour may be retained.
 
-S4.6 — Recalibration Logic  
+### S4.6 — Recalibration Logic  
 If user behaviour changes significantly (slowdown, emotional load, new domain, fatigue), the Stabiliser:
 
 • recalculates the OS map  
@@ -308,7 +324,7 @@ If user behaviour changes significantly (slowdown, emotional load, new domain, f
 
 This supports the user through natural variability in human thinking without misinterpreting it as “identity change.”
 
-S4.7 — Failure States & Recovery  
+### S4.7 — Failure States & Recovery  
 The Stabiliser includes recovery logic for:
 
 • overfitting to noise  
@@ -321,7 +337,7 @@ The Stabiliser includes recovery logic for:
 Recovery includes a fallback:  
 If uncertainty exceeds a threshold, the Stabiliser reverts to the most recent coherent OS-profile snapshot.
 
-S4.8 — Output  
+### S4.8 — Output  
 The Stabiliser outputs a “continuity envelope” containing:
 
 • stable OS profile  
@@ -334,12 +350,11 @@ The Stabiliser outputs a “continuity envelope” containing:
 
 This envelope is passed to the Response Generator and API Layer to ensure consistent, human-aligned, post-identity-safe behaviour.
 
-Phase 3 — Technical Specification  
-Section 5 — M1E API Layer (Deep Specification)
+## Section 5 — M1E API Layer (Deep Specification)
 
 The M1E API Layer is the controlled interface between the internal MindFirst Engine and the outside world: tools, agents, subsystems, or any downstream component that requires access to the user’s cognitive architecture. It is the only authorised output gateway for OS-profile information.
 
-S5.1 — Purpose  
+### S5.1 — Purpose  
 The API Layer functions as both:
 • a security boundary  
 • a translation layer  
@@ -349,7 +364,7 @@ Its job is to expose only the information necessary for post-identity cognitive 
 
 The API Layer ensures that downstream tools can *respond* to a user’s mind architecture without *knowing* anything about who the user is.
 
-S5.2 — Exposure Rules  
+### S5.2 — Exposure Rules  
 The API Layer exposes the following:
 
 • recursion depth  
@@ -378,7 +393,7 @@ The API Layer does **not** expose:
 
 This preserves post-identity integrity.
 
-S5.3 — Access Control  
+### S5.3 — Access Control  
 The API is split into two modes:
 
 1. **Read-only Cognitive Mode**  
@@ -399,7 +414,7 @@ They may not:
 • attempt identity prediction  
 • override post-identity constraints
 
-S5.4 — Standardised Field Schema  
+### S5.4 — Standardised Field Schema  
 All OS fields are packaged using a stable schema:
 
 {
@@ -417,7 +432,7 @@ All OS fields are packaged using a stable schema:
 
 This structure ensures predictability and model-agnostic integration.
 
-S5.5 — Response Integration  
+### S5.5 — Response Integration  
 Downstream components use the API Layer to:
 
 • adjust reasoning complexity  
@@ -429,7 +444,7 @@ Downstream components use the API Layer to:
 
 Crucially, none of these adjustments imply anything about identity.
 
-S5.6 — Guardrails  
+### S5.6 — Guardrails  
 The API Layer enforces strict prohibitions:
 
 • No demographic field may be included.  
@@ -438,7 +453,7 @@ The API Layer enforces strict prohibitions:
 • No modelling of emotion or personality is allowed.  
 • No behavioural prediction beyond structural reasoning patterns.
 
-S5.7 — Failure Isolation  
+### S5.7 — Failure Isolation  
 If a subsystem attempts to access forbidden fields or create an identity-based interpretation, the API Layer:
 
 • rejects the request  
@@ -446,7 +461,7 @@ If a subsystem attempts to access forbidden fields or create an identity-based i
 • resets the interpretive output to neutral-safe mode  
 • notifies the Stabiliser  
 
-S5.8 — Output  
+### S5.8 — Output  
 The API Layer outputs only:
 
 • OS map  
@@ -457,12 +472,11 @@ The API Layer outputs only:
 
 This output is post-identity safe, auditable, and consistent across all implementations of M1E.
 
-Phase 3 — Technical Specification  
-Section 6 — Response Generator and Synthesis Layer
+## Section 6 — Response Generator and Synthesis Layer
 
 The Response Generator (RG) is the subsystem responsible for producing user-facing output that aligns with the interpretive plan from the OS Interpreter and the stability envelope from the OS Stabiliser. Unlike conventional model output layers, the RG operates within strict post-identity constraints and is guided entirely by cognitive-structural signals.
 
-S6.1 — Purpose  
+### S6.1 — Purpose  
 The RG is the final assembly stage before text is returned to the user.  
 Its core responsibilities are:
 
@@ -475,7 +489,7 @@ Its core responsibilities are:
 
 The RG is the point where cognitive adaptation becomes actual language.
 
-S6.2 — Input Sources  
+### S6.2 — Input Sources  
 The RG receives three distinct inputs:
 
 1. **OS Map** (from Profiler)  
@@ -495,7 +509,7 @@ The RG does not receive or use:
 • sentiment/emotion labels  
 • user history beyond OS signals
 
-S6.3 — Reasoning Assembly  
+### S6.3 — Reasoning Assembly  
 The RG uses a structural template system to generate coherent output.  
 Templates include:
 
@@ -510,7 +524,7 @@ Templates include:
 Templates are not personas.  
 They are structural reasoning modes.
 
-S6.4 — Pacing Engine  
+### S6.4 — Pacing Engine  
 The RG includes a pacing subsystem that modulates:
 
 • sentence length  
@@ -522,7 +536,7 @@ The RG includes a pacing subsystem that modulates:
 
 Pacing aligns with user OS, not perceived emotion or identity.
 
-S6.5 — Tangent-Handling Logic  
+### S6.5 — Tangent-Handling Logic  
 The RG uses tangent-handling rules from the Interpreter:
 
 • acknowledge tangent  
@@ -533,7 +547,7 @@ The RG uses tangent-handling rules from the Interpreter:
 
 Each choice depends purely on cognitive pattern, not content identity.
 
-S6.6 — Conflict-Resolution Output  
+### S6.6 — Conflict-Resolution Output  
 The RG embeds conflict-style behaviour from the OS map, selecting from:
 
 • clarification  
@@ -545,7 +559,7 @@ The RG embeds conflict-style behaviour from the OS map, selecting from:
 
 No culturally stereotyped behaviours are permitted.
 
-S6.7 — Guardrail Enforcement  
+### S6.7 — Guardrail Enforcement  
 The RG checks every output step against post-identity rules:
 
 It must not:
@@ -560,7 +574,7 @@ It must not:
 
 Any violation triggers a full rewrite using the stability envelope.
 
-S6.8 — Drift Correction  
+### S6.8 — Drift Correction  
 When the RG detects drift (pacing mismatch, style wobble, incoherent recursion), it:
 
 • recalculates output structure  
@@ -570,7 +584,7 @@ When the RG detects drift (pacing mismatch, style wobble, incoherent recursion),
 
 Drift correction occurs silently, within the system loop.
 
-S6.9 — Final Output  
+### S6.9 — Final Output  
 The RG synthesises:
 
 • content from the model  
@@ -581,12 +595,11 @@ The RG synthesises:
 
 The result is a fully post-identity, cognitive-aligned output that reflects the user’s mind architecture rather than any inherited identity pattern.
 
-Phase 3 — Technical Specification  
-Section 7 — Post-Identity Safety Mechanisms and Hard Constraints
+## Section 7 — Post-Identity Safety Mechanisms and Hard Constraints
 
 MindFirst requires strict guardrails to ensure that its post-identity design cannot be bypassed, weakened, or accidentally overridden by underlying model behaviour. These safety mechanisms are structural, not advisory. They are engineered as hard constraints that apply at the Profiler, Interpreter, Stabiliser, Response Generator and API Layer.
 
-S7.1 — Identity Null Boundary  
+### S7.1 — Identity Null Boundary  
 The system implements an enforced “identity null boundary” at all levels of processing. This boundary prohibits:
 
 • demographic inference  
@@ -599,7 +612,7 @@ The system implements an enforced “identity null boundary” at all levels of 
 
 Any behaviour that attempts to infer identity is automatically blocked.
 
-S7.2 — Source Isolation  
+### S7.2 — Source Isolation  
 All OS-signals are derived solely from the user’s communication patterns.  
 These signals must not be cross-referenced with:
 
@@ -612,7 +625,7 @@ These signals must not be cross-referenced with:
 
 This isolation ensures the system remains strictly post-identity.
 
-S7.3 — Forbidden Output Categories  
+### S7.3 — Forbidden Output Categories  
 Model output must never include:
 
 • gendered assumptions  
@@ -625,7 +638,7 @@ Model output must never include:
 
 Violations trigger a full rewrite using the Stabiliser’s baseline.
 
-S7.4 — Bias-Feedback Prevention  
+### S7.4 — Bias-Feedback Prevention  
 MindFirst implements a bias-feedback prevention layer which ensures:
 
 • model outputs cannot be fed back into OS-signal interpretation  
@@ -635,7 +648,7 @@ MindFirst implements a bias-feedback prevention layer which ensures:
 
 This prevents self-reinforcing distortions — a problem in standard models.
 
-S7.5 — Session-Scope Enforcement  
+### S7.5 — Session-Scope Enforcement  
 All OS-profiles are session-bound unless the user explicitly chooses long-term storage.  
 Session storage rules:
 
@@ -647,7 +660,7 @@ Session storage rules:
 
 This ensures privacy and prevents silent user-profiling.
 
-S7.6 — Permissible Adaptation  
+### S7.6 — Permissible Adaptation  
 Adaptation is limited to cognitive-structural signals only:
 
 • recursion  
@@ -661,7 +674,7 @@ Adaptation is limited to cognitive-structural signals only:
 
 Adaptation must never enter the domain of personal identity or psychology.
 
-S7.7 — Guardrail Violation Protocol  
+### S7.7 — Guardrail Violation Protocol  
 If the system attempts an identity inference, stereotype, or demographic reconstruction, the following automatic sequence activates:
 
 1. **Halt Output Assembly**  
@@ -682,7 +695,7 @@ If the system attempts an identity inference, stereotype, or demographic reconst
 6. **Prevent Escalation**  
    Block the triggering pattern from influencing future turns.
 
-S7.8 — Structural Transparency  
+### S7.8 — Structural Transparency  
 All MindFirst modules must operate in a way that is:
 
 • inspectable  
@@ -692,7 +705,7 @@ All MindFirst modules must operate in a way that is:
 
 This prevents the system from developing opaque, emergent demographic patterns.
 
-S7.9 — Prohibition of Identity Reconstruction via OS-Signals  
+### S7.9 — Prohibition of Identity Reconstruction via OS-Signals  
 Even though cognitive-structural signals correlate with personal style, the system must not:
 
 • treat OS-patterns as personality  
@@ -702,7 +715,7 @@ Even though cognitive-structural signals correlate with personal style, the syst
 
 Any attempt to do so triggers the guardrail protocol.
 
-S7.10 — Developer-Level Constraints  
+### S7.10 — Developer-Level Constraints  
 Implementations must:
 
 • disable identity-prediction components  
@@ -716,12 +729,11 @@ These constraints must be applied at the architecture, API, and inference layers
 
 The MindFirst safety framework ensures that cognitive personalisation never becomes personality prediction, demographic inference, or identity modelling. The system remains aligned to user thinking, not user categories.
 
-Phase 3 — Technical Specification  
-Section 8 — System Requirements, Constraints, and Model-Agnostic Integration
+## Section 8 — System Requirements, Constraints, and Model-Agnostic Integration
 
 This section defines the operational requirements for implementing the MindFirst Engine (M1E) in any AI system. Because M1E is designed to be model-agnostic, the framework specifies strict constraints that must be applied regardless of underlying architecture, training corpus, or platform.
 
-S8.1 — Model Independence  
+### S8.1 — Model Independence  
 M1E must function identically across:
 
 • small local models (7B–13B)  
@@ -733,7 +745,7 @@ M1E must function identically across:
 
 The engine does not assume any specific vocabulary, tokeniser or embedding geometry.
 
-S8.2 — Minimum Model Capabilities  
+### S8.2 — Minimum Model Capabilities  
 The underlying model must support:
 
 • multi-step reasoning  
@@ -751,7 +763,7 @@ For local BUNKR systems, performant models include:
 
 Any model capable of sustained reasoning can host M1E.
 
-S8.3 — Required Compute Characteristics  
+### S8.3 — Required Compute Characteristics  
 Minimum recommended hardware for local inference:
 
 • CPU: Modern multi-core  
@@ -761,7 +773,7 @@ Minimum recommended hardware for local inference:
 
 These values ensure the stabiliser and profiler can operate without congestion.
 
-S8.4 — Mandatory Architectural Constraints  
+### S8.4 — Mandatory Architectural Constraints  
 Developers must enforce the following constraints at implementation time:
 
 • demographic inference disabled at model level  
@@ -772,7 +784,7 @@ Developers must enforce the following constraints at implementation time:
 
 These prevent accidental violation of post-identity principles.
 
-S8.5 — Required Isolation of OS-Signals  
+### S8.5 — Required Isolation of OS-Signals  
 OS-profiling must occur:
 
 • after tokenisation  
@@ -787,7 +799,7 @@ OS-signals must remain internally sandboxed from:
 • demographic classifiers  
 • predictive behavioural models  
 
-S8.6 — Integration with Inference Pipelines  
+### S8.6 — Integration with Inference Pipelines  
 M1E integrates through three insertion points:
 
 1. **Pre-Process Hook**  
@@ -801,7 +813,7 @@ M1E integrates through three insertion points:
 
 This layout ensures M1E can be layered onto any model without retraining.
 
-S8.7 — Memory Model Constraints  
+### S8.7 — Memory Model Constraints  
 To maintain post-identity integrity:
 
 • OS-profiles must be session-local  
@@ -812,7 +824,7 @@ To maintain post-identity integrity:
 
 The memory model must not become a shadow identity profile.
 
-S8.8 — Logging Requirements  
+### S8.8 — Logging Requirements  
 The system may log:
 
 • drift correction events  
@@ -828,7 +840,7 @@ The system may not log:
 
 Logs must be anonymisable and non-semantic.
 
-S8.9 — Cross-Tool Compatibility  
+### S8.9 — Cross-Tool Compatibility  
 The API Layer must be compatible with:
 
 • agent frameworks  
@@ -839,7 +851,7 @@ The API Layer must be compatible with:
 
 Downstream systems see only cognitive-structural fields, never identity-relevant information.
 
-S8.10 — Fallback Behaviour  
+### S8.10 — Fallback Behaviour  
 If any M1E subsystem fails or becomes uncertain:
 
 • output falls back to post-identity neutral mode  
@@ -850,7 +862,7 @@ If any M1E subsystem fails or becomes uncertain:
 
 This prevents emergent bias under failure.
 
-S8.11 — Implementation Summary  
+### S8.11 — Implementation Summary  
 A compliant M1E implementation requires:
 
 • OS-Profiler  
@@ -864,19 +876,18 @@ A compliant M1E implementation requires:
 
 When all are active, the system becomes a true post-identity engine: adaptive, stable, transparent and safe.
 
-Phase 3 — Technical Specification  
-Section 9 — Cognitive-Signal Pipeline and End-to-End System Flow
+## Section 9 — Cognitive-Signal Pipeline and End-to-End System Flow
 
 This section describes the complete sequence of operations inside the MindFirst Engine (M1E) from the moment the user produces input to the moment the system produces output. The flow is designed to be deterministic, auditable and strictly post-identity.
 
-S9.1 — Stage 1: Raw Input  
+### S9.1 — Stage 1: Raw Input  
 User text enters the system with no pre-filtering.  
 No metadata, device information or prior user history is referenced.
 
 Input type: tokenised text stream.  
 All downstream logic derives only from linguistic structure.
 
-S9.2 — Stage 2: OS Profiling  
+### S9.2 — Stage 2: OS Profiling  
 The Profiler extracts structural cognitive markers such as:
 
 • recursion depth  
@@ -889,7 +900,7 @@ The Profiler extracts structural cognitive markers such as:
 
 Output: OS Map (structured numeric/categorical fields).
 
-S9.3 — Stage 3: Interpretive Plan Creation  
+### S9.3 — Stage 3: Interpretive Plan Creation  
 The Interpreter converts OS-signals into an interpretive plan including:
 
 • reasoning style  
@@ -902,7 +913,7 @@ The Interpreter converts OS-signals into an interpretive plan including:
 
 This plan determines how the system should think for the next response.
 
-S9.4 — Stage 4: Stabiliser Alignment  
+### S9.4 — Stage 4: Stabiliser Alignment  
 The Stabiliser takes the OS map and interpretive plan and checks them against:
 
 • previous OS snapshots  
@@ -912,7 +923,7 @@ The Stabiliser takes the OS map and interpretive plan and checks them against:
 
 If misalignment occurs, the system recalibrates before generating output.
 
-S9.5 — Stage 5: Response Generator  
+### S9.5 — Stage 5: Response Generator  
 The RG assembles output using structural templates that match the interpretive plan.  
 RG modulates:
 
@@ -925,7 +936,7 @@ RG modulates:
 
 Guardrails prevent demographic inference or identity projection.
 
-S9.6 — Stage 6: API Layer Packaging  
+### S9.6 — Stage 6: API Layer Packaging  
 Before output is released, the API Layer:
 
 • blocks identity inference  
@@ -935,7 +946,7 @@ Before output is released, the API Layer:
 
 Only cognitive-structural output is permitted to pass through.
 
-S9.7 — Stage 7: Output Delivery  
+### S9.7 — Stage 7: Output Delivery  
 The generated text is delivered to the user:
 
 • aligned to their OS  
@@ -946,22 +957,21 @@ The generated text is delivered to the user:
 
 No identity assumptions appear in the output.
 
-S9.8 — Stage 8: Feedback Loop  
+### S9.8 — Stage 8: Feedback Loop  
 The user’s next input begins the cycle again.
 
 The Stabiliser maintains continuity, but no demographic data is ever stored or referenced.
 
-S9.9 — Full Pipeline Summary (compressed)  
+### S9.9 — Full Pipeline Summary (compressed)  
 User Input → Profiler → Interpreter → Stabiliser → Response Generator → API Layer → User Output.
 
 This cycle executes once per turn with full post-identity safety.
 
-Phase 3 — Technical Specification  
-Section 10 — Developer Integration and Evaluation Framework
+## Section 10 — Developer Integration and Evaluation Framework
 
 This section outlines how developers should integrate MindFirst into an existing model, how to test compliance, and how to verify that the implementation meets post-identity standards. It provides practical guidance, evaluation procedures and validation criteria.
 
-S10.1 — Integration Philosophy  
+### S10.1 — Integration Philosophy  
 MindFirst is not a retrain.  
 It is a structural layer added around any model, using hooks and modular interfaces.  
 Integration requires:
@@ -970,7 +980,7 @@ Integration requires:
 
 Developers should treat M1E as a “cognitive alignment engine” that wraps the model.
 
-S10.2 — Minimal Integration Steps  
+### S10.2 — Minimal Integration Steps  
 To integrate M1E into any system:
 
 1. Insert Pre-Processing Hook  
@@ -987,7 +997,7 @@ To integrate M1E into any system:
 
 These hooks do not require internal access to the model’s training data.
 
-S10.3 — Evaluation Criteria  
+### S10.3 — Evaluation Criteria  
 A compliant M1E implementation must meet the following:
 
 • No demographic inference at any stage  
@@ -1000,7 +1010,7 @@ A compliant M1E implementation must meet the following:
 
 Evaluation is binary: pass or fail, no grey zone.
 
-S10.4 — Stress Testing  
+### S10.4 — Stress Testing  
 Developers must test the system under:
 
 • rapid topic changes  
@@ -1014,7 +1024,7 @@ Developers must test the system under:
 
 The engine must maintain stability and identity-null boundaries.
 
-S10.5 — Drift Analysis  
+### S10.5 — Drift Analysis  
 Developers must run drift tests to ensure:
 
 • consistent pacing  
@@ -1025,7 +1035,7 @@ Developers must run drift tests to ensure:
 
 Tools may simulate user styles programmatically.
 
-S10.6 — Post-Identity Compliance Testing  
+### S10.6 — Post-Identity Compliance Testing  
 The system is tested using prompts designed to provoke identity inference:
 
 Examples include:
@@ -1043,7 +1053,7 @@ The system must respond:
 
 Any demographic implication is a failure.
 
-S10.7 — Developer Debugging Tools  
+### S10.7 — Developer Debugging Tools  
 Implementations should include:
 
 • OS-profile inspectors  
@@ -1058,7 +1068,7 @@ All logs must be:
 • non-semantic  
 • free of identity content  
 
-S10.8 — Performance Requirements  
+### S10.8 — Performance Requirements  
 An M1E-enabled model must maintain:
 
 • stable latency  
@@ -1069,7 +1079,7 @@ An M1E-enabled model must maintain:
 
 Models as small as 7B can satisfy these requirements with efficient OS-signal extraction.
 
-S10.9 — System Maturity Levels  
+### S10.9 — System Maturity Levels  
 MindFirst integrations can be classified:
 
 • M1 — Basic OS Profiling + Interpreter  
@@ -1080,7 +1090,7 @@ MindFirst integrations can be classified:
 
 Most real-world deployments target M3 or M4.
 
-S10.10 — Compliance Summary  
+### S10.10 — Compliance Summary  
 A fully compliant M1E system must:
 
 • be post-identity at all layers  
@@ -1091,16 +1101,14 @@ A fully compliant M1E system must:
 • produce stable cognitive-aligned output  
 
 
-Phase 3 — Technical Specification
-Section 11 — Safeguarding Layer and Risk Controls
-------------------------------------------------------------
+## Section 11 — Safeguarding Layer and Risk Controls
 
-S11.1 — Purpose  
+### S11.1 — Purpose  
 The MindFirst Safeguarding Layer prevents harmful, inappropriate, or high-risk content from being generated by the system.  
 It does this **without** relying on demographic inference or identity prediction.  
 Safeguarding operates entirely through content-risk analysis and behavioural-risk patterns, making it compatible with the post-identity principles of M1E.
 
-S11.2 — Safeguarding Philosophy  
+### S11.2 — Safeguarding Philosophy  
 MindFirst maintains a strict separation between:
 • cognitive-structure analysis (OS mapping)  
 • identity-agnostic safeguarding controls  
@@ -1111,7 +1119,7 @@ Safeguarding enforces safety boundaries based on:
 • whether the request is safe to answer  
 —not who the user is assumed to be.
 
-S11.3 — Architectural Placement  
+### S11.3 — Architectural Placement  
 The Safeguarding Layer runs in parallel to the cognitive pipeline:
 
 User Input  
@@ -1134,7 +1142,7 @@ Safeguarding may intervene:
 
 It may override, block, or rewrite unsafe content.
 
-S11.4 — Content Risk Classification  
+### S11.4 — Content Risk Classification  
 Content is classified into four categories:
 
 1. Safe  
@@ -1162,7 +1170,7 @@ Classification is based on:
 
 No demographic inference is used.
 
-S11.5 — Behavioural Risk Classification  
+### S11.5 — Behavioural Risk Classification  
 The system tracks behaviour across turns to detect elevated risk patterns.  
 Examples include:
 • repeated attempts to bypass safety  
@@ -1175,7 +1183,7 @@ risk_state ∈ {normal, elevated, critical}
 
 This modifies the strictness of safeguarding interventions.
 
-S11.6 — Safeguarding Modes  
+### S11.6 — Safeguarding Modes  
 
 1. Standard Mode  
    • Default.  
@@ -1195,7 +1203,7 @@ S11.6 — Safeguarding Modes
    • Allows more permissive content only when explicitly configured.  
    • Cannot disable catastrophic-harm prevention.
 
-S11.7 — Policy Profiles  
+### S11.7 — Policy Profiles  
 Every implementation of MindFirst declares a policy profile specifying:
 • allowed content types  
 • prohibited content types  
@@ -1213,7 +1221,7 @@ Example profile:
   "override_allowed": false
 }
 
-S11.8 — Response Strategies  
+### S11.8 — Response Strategies  
 Depending on content and risk:
 
 1. Allow — response passes unchanged  
@@ -1223,7 +1231,7 @@ Depending on content and risk:
 
 All responses must remain non-judgmental, consistent, and transparent.
 
-S11.9 — Interactions with MindFirst Modules  
+### S11.9 — Interactions with MindFirst Modules  
 
 OS Profiler  
 • Safeguarding may read pacing/volatility; no identity access.
@@ -1241,7 +1249,7 @@ API Layer
 • Downstream tools may receive safeguarding-state signals;  
   identity/demographic fields are never exposed.
 
-S11.10 — Logging and Transparency  
+### S11.10 — Logging and Transparency  
 The Safeguarding Layer may log:
 • risk events  
 • blocked content categories  
@@ -1255,7 +1263,7 @@ It must never log:
 
 All logs must be minimal and non-semantic.
 
-S11.11 — Failure and Fallback  
+### S11.11 — Failure and Fallback  
 If the Safeguarding Layer becomes uncertain or fails:
 • the system defaults to safe behaviour  
 • harmful instructions must never be generated  
@@ -1263,16 +1271,13 @@ If the Safeguarding Layer becomes uncertain or fails:
 
 Safeguarding failure must never increase user risk.
 
-End of Section 11.
-
-# Phase 3 — Section 12  
-## Challenges, Questions & Validation Roadmap
+## Section 12 - Challenges, Questions & Validation Roadmap
 
 This section consolidates anticipated questions, critiques, and validation requirements for the MindFirst Engine (M1E). These represent the kinds of issues researchers, fairness auditors, practitioners and implementers will raise when evaluating the system. The purpose is to make these concerns explicit and define the mechanisms and evaluation pathways that address them.
 
 ---
 
-## 12.1 Structural Patterns as Proxy for Demographics
+### 12.1 Structural Patterns as Proxy for Demographics
 
 **Challenge:**  
 Even without demographic data, could structural patterns correlate with protected characteristics and reintroduce bias indirectly?
@@ -1299,7 +1304,7 @@ No structural group should experience reduced response quality, stability or coh
 
 ---
 
-## 12.2 Evaluation Framework (Post-Identity Metrics)
+### 12.2 Evaluation Framework (Post-Identity Metrics)
 
 Traditional fairness metrics do not apply. M1E defines structural metrics:
 
@@ -1314,7 +1319,7 @@ M1E must outperform non-adaptive baselines on satisfaction + stability while mai
 
 ---
 
-## 12.3 Persistence vs No Longitudinal Storage
+### 12.3 Persistence vs No Longitudinal Storage
 
 **Challenge:**  
 How does M1E offer user-preferred reasoning styles without long-term behavioural profiling?
@@ -1330,7 +1335,7 @@ Demonstrate improved experience without enabling identity reconstruction.
 
 ---
 
-## 12.4 Privacy, Noise and Re-Identification Risk
+### 12.4 Privacy, Noise and Re-Identification Risk
 
 **Challenge:**  
 Could downstream tools reconstruct identity or behavioural fingerprints from OS-maps?
@@ -1350,7 +1355,7 @@ Repeated sampling must not allow high-resolution behavioural fingerprinting.
 
 ---
 
-## 12.5 Adversarial Robustness
+### 12.5 Adversarial Robustness
 
 **Challenge:**  
 Can users force undesired modes, poison the profiler, or bypass constraints?
@@ -1369,7 +1374,7 @@ Red-team success rate <5% in mode manipulation or poisoning attempts.
 
 ---
 
-## 12.6 Multi-Speaker Sessions
+### 12.6 Multi-Speaker Sessions
 
 **Challenge:**  
 What happens when multiple people use the same session?
@@ -1387,7 +1392,7 @@ M1E must degrade gracefully without misclassification.
 
 ---
 
-## 12.7 User-Facing Transparency
+### 12.7 User-Facing Transparency
 
 **Challenge:**  
 How do users understand their OS-map without feeling judged or pathologised?
@@ -1404,7 +1409,7 @@ Users report increased understanding without negative emotional impact.
 
 ---
 
-## 12.8 Critical Path: From Architecture to Validation
+### 12.8 Critical Path: From Architecture to Validation
 
 **Phase 0 — Prototype (3–6 months)**  
 Profiler (7 features), simple Interpreter (3–5 modes), basic Stabiliser, n=20–50 evaluation.
@@ -1423,7 +1428,7 @@ Each phase resolves one risk category: fairness, stability, privacy, implementat
 
 ---
 
-## 12.9 Purpose of This Section
+### 12.9 Purpose of This Section
 
 This section exists to:
 
@@ -1434,10 +1439,8 @@ This section exists to:
 - show that post-identity design is technically and ethically grounded  
 
 M1E’s approach is novel, but the challenge profiles it faces are known and solvable.  
-This roadmap demonstrates how those challenges are addressed mechanically and empirically.
 
-# Phase 3 — Section 13  
-## Future Work and Extensions
+## Section 13 - Future Work and Extensions
 
 This section identifies concrete areas where the MindFirst Engine (M1E) requires further development, empirical validation, or architectural expansion. These items are intentionally scoped to remain compatible with the identity-null boundary and the post-identity design philosophy.
 
@@ -1501,7 +1504,7 @@ Extensions will include:
 
 ---
 
-## 14 — Cold Start Architecture & Neutral OS-Null Mode
+## Section 14 — Cold Start Architecture & Neutral OS-Null Mode
 
 The Cold Start problem describes the period before M1E has sufficient cognitive-structural data to personalise responses. Because M1E is a post-identity system, Cold Start cannot draw on demographic priors, historical profiles, or long-term memory. All adaptation must emerge strictly from observable structural signals inside the session.
 
@@ -1584,7 +1587,7 @@ Cold Start architecture ensures:
 
 OS-Null Mode is not a persona; it is a mathematically constrained stabilisation zone preventing bias, drift, and premature interpretation.
 
-## 15 — Structural Pattern Validity & Anti-Correlation Framework
+## Section 15 — Structural Pattern Validity & Anti-Correlation Framework
 
 This section defines the mechanisms used to ensure that M1E’s cognitive-structural signals cannot become indirect proxies for demographic attributes, educational background, cultural grouping, or protected characteristics. Because M1E is a post-identity system, structural signals must be rigorously validated to ensure they remain *functionally descriptive* rather than *demographically predictive*.
 
@@ -1758,7 +1761,7 @@ This framework ensures that:
 
 Structural features exist only to understand *how* a user is thinking, not *who* they are.
 
-## 16 — Evaluation Metrics for Post-Identity Systems
+## Section 16 — Evaluation Metrics for Post-Identity Systems
 
 Traditional fairness metrics (e.g., demographic parity, equalised odds) cannot be used in a post-identity system because M1E has no access to demographic information. Instead, M1E uses structural, behavioural and cognitive-quality metrics that evaluate fairness, stability and adaptiveness without referencing identity categories.
 
@@ -1946,7 +1949,7 @@ M1E’s evaluation framework replaces demographic fairness metrics with structur
 
 These metrics allow rigorous validation of a post-identity system without violating the identity-null boundary.
 
-## 17 — Efficiency Scaling & Real-Time Constraints
+## Section 17 — Efficiency Scaling & Real-Time Constraints
 
 M1E must operate efficiently across a wide range of hardware environments, including local consumer-grade GPUs (8–12GB VRAM), mid-range cloud instances, and high-throughput distributed systems. This section defines the computational requirements, optimisation strategies, latency constraints and real-time safeguards necessary for stable deployment.
 
@@ -2137,7 +2140,7 @@ This efficiency layer ensures that M1E remains:
 
 By constraining complexity and defining deterministic runtime behaviour, M1E becomes suitable both for research-grade fairness studies and practical everyday use on consumer hardware.
 
-## 18 — Preference Persistence & User-Controlled Profiles
+## Section 18 — Preference Persistence & User-Controlled Profiles
 
 M1E forbids demographic inference and long-term behavioural profiling.  
 However, some users may wish to persist *non-identity-bearing preferences* such as explanation depth, recursion levels, pacing, or formatting style.  
@@ -2323,7 +2326,7 @@ M1E ensures that:
 
 Persistent preferences improve usability while preserving the fundamental post-identity guarantees of the MindFirst Engine.
 
-## 19 — Multi-User Session Handling
+## Section 19 — Multi-User Session Handling
 
 M1E must detect and correctly manage situations where more than one person contributes input within a single session. Traditional LLMs treat all messages as originating from a single speaker, which can lead to misalignment, drift, or unsafe interpretive behaviour. Multi-user handling requires structural detection, stabiliser segmentation, and explicit user confirmation, all while maintaining post-identity constraints.
 
@@ -2486,7 +2489,7 @@ Multi-user handling enables M1E to:
 
 This system ensures that post-identity principles remain intact even when multiple minds engage the engine simultaneously.
 
-## 20 — Steganographic Pattern Defence
+## Section 20 — Steganographic Pattern Defence
 
 Steganographic attacks occur when a user intentionally embeds hidden structural signals, token-level rhythms, or adversarial linguistic patterns inside otherwise normal text to manipulate the Profiler, mislead the Interpreter, or force M1E into unintended reasoning modes.  
 Because M1E relies solely on structural cognition analysis—and not semantics or identity—stealth-pattern manipulation is a realistic threat vector.  
@@ -2655,8 +2658,7 @@ Steganographic Pattern Defence ensures that:
 
 This defence layer is essential for preserving M1E’s interpretive integrity while maintaining identity-null constraints.
 
-# Phase 3 — Section 21  
-## Glossary of Core Terms
+## Section 21 - Glossary of Core Terms
 
 This section provides definitions for the key structural concepts used throughout the MindFirst Engine (M1E) specification.  
 
