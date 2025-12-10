@@ -1477,7 +1477,90 @@ This section outlines areas of continued development beyond the scope of Phase 3
 
 Content will expand as empirical results and collaborator input become available.
 
-# Phase 3 — Section 14  
+## 14 — Cold Start Architecture & Neutral OS-Null Mode
+
+The Cold Start problem describes the period before M1E has sufficient cognitive-structural data to personalise responses. Because M1E is a post-identity system, Cold Start cannot draw on demographic priors, historical profiles, or long-term memory. All adaptation must emerge strictly from observable structural signals inside the session.
+
+### 14.1 — OS-Null Mode (Neutral Baseline)
+
+M1E begins every new session in OS-Null Mode. This mode is:
+• fully structure-neutral  
+• non-adaptive  
+• bias-minimised  
+• free of inferred heuristics  
+
+OS-Null uses fixed, conservative defaults:
+• recursion_depth = medium  
+• compression_factor = medium  
+• tangent_probability = medium-low  
+• meta_monitoring_density = neutral  
+• conflict_style = clarifying  
+• pacing_rhythm = steady  
+
+This ensures the system does not inadvertently favour any particular cognitive style in the initial turns.
+
+### 14.2 — Cold Start Signal Accumulation Window
+
+During turns 1–3, the Profiler accumulates the first meaningful cognitive-structural signals.  
+A minimum requirement for exiting OS-Null Mode is:
+
+• ≥ 2 consistent structural readings  
+• signal_volatility < threshold_V1  
+• no contradictory tangent or recursion spikes  
+• no safeguarded-content triggers  
+
+If these conditions are not met by turn 3, M1E continues in OS-Null until consistency emerges.
+
+### 14.3 — Early-Stage Adaptation Rules
+
+When sufficient signals exist, the Interpreter activates Early-Stage Mode, which applies:
+• reduced recursion scaling  
+• conservative tangent following  
+• low-risk pacing adjustments  
+• bounded heuristic selection (no full-depth patterns yet)
+
+This prevents premature overfitting while still improving alignment.
+
+### 14.4 — Transition to Full Adaptive Mode
+
+Full adaptive reasoning (as defined in Sections 3–6) begins when:
+
+• recursion_depth trend is stable across ≥ 3 turns  
+• compression_factor stabilises within ±1 tier  
+• tangent_probability shows consistent direction  
+• meta_monitoring markers appear at least once  
+• volatility_score < volatility_cutoff_V2  
+
+At this point the Stabiliser switches from low-gain to normal-gain mode, enabling full dynamic adaptation.
+
+### 14.5 — Cold Start Failure Modes
+
+Cold Start failures are resolved with deterministic fallbacks:
+
+**FM1 — High volatility in early input**  
+Action: remain in OS-Null; stabiliser rejects adaptive mode.
+
+**FM2 — Conflicting structural patterns**  
+Action: hybrid-null mode; heuristics remain minimal.
+
+**FM3 — Rapid style switching**  
+Action: lockout window (3 turns) before reconsidering adaptation.
+
+**FM4 — Safeguarding trigger in early turns**  
+Action: override adaptation; route to Safeguarding Mode (Section 11).
+
+### 14.6 — Design Goals of the Cold Start Layer
+
+Cold Start architecture ensures:
+• no demographic inference  
+• no style stereotypes or linguistic-culture shortcuts  
+• no early-stage over-adaptation  
+• consistent user experience during the first 2–5 turns  
+• transparent, auditable mode transitions  
+
+OS-Null Mode is not a persona; it is a mathematically constrained stabilisation zone preventing bias, drift, and premature interpretation.
+
+# Phase 3 — Section 15  
 ## Glossary of Core Terms
 
 This section provides definitions for the key structural concepts used throughout the MindFirst Engine (M1E) specification.  
