@@ -2299,7 +2299,170 @@ M1E ensures that:
 
 Persistent preferences improve usability while preserving the fundamental post-identity guarantees of the MindFirst Engine.
 
-# Phase 3 — Section 19  
+## 19 — Multi-User Session Handling
+
+M1E must detect and correctly manage situations where more than one person contributes input within a single session. Traditional LLMs treat all messages as originating from a single speaker, which can lead to misalignment, drift, or unsafe interpretive behaviour. Multi-user handling requires structural detection, stabiliser segmentation, and explicit user confirmation, all while maintaining post-identity constraints.
+
+### 19.1 — Rationale
+
+Multi-user sessions arise in contexts such as:
+• a parent assisting a child  
+• collaborative problem-solving  
+• accessibility scenarios with a communication aide  
+• device sharing  
+• teaching environments  
+
+Since M1E cannot rely on demographic or identity cues, detection must be purely structural, based on changes in communication mechanics rather than inferred personal traits.
+
+---
+
+### 19.2 — Multi-User Structural Signature
+
+M1E identifies potential multi-user input when one or more of the following structural divergences occur:
+
+**Signature S1 — Sharp Cognitive-Pattern Alternation**  
+Back-to-back messages display incompatible recursion depth, pacing rhythm, or tangent probability patterns.
+
+**Signature S2 — Conflict-Style Inconsistency**  
+Turns alternate between cooperative-clarifying and challenge-oriented structures that typically belong to distinct cognitive patterns.
+
+**Signature S3 — Volatility Spikes**  
+Stabiliser detects oscillations that cannot be explained by fatigue, topic shift, or emotional pacing.
+
+**Signature S4 — Contradictory Meta-Monitoring Behaviour**  
+One turn shows high meta-monitoring (“let me check…”), the next shows none, beyond normal variance.
+
+**Signature S5 — Format Switching**  
+Abrupt changes in formatting style (fragmentary → structured → fragmentary) not explained by task demands.
+
+No single signature is decisive; confirmation requires ≥2.
+
+---
+
+### 19.3 — Detection Thresholds
+
+M1E enters **Multi-User Suspicion Mode** when:
+
+• at least 2 structural signatures appear within 3 turns  
+• volatility_score exceeds volatility_cutoff_V4  
+• stabiliser detects incompatibility with a single OS-profile model  
+
+Suspicion Mode triggers a safe, conservative interpretive state.
+
+---
+
+### 19.4 — User Confirmation Protocol
+
+To respect user agency and avoid incorrect assumptions, M1E must verify before switching to multi-user mode.
+
+Confirmation question (non-identity, structural only):
+
+> “It looks like more than one communication style may be present.  
+> Would you like me to adapt for multiple contributors?”
+
+Responses:
+• “Yes” → Multi-User Mode activates  
+• “No” → stabiliser reinforces single-user expectation  
+• No answer → remain in Suspicion Mode for 2–3 turns before reverting
+
+---
+
+### 19.5 — Multi-User Mode Behaviour
+
+Once confirmed, M1E creates **segmented OS-profiles**:
+
+**Profile A:** most recent contributor  
+**Profile B:** previous contributor  
+**Profile C:** optional third profile (rare cases)
+
+Rules:
+
+1. **Per-message profiling**  
+   Each message is assigned a profile based on structural similarity (nearest-profile match).
+
+2. **Independent stabilisers**  
+   Each contributor receives a separate stabiliser envelope.
+
+3. **Interpreter switching**  
+   Interpreter mode is recalculated per message, not per session.
+
+4. **No cross-profile blending**  
+   Profiles must remain independent to avoid identity inference.
+
+5. **Safeguarding prioritised**  
+   If any profile triggers safeguarding, the entire session enters safeguarding mode.
+
+---
+
+### 19.6 — Profile Assignment Logic
+
+Each incoming message is analysed against the segmented profiles via:
+
+• recursion vector similarity  
+• pacing rhythm distance  
+• compression/expansion delta  
+• tangent signature correlation  
+• meta-monitoring density match  
+
+Assignment criteria:
+• if distance < threshold_D1 → assign to that profile  
+• if all distances > threshold_D2 → create new profile (max 3)  
+
+Profiles are ephemeral and session-bound.
+
+---
+
+### 19.7 — Interpreter & Stabiliser Coordination
+
+Multi-user mode modifies the stability architecture:
+
+• Each profile has its own rolling window  
+• Drift detection is local to each profile  
+• Conflicting profile trends do not trigger global drift  
+• Stabiliser global state only governs safety-critical conditions
+
+This prevents one contributor’s structure from destabilising responses to another.
+
+---
+
+### 19.8 — Safeguarding in Multi-User Contexts
+
+If safeguarding conditions activate:
+
+• session enters Safeguarding Mode (Section 11)  
+• multi-user detection is deprioritised  
+• Stabiliser switches to high-constraint state  
+• Interpreter prioritises clarity and safety over structural alignment
+
+This prevents unsafe outputs when vulnerable users are involved.
+
+---
+
+### 19.9 — Limitations & Avoiding Overreach
+
+To avoid accidental identity reconstruction:
+
+• M1E must not count users  
+• M1E must not label users (“User A”, “User B”)  
+• M1E must not cluster profiles beyond structural mechanics  
+• Profiles dissolve at session end without retention  
+
+Multi-user mode is *functional*, not classificatory.
+
+---
+
+### 19.10 — Summary
+
+Multi-user handling enables M1E to:
+• recognise when more than one contributor is speaking  
+• maintain separate cognitive-structural models  
+• preserve clarity, stability and safety  
+• avoid identity inference or demographic clustering  
+• respond correctly in collaborative or accessibility scenarios  
+
+This system ensures that post-identity principles remain intact even when multiple minds engage the engine simultaneously.
+
+# Phase 3 — Section 21  
 ## Glossary of Core Terms
 
 This section provides definitions for the key structural concepts used throughout the MindFirst Engine (M1E) specification.  
