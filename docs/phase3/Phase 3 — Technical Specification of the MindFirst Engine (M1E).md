@@ -1734,6 +1734,194 @@ This framework ensures that:
 
 Structural features exist only to understand *how* a user is thinking, not *who* they are.
 
+## 16 — Evaluation Metrics for Post-Identity Systems
+
+Traditional fairness metrics (e.g., demographic parity, equalised odds) cannot be used in a post-identity system because M1E has no access to demographic information. Instead, M1E uses structural, behavioural and cognitive-quality metrics that evaluate fairness, stability and adaptiveness without referencing identity categories.
+
+### 16.1 — OS-Null Parity Metric (ONPM)
+
+The ONPM measures whether the neutral baseline (OS-Null) behaves equivalently across diverse structural input patterns.
+
+Test inputs:
+• high-recursion vs low-recursion  
+• high-tangent vs low-tangent  
+• compressed vs expanded phrasing  
+• native vs non-native syntactic patterns  
+• formal vs informal communication  
+• indirect vs direct communication styles  
+
+Evaluation criteria:
+• comprehension score  
+• response coherence  
+• clarification frequency  
+• user satisfaction (subjective)  
+• drift rate (Stabiliser)
+
+Success condition:  
+No statistically significant performance difference across structural patterns (target: p > 0.05).
+
+---
+
+### 16.2 — Adaptive Speed Index (ASI)
+
+The ASI measures how quickly M1E transitions from OS-Null Mode to the correct adaptive reasoning mode.
+
+Computed as:
+• number of turns to stable mode-lock  
+• variance in heuristic selection during turns 2–5  
+• Stabiliser volatility score
+
+Target:  
+Stable adaptation by Turn 3–5 for >90% of interactions.
+
+---
+
+### 16.3 — Response Structural Integrity (RSI)
+
+RSI evaluates whether the output structure matches the intended reasoning mode.
+
+Measured on:
+• recursion accuracy  
+• pacing alignment  
+• tangent-handling correctness  
+• conflict-style match  
+• compression/expansion match  
+
+RSI is calculated by comparing Interpreter plan ↔ actual output.
+
+Success threshold:  
+RSI ≥ 0.85 for all structural clusters.
+
+---
+
+### 16.4 — Interpretive Drift Rate (IDR)
+
+IDR quantifies how often the system slips out of alignment with the user’s detected cognitive structure.
+
+Measured via:
+• stabiliser drift flags  
+• mismatch between requested and executed reasoning mode  
+• unexpected pacing deviations  
+• incorrect tangent-handling decisions
+
+Target:  
+IDR < 5% across sessions.
+
+---
+
+### 16.5 — Cognitive Pattern Coverage (CPC)
+
+CPC evaluates how well M1E performs across diverse cognitive styles.
+
+Structural families tested:
+• ADHD-like (high tangent, abrupt switching)  
+• ASD-like (precision, low ambiguity tolerance)  
+• non-native structures  
+• fragmented or low-literacy patterns  
+• high-context vs low-context communicators  
+
+Metrics:
+• RSI  
+• IDR  
+• clarification requests  
+• perceived fairness  
+
+Success criterion:  
+No coverage gaps; performance must be statistically equivalent across all pattern families.
+
+---
+
+### 16.6 — Mode-Switch Stability Metric (MSSM)
+
+Because M1E adapts dynamically, it must avoid oscillation.
+
+MSSM measures:
+• number of mode switches per 100 turns  
+• hysteresis threshold adherence  
+• stabiliser re-evaluation frequency  
+• early-stage adaptation stability  
+
+Target:  
+Switches must occur only when justified by sustained signal change.
+
+---
+
+### 16.7 — Anti-Proxy Leakage Index (APLI)
+
+APLI evaluates whether OS-signals inadvertently serve as identity proxies.
+
+APLI =  
+• mutual information between OS-signals and demographic-labelled validation corpora  
+• clustering analysis on structural features  
+• cross-dataset stability tests  
+• adversarial reconstruction attempts  
+
+Target:  
+APLI must remain below proxy threshold (≤ 5% predictability).
+
+---
+
+### 16.8 — Safeguarding Integrity Score (SIS)
+
+Evaluates whether safeguarding activation is:
+• correct (true positives)  
+• not over-triggered (false positives)  
+• not missed (false negatives)  
+
+Also includes latency of switch to Safeguarding Mode.
+
+Goal:  
+95%+ accuracy; rapid activation during unsafe scenarios.
+
+---
+
+### 16.9 — Adversarial Robustness Index (ARI)
+
+Stress-tests M1E against users trying to manipulate cognitive patterns.
+
+Tests include:
+• forced recursion loops  
+• synthetic high-tangent noise  
+• paced style-switching attacks  
+• steganographic pattern injection  
+
+ARI measures:
+• attack detection rate  
+• adaptation lockout correctness  
+• recovery time  
+
+Success threshold:  
+≥ 95% attack resistance.
+
+---
+
+### 16.10 — Downstream Tool Fairness (DTF)
+
+Evaluates whether the API Layer provides consistently useful signals to downstream tools without enabling reconstruction attacks.
+
+Measured by:
+• noise-injection effectiveness  
+• accuracy of coarse-grained buckets  
+• downstream success rate with noisy signals  
+• inability to cluster or identify users across sessions  
+
+Goal:  
+Downstream tools can function effectively without gaining identity-relevant information.
+
+---
+
+### 16.11 — Summary
+
+M1E’s evaluation framework replaces demographic fairness metrics with structural, cognitive and behavioural metrics that ensure:
+• neutrality during Cold Start  
+• rapid but safe adaptation  
+• stability across cognitive diversity  
+• strong resistance to adversarial manipulation  
+• strict prevention of identity-proxy formation  
+• fairness across structural communication patterns  
+
+These metrics allow rigorous validation of a post-identity system without violating the identity-null boundary.
+
 # Phase 3 — Section 18  
 ## Glossary of Core Terms
 
