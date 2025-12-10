@@ -1,6 +1,32 @@
 # MindFirst Phase 3 — Technical Operation and Interface Design
 
-Phase 3 — Technical Specification  
+Phase 3 — Technical Specification
+
+# Phase 3 — Technical Specification of the MindFirst Engine (M1E)
+## Table of Contents
+
+1.  System Overview and Design Philosophy  
+2.  OS Profiler — Deep Specification  
+3.  OS Interpreter — Deep Specification  
+4.  OS Stabiliser — Deep Specification  
+5.  M1E API Layer — Deep Specification  
+6.  Response Generator and Synthesis Layer  
+7.  Post-Identity Safety Mechanisms and Hard Constraints  
+8.  System Requirements, Constraints, and Model-Agnostic Integration  
+9.  Cognitive-Signal Pipeline and End-to-End System Flow  
+10. Developer Integration and Evaluation Framework  
+11. Safeguarding Layer and Risk Controls  
+12. Cold-Start Behaviour  
+13. Challenges, Questions, and Validation Roadmap  
+14. Cold-Start Architecture: Neutral OS-Null Mode  
+15. Structural Pattern Validity and Anti-Correlation Framework  
+16. Evaluation Metrics for Post-Identity Systems  
+17. Efficiency Scaling and Real-Time Constraints  
+18. Preference, Persistence, and User-Controlled Profiles  
+19. Multi-User Session Handling  
+20. Definition of Steganographic Pattern Attacks  
+21. Glossary of Terms
+
 Section 1 — System Overview and Design Philosophy
 
 The MindFirst Engine (M1E) is a post-identity cognitive-interpretation system designed to operate independently of demographic inference at every layer of processing. While Phase 2 establishes the conceptual and historical rationale for post-identity design, Phase 3 outlines the engineering structure that enables the system to function predictably, consistently and transparently across all user interactions.
