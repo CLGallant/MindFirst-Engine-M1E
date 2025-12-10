@@ -1,8 +1,4 @@
-# MindFirst Phase 3 — Technical Operation and Interface Design
-
-Phase 3 — Technical Specification
-
-# Phase 3 — Technical Specification of the MindFirst Engine (M1E)
+# MindFirst Phase 3 — Technical Specification of the MindFirst Engine (M1E)
 ## Table of Contents
 
 1.  System Overview and Design Philosophy  
