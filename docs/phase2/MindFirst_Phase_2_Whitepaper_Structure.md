@@ -4,7 +4,7 @@
 
 **Author:** C. L. Gallant  
 **Affiliation:** MindFirst Research Initiative  
-**Date:** December 11, 2025  
+**Date:** [Submission Date - 2025]  
 **Version:** 2.0 (Academic Edition)  
 **Document Type:** Technical White Paper
 
@@ -288,7 +288,12 @@ API Response (Blocked):
 **Measurement:**
 ```
 Recursion Score = α·(syntactic_depth) + β·(conceptual_returns) + γ·(argument_levels)
-where α + β + γ = 1, tuned empirically
+where α + β + γ = 1
+
+Note: Parameters (α, β, γ) require empirical tuning through cross-validation on 
+labeled cognitive architecture datasets. Initial values may be set equal (α = β = γ = 0.33) 
+and optimized using gradient descent or grid search to maximize agreement with 
+human expert annotations of recursion depth.
 ```
 
 **Real-world Application:** Educational systems can identify students who process information through deep, recursive elaboration versus those who prefer sequential, non-nested presentation. High-recursion learners may struggle with purely linear tutorials, while low-recursion learners may find recursive explanations confusing.
@@ -428,7 +433,7 @@ Given that MindFirst represents a novel architectural paradigm, validation requi
 - Equal task success rates across demographic groups (within statistical noise)
 - Absence of stereotype-consistent response patterns
 
-**Baseline Comparison:** Current adaptive AI systems show 15-35% performance disparities across demographic groups [34]. MindFirst targets < 5% disparity attributable to measurement noise rather than systematic bias.
+**Baseline Comparison:** Current adaptive AI systems show 15-35% performance disparities across demographic groups, as documented in studies of facial recognition systems [3], language models [5, 6], and recommendation systems [31]. MindFirst targets < 5% disparity attributable to measurement noise rather than systematic bias.
 
 #### 6.2.2 Individual Accuracy
 
@@ -439,7 +444,7 @@ Given that MindFirst represents a novel architectural paradigm, validation requi
 - Improved task completion rates with OS-adapted interfaces
 - Reduced need for user corrections and clarifications
 
-**Expected Effect Size:** 20-40% improvement in personalization accuracy based on pilot studies of cognitive-adaptive systems [35].
+**Expected Effect Size:** Preliminary analysis based on cognitive-adaptive systems research [24, 25] suggests potential for 20-40% improvement in personalization accuracy. However, rigorous empirical validation is required to confirm these estimates for the MindFirst framework specifically. Phase 1 laboratory studies (Section 6.3) will establish precise effect sizes through controlled experiments.
 
 #### 6.2.3 Scalability and Stability
 
@@ -693,7 +698,9 @@ We invite researchers, engineers, and practitioners to engage with this framewor
 
 ### 9.1 Diagrams and Visualizations
 
-**[PLACEHOLDER: Figure 1 - MindFirst Engine Architecture Overview]**
+**Note:** The following diagrams are under development for the final publication version. Specifications are provided to guide visualization creation.
+
+**[FIGURE 1 - MindFirst Engine Architecture Overview - In Development]**
 
 Comprehensive system diagram illustrating:
 - Four primary components (OS Profiler, OS Interpreter, OS Stabiliser, M1E API Layer)
@@ -703,7 +710,7 @@ Comprehensive system diagram illustrating:
 
 *Recommended Tool: Lucidchart, draw.io, or LaTeX TikZ*
 
-**[PLACEHOLDER: Figure 2 - Cognitive Signal Flow Through M1E Pipeline]**
+**[FIGURE 2 - Cognitive Signal Flow Through M1E Pipeline - In Development]**
 
 Detailed workflow showing:
 - User input processing
@@ -714,7 +721,7 @@ Detailed workflow showing:
 
 *Recommended Tool: LaTeX TikZ for technical precision*
 
-**[PLACEHOLDER: Figure 3 - OS Profiler Signal Extraction Process]**
+**[FIGURE 3 - OS Profiler Signal Extraction Process - In Development]**
 
 Breakdown of cognitive signal detection:
 - Recursion marker identification
@@ -725,7 +732,7 @@ Breakdown of cognitive signal detection:
 
 *Recommended Tool: Mermaid.js or Graphviz for process diagrams*
 
-**[PLACEHOLDER: Figure 4 - Interaction Pipeline: User Input to AI Response]**
+**[FIGURE 4 - Interaction Pipeline: User Input to AI Response - In Development]**
 
 Complete interaction cycle visualization:
 1. User communication input
@@ -737,7 +744,7 @@ Complete interaction cycle visualization:
 
 *Recommended Tool: Sequence diagram using PlantUML or similar*
 
-**[PLACEHOLDER: Figure 5 - Comparison: Traditional Demographic vs. Post-Identity Approaches]**
+**[FIGURE 5 - Comparison: Traditional Demographic vs. Post-Identity Approaches - In Development]**
 
 Side-by-side comparison showing:
 - Traditional: User → Demographic Inference → Stereotype Application → Response
@@ -881,8 +888,8 @@ This research was developed through the MindFirst Research Initiative. The autho
 
 **C. L. Gallant**  
 MindFirst Research Initiative  
-Email: [contact information]  
-ORCID: [to be assigned]
+Email: [To be provided upon submission]  
+ORCID: [To be assigned upon publication]
 
 **Correspondence:** All inquiries regarding this research should be directed to the author via the MindFirst project repository at https://github.com/CLGallant/MindFirst-Engine-M1E
 
