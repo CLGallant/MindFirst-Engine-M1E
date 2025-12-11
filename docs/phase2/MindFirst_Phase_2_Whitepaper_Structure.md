@@ -5,6 +5,11 @@ Phase 2: Whitepaper Structure and Core Concepts
 Author: C. L. Gallant  
 Date: 22/11/2025
 
+[↩️ Back to Documentation Index](../index.md) | [🏠 Main README](../../README.md)
+
+---
+
+
 
 MindFirst is a post-identity interaction framework designed to shift artificial intelligence away from demographic assumptions and toward individual cognitive architecture. Instead of interpreting users through gender, race, age or other inherited categories, MindFirst builds a dynamic map of each person’s reasoning patterns, recursion habits, communication structures, and cognitive pacing. We call this mapping their OS. This approach offers a way to address the long-standing imbalance in historical and cultural data that AI systems are trained on, and begins from the premise that the most meaningful form of personalisation is built on how a mind works, not who a dataset assumes the user is.
 
@@ -241,3 +246,13 @@ Appendix G: Reference Structure
 References are conceptual placeholders representing the areas of literature the whitepaper aligns with. This allows future formal citations without blocking publication.
 
 ➡️ Return to Repository Map
+
+---
+
+## Related Documentation
+
+- **Previous**: [Phase 1 - Foundations](../phase1/MindFirst_Phase_1_Foundations_and_Rationale.md)
+- **Next**: [Phase 3 - Technical Specification](../phase3/Phase%203%20—%20Technical%20Specification%20of%20the%20MindFirst%20Engine%20(M1E).md)
+- **Governance**: [Phase 4 - Governance](../phase4/Phase%204%20—%20Governancet.md)
+
+[↩️ Back to Documentation Index](../index.md) | [🗺️ Repository Map](../../Repo_Map.md)

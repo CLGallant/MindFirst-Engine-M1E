@@ -1,5 +1,9 @@
 # MindFirst Phase 4 — Governance and Ethical Framework
 
+[↩️ Back to Documentation Index](../index.md) | [🏠 Main README](../../README.md)
+
+---
+
 Phase 4 — Governance & Ethical Architecture  
 Section 1 — Core Governance Principles
 
@@ -650,3 +654,14 @@ MindFirst represents a shift away from historical bias and toward a future where
 This completes Section 6 and concludes Phase 4.
 
 ➡️ Return to Repository Map
+
+---
+
+## Related Documentation
+
+- **Detailed Governance**: [Governance Charter](./Governance_Charter.md)
+- **Ethics**: [Ethical Use Policy](./Ethical_Use_Policy.md)
+- **License**: [MindFirst License](./LICENSE_MindFirst.md)
+- **Previous Phase**: [Phase 3 - Technical Specification](../phase3/Phase%203%20—%20Technical%20Specification%20of%20the%20MindFirst%20Engine%20(M1E).md)
+
+[↩️ Back to Documentation Index](../index.md) | [🗺️ Repository Map](../../Repo_Map.md)

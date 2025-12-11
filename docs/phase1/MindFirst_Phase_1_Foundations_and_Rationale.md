@@ -1,5 +1,9 @@
 # MindFirst — Phase 1: Foundations & Rationale
 
+[↩️ Back to Documentation Index](../index.md) | [🏠 Main README](../../README.md)
+
+---
+
 MindFirst is a post-identity interaction framework designed to shift artificial intelligence away from demographic assumptions and toward individual cognitive architecture. Instead of interpreting users through gender, race, age or other inherited categories, MindFirst builds a dynamic map of each person’s reasoning patterns, recursion habits, communication structures and cognitive pacing. We call this mapping their OS. This approach offers a way to address the long-standing imbalance in historical and cultural data that AI systems are trained on, and begins from the premise that the most meaningful form of personalisation is built on how a mind works, not who a dataset assumes the user is.
 
 Artificial intelligence relies on training data that reflects the biases, omissions and power structures of the world that created it. Historical records in many fields contain far more information about men than women, and far more information about Western populations than the rest of the world. When an AI system uses these patterns to guide interaction, it inherits the same distortions. Attempts to compensate for this through demographic balancing or protective layers help only at the surface level. MindFirst takes a different approach by removing demographic inference entirely and building its understanding from the user’s cognitive structure instead. This shifts the foundation of interaction away from identity and toward capability.
@@ -20,4 +24,12 @@ Post-identity methods scale more effectively than systems that try to adjust for
 
 MindFirst is built on a simple belief about humanity. We can do better than the systems we inherited. The old categories and assumptions that shaped our past do not have to define our future. Human beings want to be understood, and feeling misunderstood is one of the most uncomfortable experiences in communication. Feeling understood, or feeling "got", is deeply satisfying and motivating. It changes how people speak, how they learn, how they think and how they see themselves. MindFirst aims to offer that experience to everyone by tailoring interaction to the structure of each person’s mind rather than the identity labels that history has handed down. This approach looks forward rather than backward. It is designed for a world where people are more connected, more expressive and more individual than ever before. MindFirst offers a way for AI to meet humanity where it is going, not where it has been.
  
-➡️ Return to Repository Map
+---
+
+## Related Documentation
+
+- **Next**: [Phase 2 - Whitepaper Structure](../phase2/MindFirst_Phase_2_Whitepaper_Structure.md)
+- **Technical Details**: [Phase 3 - Technical Specification](../phase3/Phase%203%20—%20Technical%20Specification%20of%20the%20MindFirst%20Engine%20(M1E).md)
+- **Governance**: [Phase 4 - Governance](../phase4/Phase%204%20—%20Governancet.md)
+
+[↩️ Back to Documentation Index](../index.md) | [🗺️ Repository Map](../../Repo_Map.md)

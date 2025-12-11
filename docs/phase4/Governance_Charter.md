@@ -3,6 +3,11 @@
 **Date:** 2025-11-XX  
 **Maintainer:** C.L. Gallant  
 
+
+[↩️ Back to Documentation Index](../index.md) | [🏠 Main README](../../README.md)
+
+---
+
 ## 1. Purpose  
 The Governance Charter establishes the rules, responsibilities, and decision-making processes that ensure MindFirst (M1E) remains aligned with its core mission:  
 to model human reasoning structures without demographic inference, stereotype weighting, or identity-based assumptions.
@@ -114,3 +119,13 @@ Any proposed revision to this charter must:
 
 ## 8. Charter Status  
 This Governance Charter becomes active as soon as it is committed into Phase 4 of the MindFirst repository.
+
+---
+
+## Related Documentation
+
+- **Governance Overview**: [Phase 4 - Governance](./Phase%204%20—%20Governancet.md)
+- **Technical Details**: [Phase 3 - Technical Specification](../phase3/Phase%203%20—%20Technical%20Specification%20of%20the%20MindFirst%20Engine%20(M1E).md)
+- **Foundations**: [Phase 1 - Foundations](../phase1/MindFirst_Phase_1_Foundations_and_Rationale.md)
+
+[↩️ Back to Documentation Index](../index.md) | [🗺️ Repository Map](../../Repo_Map.md)

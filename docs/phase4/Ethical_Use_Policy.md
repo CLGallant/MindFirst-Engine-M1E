@@ -3,6 +3,11 @@ Version: 1.0
 Date: 2025-11-XX  
 Maintainer: C.L. Gallant  
 
+
+[↩️ Back to Documentation Index](../index.md) | [🏠 Main README](../../README.md)
+
+---
+
 ## 1. Purpose  
 This Ethical Use Policy defines the permitted and prohibited uses of the  
 MindFirst Engine (M1E). Its goal is to ensure that MindFirst remains aligned  
@@ -67,3 +72,13 @@ and include a structural-neutrality impact assessment.
 
 ## 5. Status  
 This policy becomes active immediately upon commit.
+
+---
+
+## Related Documentation
+
+- **Governance Overview**: [Phase 4 - Governance](./Phase%204%20—%20Governancet.md)
+- **Technical Details**: [Phase 3 - Technical Specification](../phase3/Phase%203%20—%20Technical%20Specification%20of%20the%20MindFirst%20Engine%20(M1E).md)
+- **Foundations**: [Phase 1 - Foundations](../phase1/MindFirst_Phase_1_Foundations_and_Rationale.md)
+
+[↩️ Back to Documentation Index](../index.md) | [🗺️ Repository Map](../../Repo_Map.md)

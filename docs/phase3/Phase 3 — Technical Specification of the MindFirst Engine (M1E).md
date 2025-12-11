@@ -1,5 +1,17 @@
 # MindFirst Phase 3 — Technical Operation and Interface Design
 
+[↩️ Back to Documentation Index](../index.md)
+
+---
+
+## 📊 Visual Aids
+
+For visual representations of the architecture:
+- **[System Architecture Diagram](../diagrams/OS-Map-Architecture.md)**: Complete system overview with component interactions
+- **[Profiler Operations Flow](../diagrams/Profiler-Operations-Flow.md)**: Detailed Profiler signal extraction process
+
+---
+
 ## Section 1 — System Overview and Design Philosophy
 
 The MindFirst Engine (M1E) is a post-identity cognitive-interpretation system that operates independently of demographic inference at every processing layer. This phase outlines the engineering structure enabling predictable, consistent, and transparent user interaction.
@@ -2665,3 +2677,18 @@ The result is an interaction framework that is not only more equitable but also 
 -----
 
 **Phase 3 — Technical Specification Complete**
+
+---
+
+## Related Documentation
+
+- **Visual Aids**:
+  - [System Architecture Diagram](../diagrams/OS-Map-Architecture.md)
+  - [Profiler Operations Flow](../diagrams/Profiler-Operations-Flow.md)
+- **Previous Phases**:
+  - [Phase 1 - Foundations](../phase1/MindFirst_Phase_1_Foundations_and_Rationale.md)
+  - [Phase 2 - Whitepaper Structure](../phase2/MindFirst_Phase_2_Whitepaper_Structure.md)
+- **Next Phase**: [Phase 4 - Governance](../phase4/Phase%204%20—%20Governancet.md)
+- **Public Overview**: [Non-Technical Summary](../Public_Overview.md)
+
+[↩️ Back to Documentation Index](../index.md) | [🗺️ Repository Map](../../Repo_Map.md)
