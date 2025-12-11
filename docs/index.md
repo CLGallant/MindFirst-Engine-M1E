@@ -7,8 +7,6 @@
 
 ## 📖 Documentation Navigation
 
-## 📖 Documentation Navigation
-
 ### Quick Links
 
 | Category | Document | Description |
