@@ -4,6 +4,11 @@ MindFirst Engine (M1E) Licence
 Version 1.0 — 2025-11-XX  
 Author: C.L. Gallant
 
+
+[↩️ Back to Documentation Index](../index.md) | [🏠 Main README](../../README.md)
+
+---
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the “Software”), to deal
 in the Software without limitation, including the rights to use, copy, modify,
@@ -42,3 +47,13 @@ following conditions:
 
 By using, modifying, or distributing this Software, the user accepts and
 agrees to all terms of this Licence.
+
+---
+
+## Related Documentation
+
+- **Governance Overview**: [Phase 4 - Governance](./Phase%204%20—%20Governancet.md)
+- **Technical Details**: [Phase 3 - Technical Specification](../phase3/Phase%203%20—%20Technical%20Specification%20of%20the%20MindFirst%20Engine%20(M1E).md)
+- **Foundations**: [Phase 1 - Foundations](../phase1/MindFirst_Phase_1_Foundations_and_Rationale.md)
+
+[↩️ Back to Documentation Index](../index.md) | [🗺️ Repository Map](../../Repo_Map.md)

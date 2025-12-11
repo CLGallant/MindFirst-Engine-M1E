@@ -1,6 +1,10 @@
 # MindFirst Engine (M1E)
 *A post-identity cognitive interaction framework*
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Status: Concept](https://img.shields.io/badge/Status-Concept%20Draft-blue.svg)]()
+[![Version: 0.1](https://img.shields.io/badge/Version-0.1-green.svg)]()
+
 ## What This Repository Contains
 
 This repository provides the complete technical and governance specification for the MindFirst Engine (M1E).  
@@ -77,7 +81,115 @@ These define how MindFirst must be used, expanded, and maintained.
 ---
 
 ## 🌐 Documentation Entry Point
-Start at: [Public Overview](docs/Public_Overview.md)
+Start at: [Public Overview](docs/Public_Overview.md) or [Documentation Index](docs/index.md)
 
+---
 
-Current status: MindFirst Engine v0.1 — foundations, architecture, training process and governance established; refinement and expansion underway.
+## 🚀 Quick Start Guide
+
+### For General Readers
+1. Start with the [Public Overview](docs/Public_Overview.md) for a non-technical introduction
+2. Explore the [Repository Map](Repo_Map.md) to understand the project structure
+3. Visit [Documentation Index](docs/index.md) for comprehensive navigation
+
+### For Contributors and Developers
+1. **Read the Documentation**: Begin with [docs/index.md](docs/index.md) for the complete overview
+2. **Review the Architecture**: Study the [Technical Specification](docs/phase3/Phase%203%20—%20Technical%20Specification%20of%20the%20MindFirst%20Engine%20(M1E).md)
+3. **Understand Governance**: Review the [Governance Charter](docs/phase4/Governance_Charter.md) and [Ethical Use Policy](docs/phase4/Ethical_Use_Policy.md)
+4. **Fork and Contribute**: See the Contributing Guidelines below
+
+### Prerequisites
+- Understanding of cognitive architecture concepts (helpful but not required)
+- Interest in post-identity AI interaction frameworks
+- Familiarity with ethical AI principles
+
+---
+
+## 🤝 Contributing Guidelines
+
+We welcome contributions from researchers, engineers, and practitioners interested in post-identity interaction frameworks. Here's how you can contribute:
+
+### How to Contribute
+
+1. **Fork the Repository**
+   ```bash
+   git clone https://github.com/CLGallant/MindFirst-Engine-M1E.git
+   cd MindFirst-Engine-M1E
+   ```
+
+2. **Create a Feature Branch**
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. **Make Your Changes**
+   - Follow the existing documentation structure
+   - Maintain consistency with the post-identity principles
+   - Ensure all new content is clear and accessible
+   - Add cross-references where appropriate
+
+4. **Commit Your Changes**
+   ```bash
+   git add .
+   git commit -m "Brief description of changes"
+   ```
+
+5. **Push and Create a Pull Request**
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+### Contribution Areas
+
+We especially welcome contributions in:
+- **Documentation**: Clarity improvements, examples, diagrams
+- **Architecture**: Technical specifications and design refinements
+- **Research**: Cognitive science foundations and validation methods
+- **Governance**: Ethical frameworks and safety mechanisms
+- **Implementation**: Prototype development (future phase)
+
+### Code of Conduct
+
+All contributors must:
+- Respect the post-identity principles outlined in the documentation
+- Adhere to the [Ethical Use Policy](docs/phase4/Ethical_Use_Policy.md)
+- Maintain professional and inclusive communication
+- Focus on cognitive-structural patterns, never demographic inference
+- Prioritize transparency and auditability
+
+### Review Process
+
+1. All contributions are reviewed for alignment with MindFirst principles
+2. Technical accuracy is verified against the specification
+3. Documentation clarity is assessed
+4. Governance compliance is confirmed
+
+---
+
+## 📞 Contact & Community
+
+- **Issues**: Use GitHub Issues for bug reports and feature requests
+- **Discussions**: Use GitHub Discussions for questions and ideas
+- **Project Lead**: C. L. Gallant
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+The MindFirst-specific governance and usage constraints are documented in [LICENSE_MindFirst](docs/phase4/LICENSE_MindFirst.md).
+
+---
+
+## ⚠️ Current Status
+
+**MindFirst Engine v0.1** — Concept Draft
+
+Foundations, architecture, and governance established. Currently in refinement phase.
+
+Next stages:
+- Prototype implementation
+- Empirical validation
+- Research collaboration
+- Community feedback integration
