@@ -11,6 +11,7 @@ It includes:
 - the safeguarding and compliance framework  
 - the evaluation and validation plan  
 - the public, non-technical overview  
+- the MindFirst Manifesto
 - a repository map to help new contributors navigate the structure
 
 M1E is currently a **concept-to-specification framework**.  
@@ -18,9 +19,11 @@ The next stage is prototype implementation and empirical validation.
 
 Contributions from researchers, engineers, and practitioners interested in post-identity interaction are welcomed.
 
+➡️ For the philosophical foundation, see the [MindFirst Manifesto](MindFirst_Manifesto.md).
+
 ➡️ For a full overview of the repository structure, see the [Repository Map](Repo_Map.md).
 
-➡️ Public Overview (non-technical summary): docs/Public_Overview.md
+➡️ Public Overview (non-technical summary): [docs/Public_Overview.md](docs/Public_Overview.md)
 
 MindFirst Engine is an interaction architecture that models users by their **cognitive communication structure**,  
 not their demographic categories. Instead of assuming gender, race, age, or other identity markers,  
@@ -69,15 +72,39 @@ Located in `docs/phase4/`:
 
 - Governance Charter  
 - Ethical Use Policy  
-- MindFirst Licence  
 - Metadata Pack  
 
 These define how MindFirst must be used, expanded, and maintained.
 
 ---
 
+## 📜 License
+
+This project is licensed under the **MindFirst License (Version 1.1)**.  
+See [LICENSE_MindFirst.md](LICENSE_MindFirst.md) for full terms.
+
+The MindFirst License ensures:
+- Structural-neutrality requirement (no demographic inference)
+- No user profiling based on identity characteristics
+- Preservation of transparency in all modifications
+- Ethics alignment with post-identity principles
+
+---
+
 ## 🌐 Documentation Entry Point
 Start at: [Public Overview](docs/Public_Overview.md)
 
+---
+
+## 📋 Recent Changes
+
+**Repository Consolidation (December 2025):**
+- Consolidated multiple license files into single MindFirst License v1.1
+- Removed redundant MIT license and outdated license versions
+- Consolidated manifesto documentation into unified MindFirst_Manifesto.md
+- Removed personal application files not relevant to repository documentation
+- Streamlined repository structure for easier navigation
+
+---
 
 Current status: MindFirst Engine v0.1 — foundations, architecture, training process and governance established; refinement and expansion underway.

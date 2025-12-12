@@ -3,22 +3,59 @@
 This document provides a high-level orientation to the structure of the M1E repository.  
 It helps new contributors understand where each component of the specification lives.
 
-## Current Structure
+## Root Directory
 
-- **/docs/phase3/**  
-  Contains the Phase 3 Technical Specification and its extension sections:  
-  - Core architecture  
-  - OS Profiler  
-  - OS Interpreter  
-  - OS Stabiliser  
-  - M1E API Layer  
-  - Response Generator  
-  - Post-Identity Safety Mechanisms  
-  - System Requirements & Constraints  
-  - Cognitive-Signal Pipeline (end-to-end flow)  
-  - Safeguarding Layer  
-  - Section 12 — Challenges & Validation Roadmap  
-  - Section 13 — Future Work  
-  - Section 14 — Glossary of Core Terms
+- **README.md** — Main entry point for the repository
+- **LICENSE_MindFirst.md** — MindFirst License v1.1 (structural-neutrality and ethical requirements)
+- **MindFirst_Manifesto.md** — Philosophical foundation and core principles
+- **Repo_Map.md** — This document (navigation guide)
 
-Additional phases and documentation will be added as development proceeds.
+## Documentation Structure
+
+### **/docs/**
+Main documentation hub with phase-organized content:
+
+#### **/docs/phase1/**
+Conceptual foundations and rationale:
+- MindFirst_Phase_1_Foundations_and_Rationale.md
+
+#### **/docs/phase2/**
+Technical architecture and whitepaper structure:
+- MindFirst_Phase_2_Whitepaper_Structure.md
+
+#### **/docs/phase3/**
+Technical specification and research basis:
+- Phase 3 — Technical Specification of the MindFirst Engine (M1E).md
+  - Core architecture (OS Profiler, Interpreter, Stabiliser, API Layer, Response Generator)
+  - Post-Identity Safety Mechanisms
+  - System Requirements & Constraints
+  - Cognitive-Signal Pipeline (end-to-end flow)
+  - Safeguarding Layer
+  - Challenges & Validation Roadmap
+  - Future Work
+  - Glossary of Core Terms
+
+#### **/docs/phase4/**
+Governance, ethics, and compliance:
+- Governance_Charter.md — Governance framework
+- Ethical_Use_Policy.md — Ethical guidelines and requirements
+- Metadata_Pack.md — Metadata and documentation standards
+- Phase 4 — Governancet.md — Governance overview
+
+#### **/docs/** (Root level)
+- **index.md** — Main documentation index
+- **Public_Overview.md** — Non-technical overview for general audience
+
+## Navigation Guide
+
+**New Contributors:** Start with README.md, then read the MindFirst_Manifesto.md and docs/Public_Overview.md
+
+**Technical Contributors:** Review phase3/ documentation for implementation details
+
+**Governance & Ethics:** See phase4/ documentation for compliance requirements
+
+**Full Documentation:** Use docs/index.md as the main entry point for all documentation
+
+---
+
+All documentation is written to be readable independently, while maintaining cross-references for deeper exploration.
