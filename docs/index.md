@@ -27,7 +27,7 @@ M1E prohibits all demographic inference and instead maintains a transparent, aud
 - 🗺️ **[Repository Map](../Repo_Map.md)**  
   Detailed directory structure and file locations
 
-- �� **[Public Overview](./Public_Overview.md)** (non-technical summary)  
+- 📘 **[Public Overview](./Public_Overview.md)** (non-technical summary)  
   Accessible introduction for general audience
 
 - 🧭 **[MindFirst Manifesto](../MindFirst_Manifesto.md)**  
