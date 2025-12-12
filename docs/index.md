@@ -33,6 +33,9 @@ M1E prohibits all demographic inference and instead maintains a transparent, aud
 - 🧭 **[MindFirst Manifesto](../MindFirst_Manifesto.md)**  
   Philosophical foundation and core principles
 
+- 📚 **[References & Bibliography](./references.md)**  
+  Citations and sources for factual claims
+
 ---
 
 ## Documentation by Phase
@@ -60,7 +63,7 @@ Technical architecture planning and whitepaper structure:
 ### Phase 3: Technical Specification
 **Location:** `./phase3/`
 
-Complete technical specification and implementation details:
+Technical specification (v0.1) and implementation details:
 - [Phase 3 — Technical Specification of the MindFirst Engine (M1E).md](./phase3/Phase%203%20—%20Technical%20Specification%20of%20the%20MindFirst%20Engine%20(M1E).md)
 
 **Key Components:**
@@ -119,7 +122,7 @@ This repository includes all technical, conceptual, and governance materials for
 
 - The **public, non-technical overview**
 
-M1E is currently a **concept-to-specification framework**.  
+M1E is currently in **active specification development** (v0.1).  
 The next stage is prototype implementation and empirical validation.
 
 Contributions from researchers, engineers, and practitioners interested in post-identity interaction are welcomed.

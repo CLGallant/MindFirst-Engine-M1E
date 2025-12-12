@@ -15,7 +15,7 @@ It includes:
 - the MindFirst Manifesto
 - a repository map to help new contributors navigate the structure
 
-M1E is currently a **concept-to-specification framework** in active development.  
+M1E is currently in **active specification development** (v0.1).  
 Some documentation sections are complete, while others are being refined and expanded.  
 The next stage is prototype implementation and empirical validation.
 
@@ -33,7 +33,7 @@ Contributions from researchers, engineers, and practitioners interested in post-
 5. **Explore documentation:** Visit [docs/index.md](docs/index.md) for phase-based documentation
 
 ### For Technical Contributors
-- **Architecture details:** See `docs/phase3/` for the complete technical specification
+- **Architecture details:** See `docs/phase3/` for the technical specification (v0.1)
 - **Core components:** OS-Profiler, OS-Interpreter, OS-Stabiliser, Response Generator, and API Layer
 - **Implementation guidance:** Review the cognitive-signal pipeline and system requirements in Phase 3 documentation
 
@@ -46,7 +46,8 @@ Contributions from researchers, engineers, and practitioners interested in post-
 ➡️ **Philosophical foundation:** [MindFirst Manifesto](MindFirst_Manifesto.md)  
 ➡️ **Repository structure:** [Repository Map](Repo_Map.md)  
 ➡️ **Public overview:** [docs/Public_Overview.md](docs/Public_Overview.md)  
-➡️ **Documentation hub:** [docs/index.md](docs/index.md)
+➡️ **Documentation hub:** [docs/index.md](docs/index.md)  
+➡️ **References & citations:** [docs/references.md](docs/references.md)
 
 ---
 
@@ -77,6 +78,7 @@ This repository serves as the official specification and documentation hub for M
 | **4** | `docs/phase4/` | Governance, licence, ethical policy, metadata |
 | — | `docs/index.md` | Main entry point for all documentation |
 | — | `docs/Public_Overview.md` | Human-readable overview |
+| — | `docs/references.md` | References and bibliography |
 
 All pages are written so they can be read independently.
 
