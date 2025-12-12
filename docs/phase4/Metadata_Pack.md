@@ -11,12 +11,20 @@ Maintainer: C.L. Gallant
 
 Root/
  ├─ README.md
- ├─ docs/
- │   ├─ phase1/
- │   ├─ phase2/
- │   ├─ phase3/
- │   └─ phase4/
- └─ .gitignore (optional future step)
+ ├─ LICENSE
+ ├─ Repo_Map.md
+ ├─ Next_Steps.md
+ ├─ Cloud_Credits_Application.md
+ └─ docs/
+     ├─ index.md
+     ├─ Public_Overview.md
+     ├─ manifestos/
+     │   ├─ mind-first-manifesto.md
+     │   └─ expanded-manifesto.md
+     ├─ phase1/
+     ├─ phase2/
+     ├─ phase3/
+     └─ phase4/
 
 ==========================================
 2. Directory Purpose
@@ -44,9 +52,8 @@ Contains:
 
 phase4/ – Governance & Ethics  
 Contains:
-- Governance Charter
-- Licensing (MIT-derivative)
-- Ethical Use Policy
+- Governance and Ethics Policy (unified governance and ethical framework)
+- Licensing information (see root LICENSE file for MIT + MindFirst terms)
 - Metadata Pack (this file)
 
 ==========================================
@@ -88,11 +95,14 @@ All future updates should include:
 ==========================================
 
 Reviewers should begin at:
-1. README.md – summary  
-2. phase1 – conceptual groundwork  
-3. phase2 – architecture model  
-4. phase3 – research justification  
-5. phase4 – governance, licence, ethics  
+1. README.md – project overview and quick start  
+2. docs/index.md – documentation hub with complete navigation
+3. docs/Public_Overview.md – non-technical introduction
+4. docs/manifestos/ – philosophy and vision documents
+5. phase1 – conceptual foundations and rationale
+6. phase2 – architecture whitepaper
+7. phase3 – complete technical specification  
+8. phase4 – governance, ethics, and metadata  
 
 ==========================================
 6. Status
