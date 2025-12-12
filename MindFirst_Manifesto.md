@@ -14,11 +14,11 @@ Through MindFirst, we aim to reduce cognitive friction and place user understand
 
 ## Key Principles
 
-### 1. OS Mapping
+### OS Mapping
 Operating System (OS) Mapping in the M1E framework aligns cognitive processes with optimal workflows. This ensures seamless collaboration between human mental models and system interfaces, minimizing cognitive friction and amplifying intellectual throughput.
 
 
-### 2. Post-Identity Interaction
+### Post-Identity Interaction
 MindFirst avoids demographic assumptions by modeling users through their **cognitive communication structure**—not their identity markers. Instead of inferring gender, race, age, or other categories, M1E creates a lightweight "OS-map" based solely on how a person thinks, recurses, and processes information.
 
 ## Why MindFirst Engine (M1E)?
