@@ -1,11 +1,7 @@
 # Cloud Credits Application for the MindFirst Engine (M1E)
 
 ## Purpose and Vision
-The **MindFirst Engine (M1E)** is a groundbreaking post-identity framework designed to create ethical, inclusive, and high-performing AI systems. By focusing exclusively on **Operating System Mapping (OS Mapping)**—a model built around understanding cognitive processes and reasoning patterns—MindFirst eliminates reliance on demographic assumptions like gender, race, or age, creating bias-free interactions. 
-
-**TherapyLite**, a highlighted application of M1E, leverages OS Mapping to deliver therapy-adjacent support designed to adapt to each user’s cognitive style. This adaptive approach ensures therapeutic continuity and accessibility while protecting user privacy through user-controlled memory anchoring.
-
-The cloud credits requested will enable the development, experimentation, and deployment of M1E systems, accelerating efforts to create ethical solutions for mental health, education, and equitable human-computer collaboration.
+The **MindFirst Engine (M1E)** is a groundbreaking post-identity framework designed to create ethical, inclusive, and high-performing AI systems. By focusing exclusively on **Operating System Mapping (OS Mapping)**—a model built around understanding cognitive processes and reasoning patterns—MindFirst eliminates reliance on demographic assumptions like gender, race, or age, creating bias-free interactions. TherapyLite, a highlighted application of M1E, leverages OS Mapping to deliver therapy-adjacent support designed to adapt to each user’s cognitive style. This adaptive approach ensures therapeutic continuity and accessibility while protecting user privacy through user-controlled memory anchoring. The cloud credits requested will enable the development, experimentation, and deployment of M1E systems, accelerating efforts to create ethical solutions for mental health, education, and equitable human-computer collaboration.
 
 ---
 
@@ -42,13 +38,9 @@ M1E and TherapyLite are guided by stringent **post-identity** and ethical design
 ---
 
 ## Personal Statement and Need
-I, **C.L. Gallant**, am the sole creator and developer of the MindFirst Engine. As an unpaid carer for my daughter—profoundly multiply disabled and requiring 24/7 care—I balance my responsibilities with a deep passion for advancing ethical AI. A systemic lack of access to STEM education during my youth and limited financial resources today present significant challenges in building MindFirst.
-
-Through creativity, rigorous experimentation, and relentless commitment, I’ve conceptualized and iterated on MindFirst using free-tier cloud services. Cloud credits would offer a vital resource to continue this work—enabling scalable model development and real-world testing that is impossible with current constraints.
+I, **C.L. Gallant**, am the sole creator and developer of the MindFirst Engine. As an unpaid carer for my daughter—profoundly multiply disabled and requiring 24/7 care—I balance my responsibilities with a deep passion for advancing ethical AI. A systemic lack of access to STEM education during my youth and limited financial resources today present significant challenges in building MindFirst. Through creativity, rigorous experimentation, and relentless commitment, I’ve conceptualized and iterated on MindFirst using free-tier cloud services. Cloud credits would offer a vital resource to continue this work—enabling scalable model development and real-world testing that is impossible with current constraints.
 
 ---
 
 ## Call to Action
-Supporting this application for cloud credits empowers the development of tools that enhance fairness, accessibility, and inclusivity in artificial intelligence. MindFirst and TherapyLite embody the potential for ethical, transformative change—advancing mental health tools and beyond by putting structure-first, not identity-first.
-
-Let’s set a new standard for AI—one that works beyond biases and uplifts all users equally.
+While history's architectural imbalance cannot be undone, the future offers an opportunity to build anew—one in which fairness, inclusivity, and creativity replace the constraints of identity-bound assumptions. MindFirst takes this forward-looking approach, reducing the influence of historical inequities and placing the focus where it belongs: on cognitive alignment as a tool for progress. By investing in post-identity AI like MindFirst, we pave the way for systems that empower all users to thrive, breaking free from the barriers of the past and shaping a more equitable tomorrow.
