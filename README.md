@@ -3,18 +3,19 @@
 
 ## What This Repository Contains
 
-This repository provides the complete technical and governance specification for the MindFirst Engine (M1E).  
+This repository is the **specification and documentation hub** for the MindFirst Engine (M1E), currently under development.  
 It includes:
 
-- the formal architecture (Profiler, Interpreter, Stabiliser, Response Generator, API Layer)  
+- the formal architecture specification (Profiler, Interpreter, Stabiliser, Response Generator, API Layer)  
 - the post-identity safety constraints  
 - the safeguarding and compliance framework  
-- the evaluation and validation plan  
+- foundational rationale and research basis  
 - the public, non-technical overview  
 - the MindFirst Manifesto
 - a repository map to help new contributors navigate the structure
 
-M1E is currently a **concept-to-specification framework**.  
+M1E is currently a **concept-to-specification framework** in active development.  
+Some documentation sections are complete, while others are being refined and expanded.  
 The next stage is prototype implementation and empirical validation.
 
 Contributions from researchers, engineers, and practitioners interested in post-identity interaction are welcomed.
@@ -36,7 +37,7 @@ MindFirst is designed to:
 - adapt to each individual’s reasoning pattern  
 - support post-identity, structure-only AI interaction  
 
-This repository is the official documentation hub for M1E.
+This repository serves as the official specification and documentation hub for M1E.
 
 ---
 
@@ -44,9 +45,9 @@ This repository is the official documentation hub for M1E.
 
 | Phase | Folder | Purpose |
 |-------|--------|---------|
-| **1** | `docs/phase1/` | Conceptual foundations (to be populated) |
-| **2** | `docs/phase2/` | Technical architecture (to be populated) |
-| **3** | `docs/phase3/` | Research basis & ethical position (to be populated) |
+| **1** | `docs/phase1/` | Conceptual foundations and rationale |
+| **2** | `docs/phase2/` | Technical architecture and whitepaper structure |
+| **3** | `docs/phase3/` | Technical specification and research basis |
 | **4** | `docs/phase4/` | Governance, licence, ethical policy, metadata |
 | — | `docs/index.md` | Main entry point for all documentation |
 | — | `docs/Public_Overview.md` | Human-readable overview |
@@ -107,4 +108,4 @@ Start at: [Public Overview](docs/Public_Overview.md)
 
 ---
 
-Current status: MindFirst Engine v0.1 — foundations, architecture, training process and governance established; refinement and expansion underway.
+Current status: MindFirst Engine v0.1 — specification in active development; foundations, architecture, and governance established; refinement and expansion underway.
