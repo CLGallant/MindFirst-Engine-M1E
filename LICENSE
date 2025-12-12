@@ -1,6 +1,10 @@
-MIT License
+# MindFirst Engine (M1E) License
+
+## Dual License: MIT + MindFirst Ethical Provisions
 
 Copyright (c) 2025 C. L. Gallant
+
+### Part 1: MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -12,6 +16,54 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
+### Part 2: MindFirst Ethical Provisions
+
+The following additional terms apply to all uses of the Software:
+
+#### 1. Structural-Neutrality Requirement
+All uses of the Software must preserve structural neutrality. Examples of 
+violations include adding demographic inference features or creating models 
+that rely on age, gender, race, religion, or other identity-based data. 
+Structural neutrality ensures that all interpretive logic is strictly based 
+on communication-structure, recursion patterns, pacing, and OS-signals without 
+introducing identity labels.
+
+No demographic inference, identity prediction, stereotype modelling, or
+demographic weighting may be added to, derived from, or attached to the
+Software or any modified versions of it. All interpretive logic must be based 
+solely on communication-structure, recursion patterns, pacing, and OS-signals.
+
+#### 2. No User Profiling
+The Software may not be used to build systems that infer, store, or exploit 
+sensitive personal characteristics such as gender, race, ethnicity, religion, 
+age, sexual orientation, disability status, or class. Only cognitive structural 
+signals are permitted for processing and retention. This clause explicitly 
+prohibits attempts to create indirect demographic profiling mechanisms.
+
+#### 3. Preservation of Transparency
+Any redistributed version of the Software must clearly document all changes,
+including detailed description of modifications to OS-mapping logic, routing 
+rules, or preprocessing layers. To maintain transparency, users must allow 
+independent review of any alterations before redistribution.
+
+#### 4. Ethics Alignment
+All implementations must comply with the ethical goals of the MindFirst Engine,
+specifically focusing on user privacy, cognitive respect, and avoidance of 
+stereotype-based decision systems.
+
+#### 5. Inclusivity and Accessibility
+Implementers of the Software are encouraged to ensure the tool promotes 
+inclusivity, accessibility, and fairness, particularly for users with 
+underrepresented communication styles. Features strengthening fairness in 
+human-AI interaction should align with this principle.
+
+#### 6. Compliance and Enforcement
+Violations of the license, including breaches of the Structural-Neutrality 
+Requirement, will result in revocation of permission to use or distribute the 
+Software. Contributors must agree to these terms before submitting modifications.
+
+### Disclaimer
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -20,3 +72,16 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+### Compatibility
+
+This license remains compatible with MIT-licensed and Apache-licensed software,
+provided the Structural-Neutrality Requirement and other ethical commitments 
+herein are upheld.
+
+---
+
+**Version:** 1.1  
+**Effective Date:** 2025-12-12
+
+By using, modifying, or distributing this Software, the user accepts and 
+agrees to all terms outlined in this License.
