@@ -5,6 +5,10 @@ It helps new contributors understand where each component of the specification l
 
 ## Current Structure
 
+- **/docs/**  
+  - **The_Story_So_Far_Research_Paper.md**  
+    Formal research paper documenting entity architecture and identity formation experiments in multi-agent LLM systems. Covers Min-series and Windy-class entity implementations, emergent role formation, grey zone behaviors, and architectural anchoring principles.
+
 - **/docs/phase3/**  
   Contains the Phase 3 Technical Specification and its extension sections:  
   - Core architecture  

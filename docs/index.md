@@ -11,6 +11,9 @@
 - 📘 **Public Overview (non-technical summary)**  
   `./Public_Overview.md`
 
+- 📊 **Research Paper: Entity Architecture and Identity Formation**  
+  `./The_Story_So_Far_Research_Paper.md`
+
 - 🔧 **Technical Specification (Phase 3)**  
   `./phase3`
 
@@ -41,6 +44,9 @@ This repository includes all technical, conceptual, and governance materials for
 
 - the **formal architecture**  
   (Profiler, Interpreter, Stabiliser, Response Generator, API Layer)
+
+- the **research foundations**  
+  including formal research papers on entity architecture and identity formation
 
 - the **post-identity safety constraints**
 

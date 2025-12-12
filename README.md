@@ -7,6 +7,7 @@ This repository provides the complete technical and governance specification for
 It includes:
 
 - the formal architecture (Profiler, Interpreter, Stabiliser, Response Generator, API Layer)  
+- research papers on entity architecture and multi-agent identity formation
 - the post-identity safety constraints  
 - the safeguarding and compliance framework  
 - the evaluation and validation plan  
@@ -20,7 +21,9 @@ Contributions from researchers, engineers, and practitioners interested in post-
 
 ➡️ For a full overview of the repository structure, see the [Repository Map](Repo_Map.md).
 
-➡️ Public Overview (non-technical summary): docs/Public_Overview.md
+➡️ Public Overview (non-technical summary): [docs/Public_Overview.md](docs/Public_Overview.md)
+
+➡️ Research Paper on Entity Architecture: [docs/The_Story_So_Far_Research_Paper.md](docs/The_Story_So_Far_Research_Paper.md)
 
 MindFirst Engine is an interaction architecture that models users by their **cognitive communication structure**,  
 not their demographic categories. Instead of assuming gender, race, age, or other identity markers,  
@@ -41,9 +44,10 @@ This repository is the official documentation hub for M1E.
 
 | Phase | Folder | Purpose |
 |-------|--------|---------|
-| **1** | `docs/phase1/` | Conceptual foundations (to be populated) |
-| **2** | `docs/phase2/` | Technical architecture (to be populated) |
-| **3** | `docs/phase3/` | Research basis & ethical position (to be populated) |
+| **Research** | `docs/` | Research papers and foundational studies |
+| **1** | `docs/phase1/` | Conceptual foundations |
+| **2** | `docs/phase2/` | Technical architecture specification |
+| **3** | `docs/phase3/` | Technical operation and interface design |
 | **4** | `docs/phase4/` | Governance, licence, ethical policy, metadata |
 | — | `docs/index.md` | Main entry point for all documentation |
 | — | `docs/Public_Overview.md` | Human-readable overview |
