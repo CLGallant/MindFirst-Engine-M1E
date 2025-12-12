@@ -51,7 +51,7 @@ Every change must be reproducible from commit history, allowing others to verify
 M1E must never be used to infer, predict, or classify demographic categories, including:
 - Gender, race, ethnicity, religion, age
 - Disability, class, sexual orientation
-- Political ideology or national origin
+- Political ideology, nationality, or national origin
 
 ### 3.2 Structural-Only Interpretation
 All interpretive logic must operate only on:
