@@ -19,11 +19,36 @@ The next stage is prototype implementation and empirical validation.
 
 Contributions from researchers, engineers, and practitioners interested in post-identity interaction are welcomed.
 
-➡️ For the philosophical foundation, see the [MindFirst Manifesto](MindFirst_Manifesto.md).
+---
 
-➡️ For a full overview of the repository structure, see the [Repository Map](Repo_Map.md).
+## 🚀 Getting Started
 
-➡️ Public Overview (non-technical summary): [docs/Public_Overview.md](docs/Public_Overview.md)
+### For New Contributors
+1. **Start here:** Read this README for an overview of the project
+2. **Understand the philosophy:** Review the [MindFirst Manifesto](MindFirst_Manifesto.md)
+3. **Get the big picture:** Read the [Public Overview](docs/Public_Overview.md) (non-technical summary)
+4. **Navigate the repository:** See the [Repository Map](Repo_Map.md) for detailed directory structure
+5. **Explore documentation:** Visit [docs/index.md](docs/index.md) for phase-based documentation
+
+### For Technical Contributors
+- **Architecture details:** See `docs/phase3/` for the complete technical specification
+- **Core components:** OS-Profiler, OS-Interpreter, OS-Stabiliser, Response Generator, and API Layer
+- **Implementation guidance:** Review the cognitive-signal pipeline and system requirements in Phase 3 documentation
+
+### For Governance & Ethics Contributors
+- **Governance framework:** See `docs/phase4/Governance_Charter.md`
+- **Ethical guidelines:** Review `docs/phase4/Ethical_Use_Policy.md`
+- **Compliance requirements:** Check `docs/phase4/Metadata_Pack.md`
+
+### Quick Links
+➡️ **Philosophical foundation:** [MindFirst Manifesto](MindFirst_Manifesto.md)  
+➡️ **Repository structure:** [Repository Map](Repo_Map.md)  
+➡️ **Public overview:** [docs/Public_Overview.md](docs/Public_Overview.md)  
+➡️ **Documentation hub:** [docs/index.md](docs/index.md)
+
+---
+
+## 🧠 About MindFirst Engine
 
 MindFirst Engine is an interaction architecture that models users by their **cognitive communication structure**,  
 not their demographic categories. Instead of assuming gender, race, age, or other identity markers,  

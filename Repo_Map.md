@@ -46,16 +46,6 @@ Governance, ethics, and compliance:
 - **index.md** — Main documentation index
 - **Public_Overview.md** — Non-technical overview for general audience
 
-## Navigation Guide
-
-**New Contributors:** Start with README.md, then read the MindFirst_Manifesto.md and docs/Public_Overview.md
-
-**Technical Contributors:** Review phase3/ documentation for implementation details
-
-**Governance & Ethics:** See phase4/ documentation for compliance requirements
-
-**Full Documentation:** Use docs/index.md as the main entry point for all documentation
-
 ---
 
 All documentation is written to be readable independently, while maintaining cross-references for deeper exploration.
