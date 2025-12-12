@@ -5,11 +5,17 @@
 
 ## Quick Navigation
 
-- 🗺️ **Repository Map (root)**  
-  `../Repo_Map.md`
+- 🗺️ **Repository Map**  
+  `./Repo_Map.md`
 
 - 📘 **Public Overview (non-technical summary)**  
   `./Public_Overview.md`
+
+- 🎯 **MindFirst Manifesto**  
+  `./mindfirst-manifesto.md`
+
+- 📋 **Development Plan & Next Steps**  
+  `./Next_Steps.md`
 
 - 🔧 **Technical Specification (Phase 3)**  
   `./phase3`
@@ -61,11 +67,17 @@ Contributions from researchers, engineers, and practitioners interested in post-
 
 ## Additional Links
 
-➡️ **Repository Map (root):**  
-`../Repo_Map.md`
+➡️ **Repository Map:**  
+`./Repo_Map.md`
 
 ➡️ **Public Overview (non-technical summary):**  
 `./Public_Overview.md`
+
+➡️ **MindFirst Manifesto:**  
+`./mindfirst-manifesto.md`
+
+➡️ **Development Plan & Next Steps:**  
+`./Next_Steps.md`
 
 ---
 
