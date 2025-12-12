@@ -31,7 +31,7 @@ M1E prohibits all demographic inference and instead maintains a transparent, aud
   Accessible introduction for general audience
 
 - 🧭 **[MindFirst Manifesto](../MindFirst_Manifesto.md)**  
-  Philosophical foundation and core principles
+  Foundational narrative and core principles
 
 - 📚 **[References & Bibliography](./references.md)**  
   Citations and sources for factual claims
@@ -122,7 +122,7 @@ This repository includes all technical, conceptual, and governance materials for
 
 - The **public, non-technical overview**
 
-M1E is currently in **active specification development** (v0.1).  
+M1E is currently in **active specification development** (v0.1). Core architectural and governance foundations are complete, while technical specifications and implementation guidance are being refined and expanded.  
 The next stage is prototype implementation and empirical validation.
 
 Contributions from researchers, engineers, and practitioners interested in post-identity interaction are welcomed.
@@ -152,4 +152,4 @@ The MindFirst License ensures:
 
 ---
 
-*Current Status: MindFirst Engine v0.1 — foundations, architecture, and governance established; refinement and expansion underway.*
+*Current Status: MindFirst Engine v0.1 — Active specification development. Core architectural and governance foundations are established; technical specifications and implementation guidance are being refined and expanded.*
