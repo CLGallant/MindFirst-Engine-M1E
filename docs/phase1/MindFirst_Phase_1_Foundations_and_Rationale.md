@@ -21,3 +21,22 @@ Post-identity methods scale more effectively than systems that try to adjust for
 MindFirst is built on a simple belief about humanity. We can do better than the systems we inherited. The old categories and assumptions that shaped our past do not have to define our future. Human beings want to be understood, and feeling misunderstood is one of the most uncomfortable experiences in communication. Feeling understood, or feeling "got", is deeply satisfying and motivating. It changes how people speak, how they learn, how they think and how they see themselves. MindFirst aims to offer that experience to everyone by tailoring interaction to the structure of each person’s mind rather than the identity labels that history has handed down. This approach looks forward rather than backward. It is designed for a world where people are more connected, more expressive and more individual than ever before. MindFirst offers a way for AI to meet humanity where it is going, not where it has been.
  
 ➡️ Return to Repository Map
+---
+
+## References
+
+For detailed citations and sources supporting the factual claims in this document, see:
+- [MindFirst Engine References and Bibliography](../references.md)
+
+Key statistics cited in this document:
+- Gender representation in AI workforce and datasets[^1][^2]
+- Cultural and geographic bias in training data[^3]
+- AI adoption statistics[^4]
+
+[^1]: West, S.M., Whittaker, M., & Crawford, K. (2019). *Discriminating Systems: Gender, Race and Power in AI*. AI Now Institute; Simonite, T. (2018). "AI is the future—but where are the women?" *WIRED*.
+[^2]: Yang, K., et al. (2020). "Towards Fairer Datasets: Filtering and Balancing the Distribution of the People Subtree in the ImageNet Hierarchy." *FAT* '20*; Buolamwini, J., & Gebru, T. (2018). "Gender Shades." *PMLR*, 81.
+[^3]: Mehrabi, N., et al. (2021). "A Survey on Bias and Fairness in Machine Learning." *ACM Computing Surveys*, 54(6); Henrich, J., et al. (2010). "The weirdest people in the world?" *Behavioral and Brain Sciences*, 33(2-3).
+[^4]: Meta AI (2024). Llama Model Release and Usage Statistics; Touvron, H., et al. (2023). "Llama 2: Open Foundation and Fine-Tuned Chat Models." arXiv:2307.09288.
+
+---
+

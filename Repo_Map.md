@@ -45,6 +45,7 @@ Governance, ethics, and compliance:
 #### **/docs/** (Root level)
 - **index.md** — Main documentation index
 - **Public_Overview.md** — Non-technical overview for general audience
+- **references.md** — References and bibliography for factual claims
 
 ---
 
