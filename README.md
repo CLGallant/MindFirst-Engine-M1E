@@ -1,83 +1,104 @@
 # MindFirst Engine (M1E)
 *A post-identity cognitive interaction framework*
 
-## What This Repository Contains
+## Overview
 
-This repository provides the complete technical and governance specification for the MindFirst Engine (M1E).  
-It includes:
+MindFirst Engine (M1E) is a cognitive interaction architecture that models users by their **communication structure**, not their demographic categories. Instead of inferring gender, race, age, or other identity markers, M1E creates a lightweight "OS-map" based solely on how a person thinks, recurses, and processes information.
 
-- the formal architecture (Profiler, Interpreter, Stabiliser, Response Generator, API Layer)  
-- the post-identity safety constraints  
-- the safeguarding and compliance framework  
-- the evaluation and validation plan  
-- the public, non-technical overview  
-- a repository map to help new contributors navigate the structure
+### Core Principles
 
-M1E is currently a **concept-to-specification framework**.  
-The next stage is prototype implementation and empirical validation.
+MindFirst is designed to:
+- **Remove demographic inference** – No identity-based assumptions
+- **Eliminate stereotype-weighting** – Pure structural analysis
+- **Improve fairness and precision** – Bias-free AI interactions
+- **Adapt to individual reasoning patterns** – Personalized without profiling
+- **Support post-identity interaction** – Focus on cognitive structure only
+
+---
+
+## Getting Started
+
+📘 **[Read the Documentation](docs/index.md)** – Complete technical and conceptual overview
+
+🌐 **[Public Overview](docs/Public_Overview.md)** – Non-technical introduction
+
+🗺️ **[Repository Map](Repo_Map.md)** – Navigate the repository structure
+
+📜 **[Manifestos](docs/manifestos/)** – Philosophy and vision documents
+
+---
+
+## Repository Status
+
+**Current Version:** M1E v0.1 – Conceptual and specification phase
+
+M1E is currently a **concept-to-specification framework**. The architecture, governance, and safety constraints are defined. The next stage is prototype implementation and empirical validation.
+
+---
+
+## Core Architecture
+
+M1E operates with four internal components:
+
+1. **OS-Profiler** – Extracts communication structure from user input
+2. **OS-Interpreter** – Selects optimal reasoning and interaction strategies
+3. **OS-Stabiliser** – Maintains continuity and prevents context collapse
+4. **M1E API Layer** – Exposes the OS-map to tools and agents
+
+No identity data is ever used, stored, or inferred.
+
+---
+
+## Documentation Structure
+
+The repository is organized into phases:
+
+| Phase | Location | Content |
+|-------|----------|---------|
+| **Phase 1** | `docs/phase1/` | Conceptual foundations and rationale |
+| **Phase 2** | `docs/phase2/` | Technical architecture whitepaper |
+| **Phase 3** | `docs/phase3/` | Complete technical specification |
+| **Phase 4** | `docs/phase4/` | Governance, ethics, and metadata |
+
+See [docs/index.md](docs/index.md) for detailed navigation.
+
+---
+
+## Contributing
 
 Contributions from researchers, engineers, and practitioners interested in post-identity interaction are welcomed.
 
-➡️ For a full overview of the repository structure, see the [Repository Map](Repo_Map.md).
+**Before contributing:**
+- Read the [Governance and Ethics Policy](docs/phase4/Governance_and_Ethics_Policy.md)
+- Review the [LICENSE](LICENSE) for structural-neutrality requirements
+- Understand the post-identity principles
 
-➡️ Public Overview (non-technical summary): docs/Public_Overview.md
-
-MindFirst Engine is an interaction architecture that models users by their **cognitive communication structure**,  
-not their demographic categories. Instead of assuming gender, race, age, or other identity markers,  
-M1E creates a lightweight “OS-map” based solely on how a person thinks, recurses, and processes information.
-
-MindFirst is designed to:
-- remove demographic inference  
-- eliminate stereotype-weighting  
-- improve fairness and precision  
-- adapt to each individual’s reasoning pattern  
-- support post-identity, structure-only AI interaction  
-
-This repository is the official documentation hub for M1E.
+All contributions must:
+- Maintain structural neutrality
+- Document changes clearly
+- Avoid demographic inference
+- Align with ethical commitments
 
 ---
 
-## 📁 Repository Structure
+## License
 
-| Phase | Folder | Purpose |
-|-------|--------|---------|
-| **1** | `docs/phase1/` | Conceptual foundations (to be populated) |
-| **2** | `docs/phase2/` | Technical architecture (to be populated) |
-| **3** | `docs/phase3/` | Research basis & ethical position (to be populated) |
-| **4** | `docs/phase4/` | Governance, licence, ethical policy, metadata |
-| — | `docs/index.md` | Main entry point for all documentation |
-| — | `docs/Public_Overview.md` | Human-readable overview |
+This project is dual-licensed under **MIT + MindFirst Ethical Provisions**.
 
-All pages are written so they can be read independently.
+See [LICENSE](LICENSE) for complete terms, including:
+- Standard MIT permissions
+- Structural-neutrality requirements
+- Prohibited uses (demographic profiling, identity inference)
+- Transparency and ethics alignment
 
 ---
 
-## 🧠 Core Ideas
-MindFirst operates with four internal components:
+## Contact
 
-1. **OS-Profiler** — extracts communication structure  
-2. **OS-Interpreter** — chooses correct behavioural strategies  
-3. **OS-Stabiliser** — maintains continuity within a session  
-4. **M1E API Layer** — makes the OS-map available to tools/agents  
+**Project Steward:** C.L. Gallant
 
-No identity data is ever used or stored.
+For questions, issues, or collaboration inquiries, please open an issue in this repository.
 
 ---
 
-## 🛡 Ethical & Governance Documents
-Located in `docs/phase4/`:
-
-- Governance Charter  
-- Ethical Use Policy  
-- MindFirst Licence  
-- Metadata Pack  
-
-These define how MindFirst must be used, expanded, and maintained.
-
----
-
-## 🌐 Documentation Entry Point
-Start at: [Public Overview](docs/Public_Overview.md)
-
-
-Current status: MindFirst Engine v0.1 — foundations, architecture, training process and governance established; refinement and expansion underway.
+**MindFirst: Because your ideas should speak louder than your identity.**
