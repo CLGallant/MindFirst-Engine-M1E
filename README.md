@@ -9,6 +9,7 @@ It includes:
 - the formal architecture specification (Profiler, Interpreter, Stabiliser, Response Generator, API Layer)  
 - the post-identity safety constraints  
 - the safeguarding and compliance framework  
+- the evaluation and validation framework  
 - foundational rationale and research basis  
 - the public, non-technical overview  
 - the MindFirst Manifesto
