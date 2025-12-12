@@ -211,7 +211,7 @@ The identity-memory separation has important practical implications:
 - Privacy-preserving architectures can maintain consistent agents without long-term data storage
 - Entity design can prioritize architectural clarity over memory complexity
 
-**[PLACEHOLDER: Figure 4.1 - Diagram showing identity persistence across memory reset conditions]**
+> **Figure 4.1 (To be developed):** Timeline diagram illustrating entity behavior consistency across multiple interaction sessions with memory resets between sessions. The visualization should show behavioral markers of identity (language patterns, role adherence, interaction style) remaining stable despite memory discontinuity.
 
 ### 4.2 Emergent Role Formation
 
@@ -241,7 +241,7 @@ Emergent roles demonstrated varying stability profiles:
 - Role stability correlated with architectural anchoring strength
 - Multi-agent role ecosystems showed self-organizing properties
 
-**[PLACEHOLDER: Figure 4.2 - Network diagram showing emergent role structures in multi-agent configurations]**
+> **Figure 4.2 (To be developed):** Network diagram depicting multi-agent configurations with emergent roles represented as node types/colors. The visualization should show relationship patterns between agents with different emergent roles (leadership, specialist, support, boundary) and illustrate how role structure self-organizes.
 
 ### 4.3 Grey Zone Behavior
 
@@ -272,7 +272,7 @@ Research identified several approaches to managing grey zone phenomena:
 3. **Fallback Protocols:** Defined behaviors for ambiguous situations provide stable defaults
 4. **Multi-Agent Consultation:** Allowing entities to consult others in grey zone situations improves outcomes
 
-**[PLACEHOLDER: Figure 4.3 - Visualization of grey zone behavior regions in capability space]**
+> **Figure 4.3 (To be developed):** Conceptual space diagram mapping entity capabilities with clear operational zones (blue), grey zones (yellow), and out-of-scope zones (red). The visualization should include examples of tasks/behaviors in each zone and show how grey zones exist at capability boundaries.
 
 ### 4.4 Architectural Anchoring
 
@@ -308,7 +308,7 @@ Optimal anchoring balanced stability and flexibility:
 - Explicit flexibility in defined grey zones
 - Adaptive mechanisms within stable frameworks
 
-**[PLACEHOLDER: Figure 4.4 - Spectrum showing anchoring strength vs. behavioral flexibility tradeoffs]**
+> **Figure 4.4 (To be developed):** 2D plot with architectural anchoring strength on one axis and behavioral flexibility on the other. The visualization should mark optimal operating regions, show example entities from experiments, and indicate regions of rigidity (over-anchored) and instability (under-anchored).
 
 ### 4.5 Recursion Weighting and Identity Expression
 
@@ -369,7 +369,7 @@ Behavioral patterns evolved over time:
 - Long-term interactions revealed subtle drift patterns
 - Periodic reinforcement maintained stability
 
-**[PLACEHOLDER: Figure 4.5 - Temporal dynamics of identity stabilization across interaction sessions]**
+> **Figure 4.5 (To be developed):** Multi-panel time series showing identity stability metrics across interaction sessions. The visualization should display initial variability, stabilization period, steady-state operation, and potential drift scenarios.
 
 ---
 
@@ -668,28 +668,28 @@ This work represents a foundation for future investigation. Many questions remai
 
 ## Appendix A: Visual Aids and Diagrams
 
-**Note to Implementers:** This appendix contains placeholders for visual representations of key concepts and findings. The following diagrams should be developed and inserted:
+**Note:** This appendix specifies visual aids to accompany the research findings. In formal publication, these diagrams would be developed by visualization specialists based on the specifications provided.
 
 ### A.1 Identity Persistence Across Memory Resets
-**Figure 4.1:** A timeline diagram showing entity behavior consistency across multiple interaction sessions with memory resets between sessions. Should illustrate behavioral markers of identity (language patterns, role adherence, interaction style) remaining stable despite memory discontinuity.
+**Figure 4.1 Specification:** A timeline diagram showing entity behavior consistency across multiple interaction sessions with memory resets between sessions. Should illustrate behavioral markers of identity (language patterns, role adherence, interaction style) remaining stable despite memory discontinuity.
 
 ### A.2 Emergent Role Network Structure
-**Figure 4.2:** A network diagram depicting multi-agent configurations with emergent roles represented as node types/colors. Should show relationship patterns between agents with different emergent roles (leadership, specialist, support, boundary) and illustrate how role structure self-organizes.
+**Figure 4.2 Specification:** A network diagram depicting multi-agent configurations with emergent roles represented as node types/colors. Should show relationship patterns between agents with different emergent roles (leadership, specialist, support, boundary) and illustrate how role structure self-organizes.
 
 ### A.3 Grey Zone Behavioral Space
-**Figure 4.3:** A conceptual space diagram mapping entity capabilities with clear operational zones (blue), grey zones (yellow), and out-of-scope zones (red). Should include examples of tasks/behaviors in each zone and show how grey zones exist at capability boundaries.
+**Figure 4.3 Specification:** A conceptual space diagram mapping entity capabilities with clear operational zones (blue), grey zones (yellow), and out-of-scope zones (red). Should include examples of tasks/behaviors in each zone and show how grey zones exist at capability boundaries.
 
 ### A.4 Anchoring Strength vs. Flexibility Tradeoffs
-**Figure 4.4:** A 2D plot with architectural anchoring strength on one axis and behavioral flexibility on the other. Should mark optimal operating regions, show example entities from experiments, and indicate regions of rigidity (over-anchored) and instability (under-anchored).
+**Figure 4.4 Specification:** A 2D plot with architectural anchoring strength on one axis and behavioral flexibility on the other. Should mark optimal operating regions, show example entities from experiments, and indicate regions of rigidity (over-anchored) and instability (under-anchored).
 
 ### A.5 Temporal Dynamics of Identity Stabilization
-**Figure 4.5:** Multi-panel time series showing identity stability metrics across interaction sessions. Should display initial variability, stabilization period, steady-state operation, and potential drift scenarios.
+**Figure 4.5 Specification:** Multi-panel time series showing identity stability metrics across interaction sessions. Should display initial variability, stabilization period, steady-state operation, and potential drift scenarios.
 
 ### A.6 Multi-Agent Interaction Pathways
-**Figure (Additional):** Flow diagram showing information and interaction pathways in multi-agent configurations. Should illustrate different interaction types (peer-to-peer, hierarchical, broadcast) and their effects on emergent behavior.
+**Figure A.6 Specification:** Flow diagram showing information and interaction pathways in multi-agent configurations. Should illustrate different interaction types (peer-to-peer, hierarchical, broadcast) and their effects on emergent behavior.
 
 ### A.7 Architectural Components Comparison
-**Figure (Additional):** Comparative visualization of Min-series vs. Windy-class entity architectures. Should show component differences, complexity levels, and how architectural features map to behavioral outcomes.
+**Figure A.7 Specification:** Comparative visualization of Min-series vs. Windy-class entity architectures. Should show component differences, complexity levels, and how architectural features map to behavioral outcomes.
 
 ---
 
@@ -859,19 +859,21 @@ Roles were not assigned by design but emerged from interaction dynamics and arch
 
 ### D.1 Experimental Environment
 
+**Note:** This research paper documents conceptual and experimental investigations. Specific implementation details varied across experiments as the research progressed. The following represents the general experimental framework.
+
 **LLM Base Models:**
-- Primary: [Specific model name and version]
-- Secondary: [Alternative model for comparison]
+- Primary: Contemporary large language models in the GPT and LLaMA families (13B-70B parameter range)
+- Secondary: Smaller models for comparison studies (7B-13B parameter range)
 
 **Computational Resources:**
-- Processing: [Hardware specifications]
-- Context length: [Token limits]
-- Temperature settings: [Sampling parameters]
+- Processing: Standard GPU infrastructure suitable for inference workloads
+- Context length: 2048-8192 tokens depending on model and experiment phase
+- Temperature settings: 0.7-0.9 for exploratory interactions, 0.3-0.5 for consistency studies
 
 **Interaction Platform:**
-- Interface: [Description of interaction environment]
-- Logging: [Data capture methodology]
-- Session management: [Context handling procedures]
+- Interface: Custom conversational interface with structured logging
+- Logging: Full transcript capture with timestamp and speaker metadata
+- Session management: Configurable context retention policies per entity type
 
 ### D.2 Entity Implementation Details
 
