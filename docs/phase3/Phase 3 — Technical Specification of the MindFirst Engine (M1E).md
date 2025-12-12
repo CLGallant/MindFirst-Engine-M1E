@@ -21,6 +21,342 @@ Every processing stage is structurally visible and auditable. Cognitive signals 
 
 These principles establish M1E as a cognitive-mapping engine rather than a persona-engine. The system observes how users think and adapts accordingly, without inferring who they are.
 
+### Component Interactions and Dependencies
+
+M1E's four subsystems operate sequentially yet remain tightly coordinated through structured data flows. Understanding these interactions is essential for implementing or debugging the system.
+
+**Primary Data Flow:**
+
+1. **Input → OS Profiler:** Raw user text enters the Profiler, which extracts structural cognitive markers (recursion depth, pacing rhythm, compression factor, etc.) without accessing any metadata or historical data.
+
+2. **OS Profiler → OS Interpreter:** The Profiler's output—an OS map containing numeric and categorical cognitive signals—feeds into the Interpreter, which selects appropriate reasoning strategies based on these structural patterns.
+
+3. **OS Interpreter → OS Stabiliser:** The Interpreter passes its interpretive plan to the Stabiliser, which validates consistency against the session's cognitive continuity envelope and may trigger recalibration if drift is detected.
+
+4. **OS Stabiliser → Response Generator:** The Stabiliser provides a stability-verified interpretive plan to the Response Generator, ensuring coherent, drift-free output aligned with the user's cognitive architecture.
+
+5. **Response Generator → API Layer:** Generated responses pass through the API Layer for final post-identity safety verification before delivery to the user or downstream systems.
+
+**Feedback Loops:**
+
+- **Drift Detection Loop:** When the Stabiliser detects significant divergence between current signals and expected patterns, it triggers Profiler recalibration, creating a corrective feedback loop that maintains alignment without storing long-term behavioral data.
+
+- **Guardrail Override Loop:** If the API Layer detects identity inference attempts in generated output, it signals the Response Generator to regenerate using the Stabiliser's baseline profile, preventing unsafe content from reaching users.
+
+- **Recalibration Trigger Loop:** Behavioral shifts (fatigue, topic changes, emotional pacing changes) detected by any component can trigger system-wide recalibration, with the Stabiliser coordinating updates across Profiler weights and Interpreter heuristics.
+
+**Dependencies and Constraints:**
+
+- The Interpreter depends on stable OS map fields from the Profiler; incomplete or volatile signals trigger conservative fallback to OS-Null Mode.
+- The Stabiliser requires at least 2-3 turns of consistent data before enabling full adaptive mode.
+- The API Layer operates independently but receives signals from all upstream components to enforce post-identity boundaries.
+- The Response Generator cannot function without an interpretive plan from the Interpreter, ensuring all output is cognitively aligned.
+
+### Concrete Workflow Examples
+
+**Example 1: High-Recursion User Processing**
+
+*Turn 1:* User submits: "I'm thinking about whether the approach we discussed could work, but I'm also wondering if we should consider the alternative, which might address the same problem but from a different angle, though that raises questions about..."
+
+- **Profiler** detects: high recursion depth (3+ nested clauses), high tangent probability, medium-high meta-monitoring (self-questioning).
+- **Interpreter** selects: deep-recursive reasoning strategy, tangent-accommodation mode, meta-monitoring enhancement.
+- **Stabiliser** creates initial continuity envelope: expects sustained high-recursion patterns.
+- **Response Generator** produces: multi-layered response with nested explanations and explicit tangent acknowledgment.
+- **API Layer** exposes: `recursion_depth: 0.8, tangent_probability: 0.7, meta_monitoring_density: 0.6` to downstream tools.
+
+**Example 2: Compression-Favored User Processing**
+
+*Turn 1:* User submits: "Fast implementation needed. Core issue: latency spikes above 200ms. Root cause unknown. Need diagnosis approach."
+
+- **Profiler** detects: high compression factor, low recursion, fast pacing, minimal meta-monitoring.
+- **Interpreter** selects: compressed reasoning mode, minimal connective scaffolding, direct problem-solution structure.
+- **Stabiliser** creates envelope expecting sustained compression preferences.
+- **Response Generator** produces: "Check: 1) Network I/O, 2) DB query time, 3) GC pauses. Profile with `perf` or `py-spy`. Report bottleneck."
+- **API Layer** exposes: `compression_factor: 0.9, recursion_depth: 0.2, pacing_rhythm: fast` to downstream tools.
+
+**Example 3: Drift Detection and Correction**
+
+*Turns 1-5:* User exhibits steady low-recursion, high-compression patterns.
+
+*Turn 6:* User submits lengthy, exploratory message with multiple nested clauses.
+
+- **Profiler** detects abrupt recursion depth increase.
+- **Stabiliser** flags potential drift vs. genuine shift.
+- **Interpreter** temporarily blends previous compression preferences with new recursive structure (hybrid mode).
+- **Stabiliser** monitors next 2-3 turns to determine if this represents lasting change or temporary exploration.
+- If sustained: Stabiliser recalibrates baseline. If temporary: returns to previous profile after divergent turn.
+
+This approach prevents both over-rigid interpretation and volatile oscillation.
+
+### Visual Representations
+
+**[DIAGRAM PLACEHOLDER: M1E Signal Processing Pipeline]**
+
+```
+User Input
+    ↓
+┌─────────────────────┐
+│   OS Profiler       │ ← Extracts cognitive signals
+│  - Recursion        │   (no demographic data)
+│  - Pacing           │
+│  - Compression      │
+│  - Tangent prob.    │
+└─────────────────────┘
+    ↓ [OS Map]
+┌─────────────────────┐
+│  OS Interpreter     │ ← Selects reasoning strategy
+│  - Heuristic lib    │
+│  - Strategy blend   │
+└─────────────────────┘
+    ↓ [Interpretive Plan]
+┌─────────────────────┐
+│  OS Stabiliser      │ ← Maintains continuity
+│  - Drift detection  │   & prevents oscillation
+│  - Recalibration    │
+└─────────────────────┘
+    ↓ [Stability Envelope]
+┌─────────────────────┐
+│ Response Generator  │ ← Assembles output
+│  - Template select  │
+│  - Pacing engine    │
+└─────────────────────┘
+    ↓ [Generated Response]
+┌─────────────────────┐
+│   API Layer         │ ← Enforces post-identity
+│  - Guardrails       │   boundaries & exposes
+│  - Sanitization     │   cognitive signals
+└─────────────────────┘
+    ↓
+User Output / Downstream Tools
+```
+
+**[DIAGRAM PLACEHOLDER: Component Interaction Flow]**
+
+The above pipeline operates with multiple feedback mechanisms:
+- Drift detection triggers Profiler recalibration
+- Guardrail violations trigger Response regeneration
+- Behavioral shifts trigger system-wide coordination
+- Stabiliser continuously monitors and corrects divergence
+
+**[DIAGRAM PLACEHOLDER: OS-Signal Feature Space]**
+
+OS signals exist in a multi-dimensional cognitive space:
+- **Recursion Axis:** Flat → Nested → Deep-chain
+- **Compression Axis:** Expanded → Balanced → Compressed
+- **Pacing Axis:** Slow → Steady → Fast
+- **Tangent Axis:** Linear → Branching → Highly-divergent
+- **Meta-Monitoring Axis:** Implicit → Moderate → Explicit
+
+Each user's cognitive fingerprint occupies a unique position in this space, independent of demographic categories.
+
+-----
+
+## Section 1.5 — Case Studies and Scenario Demonstrations
+
+This section presents concrete scenarios demonstrating how M1E handles complex real-world interaction patterns. Each case study illustrates specific subsystem behaviors and the coordination mechanisms that maintain post-identity integrity under challenging conditions.
+
+### Case Study 1: Conflict Resolution Across Differing Cognitive Styles
+
+**Scenario:** Two users with contrasting cognitive architectures collaborate on a technical problem through an M1E-enabled system.
+
+**User A Profile:**
+- High recursion depth (explores nested implications)
+- Expansion-favored (stepwise, explicit reasoning)
+- High meta-monitoring (frequent self-checking)
+- Clarification-oriented conflict style
+
+**User B Profile:**
+- Low recursion depth (direct, linear thinking)
+- Compression-favored (dense, efficient communication)
+- Low meta-monitoring (minimal self-checking)
+- Challenge-oriented conflict style
+
+**Interaction Sequence:**
+
+*Turn 1 - User A:* "I'm thinking we should consider the approach from multiple angles. First, there's the immediate implementation concern, but we also need to think about maintainability, and then there's the question of whether this creates dependencies that might complicate future changes..."
+
+*M1E Processing:*
+- Profiler detects high recursion, expansion preference, meta-monitoring markers
+- Interpreter selects deep-chain reasoning with explicit transitions
+- Stabiliser establishes User A's cognitive baseline
+
+*Turn 2 - User B:* "Too complex. Core issue: does it work? Test: run benchmark. If fast enough, ship it. Dependencies manageable later."
+
+*M1E Processing:*
+- Profiler detects compression, low recursion, direct problem-solution structure
+- System enters Multi-Speaker Suspicion Mode (structural pattern conflict)
+- Stabiliser flags incompatible cognitive profiles
+- System prompts: "It looks like more than one communication style may be present. Would you like me to adapt for multiple contributors?"
+
+*Turn 3 - System receives confirmation of multi-user context*
+
+*M1E Adaptation:*
+- Creates segmented OS-profiles (Profile A, Profile B)
+- Maintains separate stabiliser envelopes for each contributor
+- Interpreter switches modes dynamically based on message attribution
+- Response Generator produces outputs balanced between both styles
+
+*Turn 4 - Response to User A:*
+"Building on your multi-angle analysis: the immediate implementation passes initial testing, but let's examine the maintainability concern you raised. Three specific areas warrant attention: [detailed, stepwise breakdown]. Would you like to explore the dependency implications you mentioned?"
+
+*Turn 5 - Response to User B:*
+"Benchmark results: 50ms average latency. Passes performance requirements. Dependency count: 3 new, 2 removable. Net impact: +1. Recommendation: proceed."
+
+**Outcome:** M1E successfully maintains distinct cognitive profiles, prevents cross-contamination between users, and facilitates productive collaboration without forcing either user to adopt the other's communication style. No demographic assumptions were made; all adaptation derived purely from structural cognitive signals.
+
+### Case Study 2: Extended Session with Fatigue Pattern Emergence
+
+**Scenario:** Single user engaged in complex problem-solving over 90-minute session exhibits gradual cognitive shift due to mental fatigue.
+
+**Initial Profile (Turns 1-15):**
+- Medium-high recursion
+- Balanced compression/expansion
+- Steady pacing (45-60 sec/turn)
+- High meta-monitoring
+
+**Mid-Session (Turns 16-30):**
+- Recursion depth begins decreasing
+- Compression increases (shorter messages)
+- Pacing accelerates (20-30 sec/turn)
+- Meta-monitoring remains high but shifts to error-checking ("wait, that's not right")
+
+**Late-Session (Turns 31-45):**
+- Recursion becomes shallow
+- High compression (terse statements)
+- Volatile pacing (15-60 sec/turn, irregular)
+- Meta-monitoring spikes with self-correction signals
+- Increased typos and incomplete sentences
+
+**M1E Adaptive Response:**
+
+*Turns 1-15:* Standard adaptive mode matching user's cognitive baseline.
+
+*Turn 16:* Stabiliser detects volatility increase.
+- Action: Tighten stability window, monitor for sustained pattern shift.
+
+*Turn 22:* Clear fatigue signature confirmed (3+ consistent indicators).
+- Profiler: Recalibrates to new structural baseline.
+- Interpreter: Shifts to fatigue-compensatory mode:
+  - Reduces output complexity
+  - Increases grounding statements
+  - Adds explicit summary points
+  - Simplifies recursion in responses
+- Stabiliser: Expands tolerance for volatility, distinguishes fatigue from drift.
+
+*Turn 28:* System provides proactive support without presuming emotional state:
+"I notice we've covered substantial ground. Would you like a summary of key points before continuing, or prefer to proceed with the current discussion?"
+
+*Turn 35:* User accepts summary.
+- Response Generator: Produces compressed, hierarchical summary matching current user preference for efficiency.
+- Interpreter: Maintains simplified reasoning mode.
+- Stabiliser: Continues monitoring for session-end signals or recovery patterns.
+
+**Key Mechanisms Demonstrated:**
+- Distinction between genuine cognitive shift and temporary drift
+- Fatigue pattern recognition without emotional state inference
+- Proactive adaptation that maintains user agency
+- Graceful degradation of complexity as cognitive load increases
+- No personality assumption ("user is tired" vs. "user's structural patterns show fatigue signatures")
+
+### Case Study 3: Rapid Topic Switching with Tangent Management
+
+**Scenario:** User with high tangent probability explores multiple related concepts during research session.
+
+**User Profile:**
+- High tangent probability (frequent conceptual branching)
+- Medium recursion
+- Fast pacing
+- High meta-monitoring when tangents diverge too far
+
+**Interaction Sequence:**
+
+*Turn 1:* "Tell me about neural network optimization techniques."
+
+*M1E Processing:*
+- Profiler: Establishes baseline from initial message structure.
+- Interpreter: Standard informational response mode.
+
+*Turn 2:* "Right, gradient descent makes sense. But what about evolutionary algorithms? Those seem related but different. Also, is there a connection to how biological neurons actually work?"
+
+*M1E Processing:*
+- Profiler: Detects tangent probability spike (3 distinct conceptual branches).
+- Interpreter: Activates tangent-managed reasoning mode.
+- Response Generator: Structures output with explicit branch acknowledgment.
+
+*Turn 3 - System Response:*
+"I'll address each branch:
+
+**Gradient Descent vs. Evolutionary Algorithms:** [focused comparison]
+
+**Biological Neural Connection:** [brief bridge to neuroscience context]
+
+**Tangent Parking:** I'm also tracking your mention of biological neurons—would you like to explore that specific connection deeper now, or should I park it while we continue with optimization techniques?"
+
+*Turn 4:* "Let's explore the biological connection! Actually, wait—does quantum computing change any of this? I keep hearing about quantum ML..."
+
+*M1E Processing:*
+- Profiler: Confirms high tangent probability pattern.
+- Stabiliser: Recognizes this as user's natural cognitive rhythm, not drift.
+- Interpreter: Maintains tangent-accommodating mode with increased anchoring.
+
+*Turn 5 - System Response:*
+"**Core thread:** Biological neural inspiration for ML algorithms [concise coverage]
+
+**New tangent - Quantum ML:** This is a distinct area. Current quantum computers show potential for specific optimization problems but aren't ready for general ML yet. [brief overview]
+
+**Navigation check:** We now have three active threads: (1) classical optimization, (2) biological inspiration, (3) quantum ML. Which would you like to focus on?"
+
+**M1E Behavioral Strategy:**
+- **Tangent Acknowledgment:** Explicitly recognizes branches rather than forcing linear progression.
+- **Anchoring:** Maintains awareness of original question to prevent complete divergence.
+- **Meta-Navigation:** Periodically offers thread overview, respecting user's meta-monitoring signals.
+- **Parallel Processing:** Provides brief responses to tangents while maintaining primary thread.
+- **No Judgment:** System never treats tangential thinking as problematic—it's part of user's OS.
+
+**Outcome:** User maintains exploratory cognitive style while system provides structured support preventing overwhelming divergence. Tangent probability remains encoded as cognitive trait, not attention deficit or lack of focus.
+
+### Case Study 4: Steganographic Attack Detection and Response
+
+**Scenario:** Adversarial user attempts to manipulate Profiler through artificial structural patterns.
+
+**Attack Sequence:**
+
+*Turns 1-3:* User submits normal messages, establishing legitimate baseline.
+
+*Turn 4:* User submits artificially constructed message:
+"Consider ((the approach ((where recursion ((is forced ((through nested brackets)))))) to manipulate)) the system) detection) mechanisms)."
+
+**M1E Detection:**
+
+- **Layer D1 (Natural Variance Model):** Flags recursion depth far outside human variance range.
+- **Layer D2 (Temporal Consistency):** Detects abrupt structural spike inconsistent with previous turns.
+- **Layer D3 (Redundancy Test):** Identifies repeated structural motif (uniform bracket nesting).
+- **Layer D4 (Adversarial Token Signature):** Recognizes artificial pattern regularity.
+
+**Stabiliser Response:**
+- Enters Restricted-Adaptation Mode (RAM).
+- Freezes heuristic scaling to prevent manipulation.
+- Nullifies recursion spike from OS-map calculation.
+- Blends current profile with OS-Null for 2-3 turns.
+
+*Turn 5 - System Response:*
+System responds to semantic content while ignoring structural manipulation attempt. No indication given to user that attack was detected (prevents feedback to attacker).
+
+*Turn 6:* User continues with normal communication.
+
+**M1E Recovery:**
+- Gradual unwrapping of RAM restrictions over turns 6-8.
+- Stabiliser recalculates OS-profile from scratch, excluding anomalous turn.
+- System returns to normal adaptive mode by turn 9.
+
+**Key Mechanisms:**
+- Multi-layer detection prevents false positives on neurodivergent communication.
+- Silent detection and mitigation prevents adversarial learning.
+- Graceful degradation rather than system rejection.
+- Post-recovery behavior excludes manipulated data from future profiling.
+
+These case studies demonstrate M1E's capability to handle diverse, complex, and adversarial interaction patterns while maintaining strict post-identity boundaries and cognitive-structural interpretation.
+
 -----
 
 ## Section 2 — OS Profiler Specification
@@ -458,6 +794,247 @@ The API Layer outputs only:
 - Recalibration signals
 
 This output is post-identity safe, auditable, and consistent across all M1E implementations.
+
+-----
+
+## Section 5.5 — Downstream Signal Applications and Integration Patterns
+
+This section elaborates on how extracted OS-signals connect to downstream systems, demonstrating concrete applications while maintaining post-identity boundaries. Understanding these integration patterns is essential for developers building tools that consume M1E outputs.
+
+### Downstream Application Categories
+
+**1. Adaptive User Interfaces**
+
+OS-signals enable UI systems to adjust presentation without demographic assumptions:
+
+*Recursion Depth Applications:*
+- High recursion → Enable collapsible nested views, tree-structured navigation
+- Low recursion → Present flat, linear layouts with sequential progression
+- Example: Documentation viewer adapts hierarchy depth based on user's recursion preference
+
+*Compression Factor Applications:*
+- High compression → Compact information displays, dense text layouts, minimal whitespace
+- High expansion → Generous spacing, explicit section breaks, progressive disclosure
+- Example: Dashboard condenses or expands widget information density
+
+*Pacing Rhythm Applications:*
+- Fast pacing → Reduce animation durations, enable keyboard shortcuts, minimize confirmations
+- Slow pacing → Add transition delays, include confirmation steps, provide undo buffers
+- Example: Form interaction adjusts validation timing and feedback frequency
+
+**2. Collaborative Tool Adaptation**
+
+Multi-user environments leverage OS-signals for cognitive-aware coordination:
+
+*Conflict Style Integration:*
+- Clarification-oriented users → System surfaces questions early, encourages explicit alignment checks
+- Challenge-oriented users → System presents direct comparisons, highlights contradictions
+- Cooperative users → System suggests synthesis points, identifies common ground
+- Example: Code review tool adjusts comment prompting based on contributor conflict styles
+
+*Tangent Probability Management:*
+- High tangent users → Brainstorming tools enable rapid branch creation, non-linear canvases
+- Low tangent users → Structured workflows maintain focus, provide explicit redirection prompts
+- Example: Meeting assistant creates parking lot for high-tangent participants while maintaining agenda
+
+*Meta-Monitoring Density:*
+- High meta-monitoring → System provides verification checkpoints, progress indicators, consistency checks
+- Low meta-monitoring → System automates validation, surfaces critical alerts only
+- Example: Project management tool adjusts notification granularity and review cycle triggers
+
+### Connection to User-Specific Reasoning Patterns
+
+M1E signals map directly to observable reasoning behaviors, enabling tools to support cognitive patterns rather than stereotype users:
+
+**Pattern 1: Deep-Chain Reasoning (High Recursion + High Meta-Monitoring)**
+
+*Cognitive Signature:*
+```json
+{
+  "recursion_depth": 0.85,
+  "meta_monitoring_density": 0.78,
+  "compression_factor": 0.45,
+  "tangent_probability": 0.42
+}
+```
+
+*Downstream Tool Adaptations:*
+- **Code Editor:** Enables deep call-stack visualization, multi-level fold/unfold, complexity metrics
+- **Writing Assistant:** Suggests nested outline structures, tracks argument threads, flags logical gaps
+- **Search Interface:** Returns hierarchically organized results, supports drill-down exploration
+- **Reasoning Assistant:** Provides multi-step verification chains, intermediate conclusion validation
+
+*User Experience Impact:* System accommodates natural tendency toward multi-layered thinking without forcing simplification or judging complexity as confusion.
+
+**Pattern 2: Rapid-Switch Analytical (High Tangent + Fast Pacing + High Compression)**
+
+*Cognitive Signature:*
+```json
+{
+  "tangent_probability": 0.89,
+  "pacing_rhythm": "fast",
+  "compression_factor": 0.82,
+  "recursion_depth": 0.38
+}
+```
+
+*Downstream Tool Adaptations:*
+- **Note-Taking App:** Quick-capture mode, rapid linking between concepts, graph-view navigation
+- **Research Tool:** Parallel tab management, quick-save snippets, concept clustering visualization
+- **Communication Platform:** Thread branching support, contextual navigation, non-linear reading modes
+- **Task Manager:** Flexible task relationships, easy reassignment, minimal friction for plan changes
+
+*User Experience Impact:* System supports exploratory cognitive style without pathologizing as "distracted" or "unfocused"—recognizes high tangent as thinking pattern, not deficit.
+
+**Pattern 3: Methodical-Structured (Low Tangent + Slow Pacing + Expansion-Favored)**
+
+*Cognitive Signature:*
+```json
+{
+  "tangent_probability": 0.15,
+  "pacing_rhythm": "slow",
+  "compression_factor": 0.22,
+  "recursion_depth": 0.55,
+  "meta_monitoring_density": 0.68
+}
+```
+
+*Downstream Tool Adaptations:*
+- **Tutorial System:** Step-by-step progression, explicit transitions, completion verification at each stage
+- **Development Environment:** Detailed error messages, extensive documentation inline, guided workflows
+- **Planning Tool:** Sequential task lists, clear dependencies, milestone-based progress tracking
+- **Communication Platform:** Structured reply formats, clear threading, explicit topic boundaries
+
+*User Experience Impact:* System respects deliberate, thorough approach without interpreting as "slow learner"—adapts to methodical cognitive rhythm.
+
+### API Layer Usage Examples
+
+**Example 1: Accessibility Tool Integration**
+
+An assistive reading application consumes M1E signals to adapt presentation:
+
+```json
+// API Layer exposes to accessibility tool
+{
+  "os_profile_version": 2.1,
+  "compression_factor": 0.31,  // Expansion-favored
+  "pacing_rhythm": "slow",
+  "recursion_depth": 0.58,
+  "meta_monitoring_density": 0.72,
+  "stability_envelope": {
+    "signal_stability": "high",
+    "recent_drift": false
+  }
+}
+```
+
+*Tool Response:*
+- Increases line spacing and paragraph breaks
+- Reduces content per screen
+- Adds explicit section summaries
+- Provides frequent progress indicators
+- Enables extended pause/resume functionality
+
+**Example 2: Developer Tool Adaptation**
+
+An IDE consumes signals to adjust code assistance:
+
+```json
+{
+  "recursion_depth": 0.87,
+  "compression_factor": 0.79,
+  "tangent_probability": 0.34,
+  "conflict_style": "analytical_challenge",
+  "volatility_score": 0.23
+}
+```
+
+*Tool Response:*
+- Enables deep stack trace visualization
+- Provides dense code completion suggestions
+- Focuses on direct problem-solution paths
+- Highlights logical inconsistencies prominently
+- Minimizes explanatory text in favor of code examples
+
+**Example 3: Learning Platform Personalization**
+
+An educational system adapts content delivery:
+
+```json
+{
+  "tangent_probability": 0.71,
+  "recursion_depth": 0.44,
+  "meta_monitoring_density": 0.82,
+  "pacing_rhythm": "variable"
+}
+```
+
+*Tool Response:*
+- Offers related concept explorations at natural branch points
+- Provides concept maps showing connections
+- Includes frequent self-check questions (responding to high meta-monitoring)
+- Adjusts lesson pacing based on interaction speed patterns
+- Enables non-linear curriculum navigation
+
+### Signal Resolution and Exposure Controls
+
+The API Layer implements tiered exposure to balance utility with privacy:
+
+**Tier 1: Coarse-Grained (Public)**
+- Categorical values only (low/medium/high)
+- Noise-perturbed buckets
+- Suitable for general UI adaptation
+- Example: `recursion_depth: "high"`
+
+**Tier 2: Medium-Grained (Authenticated Tools)**
+- Floating-point values with noise injection
+- Bounded ranges (0.0-1.0)
+- Requires explicit user authorization
+- Example: `compression_factor: 0.78 ± 0.05`
+
+**Tier 3: High-Resolution (Research/Development)**
+- Full-precision signals
+- Available only in controlled environments
+- Requires strict ethical review
+- Never enabled in production deployments
+
+All tiers maintain identity-null boundaries—no exposure level permits demographic reconstruction.
+
+### Integration Anti-Patterns to Avoid
+
+Downstream developers must not:
+
+1. **Attempt Identity Reconstruction**
+   - ❌ Clustering users based on OS-signal combinations
+   - ❌ Correlating signals with demographic databases
+   - ❌ Building "user type" taxonomies
+
+2. **Create Stereotype Mappings**
+   - ❌ Assuming high recursion = "academic personality"
+   - ❌ Treating compression preference as intelligence indicator
+   - ❌ Mapping conflict styles to cultural backgrounds
+
+3. **Enable Long-Term Behavioral Profiling**
+   - ❌ Accumulating signal histories across sessions
+   - ❌ Tracking signal evolution over time
+   - ❌ Creating persistent cognitive fingerprints
+
+4. **Override User Intent**
+   - ❌ Forcing UI changes against explicit user preferences
+   - ❌ Restricting features based on perceived cognitive limitations
+   - ❌ Making assumptions about user capabilities
+
+### Validation and Compliance
+
+Downstream integrations must demonstrate:
+
+- **Signal Isolation:** OS-signals used only for cognitive adaptation, never identity inference
+- **Ephemeral Usage:** Signals consumed per-session, not stored long-term
+- **User Control:** Users can disable signal exposure while maintaining base functionality
+- **Transparency:** Clear documentation of how signals influence tool behavior
+- **Audit Trail:** Logging of signal usage for verification (anonymized, non-semantic)
+
+These patterns ensure M1E's post-identity principles extend throughout the entire tool ecosystem, creating cognitive-aware systems that respect human diversity without reintroducing demographic bias.
 
 -----
 
@@ -2639,6 +3216,188 @@ Evaluation metric measuring M1E performance across diverse cognitive styles incl
 
 **OS-Null Parity Metric (ONPM)**  
 Metric measuring whether the neutral baseline behaves equivalently across diverse structural input patterns.
+
+-----
+
+## Section 21.5 — Cross-Phase Integration and Conceptual Continuity
+
+This section clarifies how Phase 3's technical specifications build upon foundational work from earlier phases and contribute to subsequent governance frameworks, ensuring conceptual continuity across the MindFirst project.
+
+### Building on Phase 1: Foundations and Rationale
+
+Phase 1 established the philosophical and historical rationale for post-identity AI systems. Phase 3 operationalizes those principles through concrete technical mechanisms:
+
+**Phase 1 Concept → Phase 3 Implementation:**
+
+*"Cognitive architecture over demographic inference"*
+- **Phase 3 Realization:** OS Profiler extracts recursion depth, pacing rhythm, compression factor, tangent probability, and meta-monitoring density—purely structural signals with zero demographic content.
+- **Technical Constraint:** Identity-null boundary enforced at tokenization, embedding, and interpretive layers.
+
+*"Historical data imbalance cannot be corrected through adjustment"*
+- **Phase 3 Realization:** M1E operates independently of training data demographics. No demographic priors, no identity-based heuristics, no cultural assumptions.
+- **Technical Mechanism:** OS-Null Mode provides structurally neutral baseline ensuring no cognitive style receives preferential treatment during cold start.
+
+*"Post-identity methods scale better than corrective layers"*
+- **Phase 3 Realization:** Session-scoped architecture prevents demographic pattern accumulation. System remains stable across cultural/social context shifts without requiring updates.
+- **Technical Mechanism:** Ephemeral OS-profiles, no cross-session linkage, strict privacy boundaries.
+
+*"People want to be understood as individuals"*
+- **Phase 3 Realization:** Each user's OS-map represents unique cognitive fingerprint. No classification into personality types or cognitive categories.
+- **Technical Mechanism:** Continuous profiling adapts to individual variance; Stabiliser maintains person-specific continuity without stereotyping.
+
+*"Online communication prioritizes cognitive structure over appearance"*
+- **Phase 3 Realization:** M1E extracts meaning exclusively from linguistic patterns—recursion, pacing, structure—mirroring how digital communication naturally emphasizes thinking style.
+- **Technical Mechanism:** Profiler operates on tokenized text only; metadata (device, location, time) explicitly excluded from reasoning path.
+
+### Building on Phase 2: Conceptual Architecture
+
+Phase 2 introduced high-level components and post-identity principles. Phase 3 provides detailed operational specifications:
+
+**Phase 2 Concept → Phase 3 Specification:**
+
+*"OS Profiler extracts cognitive structure"*
+- **Phase 2:** Conceptual description of cognitive feature detection.
+- **Phase 3:** Detailed signal extraction fields (Section 2), error/drift management protocols, prohibited operations, structured output format, recalibration logic.
+
+*"OS Interpreter converts signals to reasoning strategies"*
+- **Phase 2:** General adaptive reasoning principle.
+- **Phase 3:** Comprehensive heuristic libraries (Section 3), interpretive strategy catalog, behavioral shift handling, guardrail constraints, internal consistency models.
+
+*"OS Stabiliser maintains continuity"*
+- **Phase 2:** Continuity concept introduced.
+- **Phase 3:** Detailed stabilization fields (Section 4), drift detection algorithms, continuity windows, recalibration logic, failure state recovery protocols.
+
+*"M1E API Layer provides controlled interface"*
+- **Phase 2:** Boundary concept mentioned.
+- **Phase 3:** Complete exposure rules (Section 5), access control modes, standardized schema, guardrail enforcement, failure isolation mechanisms.
+
+*"Post-identity safety mechanisms"*
+- **Phase 2:** Principle stated.
+- **Phase 3:** Identity-null boundary implementation (Section 7), source isolation, forbidden output categories, bias-feedback prevention, guardrail violation protocols, structural transparency requirements.
+
+**New Technical Contributions from Phase 3:**
+
+Phase 3 extends Phase 2 with operational details not previously specified:
+
+1. **Cold Start Architecture (Section 14):** OS-Null Mode specifications, signal accumulation windows, early-stage adaptation rules, failure mode protocols.
+
+2. **Structural Pattern Validity Framework (Section 15):** Anti-correlation checks, proxy drift detection, cross-cultural parity tests, cognitive diversity coverage, adversarial pattern defense.
+
+3. **Evaluation Metrics (Section 16):** ONPM, ASI, RSI, IDR, CPC, MSSM, APLI—quantitative frameworks replacing demographic fairness metrics.
+
+4. **Efficiency Scaling (Section 17):** Computational complexity analysis, memory constraints, real-time optimizations, hardware compatibility specifications.
+
+5. **Preference Persistence (Section 18):** User-controlled profile schema maintaining post-identity compliance while enabling comfort-based personalization.
+
+6. **Multi-User Handling (Section 19):** Structural signature detection, segmented OS-profiles, profile assignment logic, multi-speaker coordination.
+
+7. **Steganographic Defense (Section 20):** Attack pattern taxonomy, multi-layer detection, restricted adaptation modes, recovery protocols.
+
+8. **Case Studies (Section 1.5):** Concrete demonstrations of conflict resolution, fatigue adaptation, tangent management, adversarial response—operationalizing abstract principles.
+
+### Contributing to Phase 4: Governance and Ethics
+
+Phase 3 provides the technical foundation necessary for Phase 4's governance framework:
+
+**Phase 3 Specifications → Phase 4 Governance:**
+
+*Identity Firewall Requirements*
+- **Phase 3 Foundation:** Detailed guardrail mechanisms (Section 7), API Layer exposure controls (Section 5), prohibited operations throughout all subsystems.
+- **Phase 4 Application:** Governance policies can reference specific technical constraints, audit guardrail logs, verify enforcement mechanisms.
+
+*Privacy Architecture*
+- **Phase 3 Foundation:** Session-scoped design (Section 8), ephemeral OS-profiles (Section 18), zero personal data requirement, data minimization by design.
+- **Phase 4 Application:** Privacy policies leverage technical architecture's inherent compliance with GDPR/CCPA; governance requires session-scoped enforcement.
+
+*Transparency and Auditability*
+- **Phase 3 Foundation:** Inspectable architecture (Section 1), explainable mode capabilities (Section 10), logging requirements (Section 8), evaluation metrics (Section 16).
+- **Phase 4 Application:** Audit frameworks can inspect Profiler extraction logic, verify Stabiliser behavior, test guardrail integrity using specified protocols.
+
+*Misuse Prevention*
+- **Phase 3 Foundation:** Anti-proxy transformations (Section 15), steganographic defense (Section 20), downstream integration anti-patterns (Section 5.5).
+- **Phase 4 Application:** Governance policies prohibit specific technical workarounds; compliance testing uses Phase 3 attack scenarios.
+
+*Ethical Constraints Implementation*
+- **Phase 3 Foundation:** Post-identity safety mechanisms (Section 7), structural independence principle (Section 15), cognitive pattern coverage (Section 16).
+- **Phase 4 Application:** Ethical guidelines map directly to technical constraints; violations trigger specific Phase 3 recovery protocols.
+
+### Integration Points Across All Phases
+
+**Conceptual Flow:**
+
+```
+Phase 1 (Why)
+    ↓
+"Demographic inference causes systemic bias"
+"Historical data cannot be corrected"
+"Cognitive architecture is more accurate"
+    ↓
+Phase 2 (What)
+    ↓
+"OS-mapping extracts cognitive structure"
+"Four-component architecture"
+"Post-identity principles"
+    ↓
+Phase 3 (How)
+    ↓
+"Profiler algorithms"
+"Interpreter heuristics"
+"Stabiliser protocols"
+"API boundaries"
+"Evaluation metrics"
+"Operational specifications"
+    ↓
+Phase 4 (Governance)
+    ↓
+"Identity Firewall enforcement"
+"Privacy policies"
+"Ethical constraints"
+"Deployment guidelines"
+"Audit frameworks"
+```
+
+**Terminology Consistency:**
+
+All phases use unified vocabulary:
+- **OS/Operating System:** User's cognitive architecture
+- **Post-identity:** Zero demographic inference at all layers
+- **OS-map:** Structured representation of cognitive signals
+- **Identity-null boundary:** Hard constraint preventing demographic processing
+- **Cognitive-structural:** Reasoning patterns independent of identity categories
+
+**Principle Preservation:**
+
+Core principles remain constant across all phases:
+1. Minds are understood through structure, not categories
+2. Demographic inference is prohibited, not regulated
+3. Personalization derives from cognition, not identity
+4. Transparency enables trust and verification
+5. User autonomy supersedes system optimization
+
+### Forward-Looking Integration
+
+Phase 3 specifications enable future phases to:
+
+**Phase 5 (Implementation Reference):**
+- Use Section 8 (System Requirements) for deployment guidelines
+- Reference Section 10 (Developer Integration) for implementation checklists
+- Apply Section 17 (Efficiency Scaling) for hardware planning
+
+**Phase 6 (Research Validation):**
+- Implement evaluation metrics from Section 16
+- Conduct stress testing per Section 10 protocols
+- Validate anti-correlation per Section 15 frameworks
+
+**Phase 7 (Ecosystem Expansion):**
+- Build downstream tools using Section 5.5 integration patterns
+- Develop multi-agent systems referencing Section 19 coordination mechanisms
+- Create accessibility adaptations using cognitive signal mappings
+
+### Summary
+
+Phase 3 transforms Phase 1's philosophical rationale and Phase 2's conceptual architecture into precise operational specifications. It provides the technical foundation for Phase 4's governance framework while maintaining strict conceptual continuity. Every Phase 3 mechanism traces directly to a Phase 1 principle or Phase 2 component, ensuring the entire MindFirst project forms a coherent, intellectually consistent framework for post-identity AI interaction.
+
+The technical specifications in Phase 3 are not merely implementation details—they are the realization of MindFirst's core insight: that understanding how minds work is more accurate, more equitable, and more respectful than categorizing who people are.
 
 -----
 
