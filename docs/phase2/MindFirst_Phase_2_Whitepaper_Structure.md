@@ -247,7 +247,7 @@ Key statistics and research areas cited in this document:
 ### Select Citations
 
 [^1]: West, S.M., Whittaker, M., & Crawford, K. (2019). *Discriminating Systems: Gender, Race and Power in AI*. AI Now Institute; Simonite, T. (2018). "AI is the future—but where are the women?" *WIRED*.
-[^2]: Yang, K., et al. (2020). "Towards Fairer Datasets: Filtering and Balancing the Distribution of the People Subtree in the ImageNet Hierarchy." *FAT\* '20*; Buolamwini, J., & Gebru, T. (2018). "Gender Shades." *PMLR*, 81.
+[^2]: Yang, K., et al. (2020). "Towards Fairer Datasets: Filtering and Balancing the Distribution of the People Subtree in the ImageNet Hierarchy." *FAT* '20*; Buolamwini, J., & Gebru, T. (2018). "Gender Shades." *PMLR*, 81.
 [^3]: Mehrabi, N., et al. (2021). "A Survey on Bias and Fairness in Machine Learning." *ACM Computing Surveys*, 54(6); Blodgett, S.L., et al. (2020). "Language (Technology) is Power: A Critical Survey of 'Bias' in NLP." *ACL*.
 [^4]: Meta AI (2024). Llama Model Release and Usage Statistics; Touvron, H., et al. (2023). "Llama 2: Open Foundation and Fine-Tuned Chat Models." arXiv:2307.09288.
 

@@ -18,7 +18,7 @@ This page provides citations and references for factual claims and statistics us
 **Claim:** Less than 42% of the faces in the widely used ImageNet dataset were identified as female.
 
 **References:**
-1. Yang, K., Qinami, K., Fei-Fei, L., Deng, J., & Russakovsky, O. (2020). "Towards Fairer Datasets: Filtering and Balancing the Distribution of the People Subtree in the ImageNet Hierarchy." *Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency (FAT\* '20)*, pp. 547–558. DOI: 10.1145/3351095.3375709
+1. Yang, K., Qinami, K., Fei-Fei, L., Deng, J., & Russakovsky, O. (2020). "Towards Fairer Datasets: Filtering and Balancing the Distribution of the People Subtree in the ImageNet Hierarchy." *Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency (FAT* '20)*, pp. 547–558. DOI: 10.1145/3351095.3375709
 2. Buolamwini, J., & Gebru, T. (2018). "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification." *Proceedings of Machine Learning Research*, 81, pp. 1–15. Available at: http://proceedings.mlr.press/v81/buolamwini18a.html
 
 ---
@@ -49,8 +49,10 @@ This page provides citations and references for factual claims and statistics us
 **Claim:** In October 2024 alone, over two million downloads of Llama models demonstrated how quickly AI is becoming part of everyday communication.
 
 **References:**
-1. Meta AI (2024). *Llama Model Release and Usage Statistics*. Meta AI Blog. (Note: Specific download statistics are typically released through official Meta AI announcements and blog posts. This represents publicly available usage data at the time of writing.)
-2. Touvron, H., et al. (2023). "Llama 2: Open Foundation and Fine-Tuned Chat Models." arXiv preprint arXiv:2307.09288. Available at: https://arxiv.org/abs/2307.09288
+1. Touvron, H., et al. (2023). "Llama 2: Open Foundation and Fine-Tuned Chat Models." arXiv preprint arXiv:2307.09288. Available at: https://arxiv.org/abs/2307.09288
+2. Meta AI (2024). Download and usage statistics are tracked through Hugging Face model hub: https://huggingface.co/meta-llama
+
+**Note:** Download statistics represent publicly available metrics from model distribution platforms. Specific monthly download counts may vary based on reporting methodology.
 
 ---
 
@@ -58,14 +60,14 @@ This page provides citations and references for factual claims and statistics us
 
 ### Foundational Works
 1. Barocas, S., & Selbst, A.D. (2016). "Big Data's Disparate Impact." *California Law Review*, 104(3), pp. 671–732. DOI: 10.15779/Z38BG31
-2. Crawford, K. (2017). "The Trouble with Bias." *Keynote at NIPS 2017*. Video and transcript available at: https://www.youtube.com/watch?v=fMym_BKWQzk
+2. Crawford, K. (2017). "The Trouble with Bias." *Keynote at NeurIPS 2017*. Video and transcript available at: https://www.youtube.com/watch?v=fMym_BKWQzk
 3. Noble, S.U. (2018). *Algorithms of Oppression: How Search Engines Reinforce Racism*. NYU Press. ISBN: 978-1479837243
 4. O'Neil, C. (2016). *Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy*. Crown Publishing. ISBN: 978-0553418811
 5. Gebru, T., et al. (2018). "Datasheets for Datasets." arXiv preprint arXiv:1803.09010. Available at: https://arxiv.org/abs/1803.09010
 
 ### Cognitive Architecture and Personalization
-1. Mitchell, M., et al. (2019). "Model Cards for Model Reporting." *Proceedings of the Conference on Fairness, Accountability, and Transparency (FAT\* '19)*, pp. 220–229. DOI: 10.1145/3287560.3287596
-2. Raji, I.D., et al. (2020). "Closing the AI Accountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing." *Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency (FAT\* '20)*, pp. 33–44. DOI: 10.1145/3351095.3372873
+1. Mitchell, M., et al. (2019). "Model Cards for Model Reporting." *Proceedings of the Conference on Fairness, Accountability, and Transparency (FAT* '19)*, pp. 220–229. DOI: 10.1145/3287560.3287596
+2. Raji, I.D., et al. (2020). "Closing the AI Accountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing." *Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency (FAT* '20)*, pp. 33–44. DOI: 10.1145/3351095.3372873
 
 ---
 
