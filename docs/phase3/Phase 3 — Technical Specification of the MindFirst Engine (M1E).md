@@ -53,7 +53,7 @@ Measures conceptual branching likelihood. High tangent-probability users benefit
 Detects checking behaviour (“let me see,” “that doesn’t align”), expectation tracking, and self-correction signals.
 
 **Emotional Pacing Markers**  
-Derives from affective content timing, hesitation signals, topic oscillation, and stabilization attempts.
+Derives from affective content timing, hesitation signals, topic oscillation, and stabilisation attempts.
 
 **Conflict-Handling Tendency**  
 Categorizes interaction repair patterns: clarification, concession, redirection, analytic challenge, or avoidance.
@@ -602,7 +602,7 @@ The system implements an enforced “identity-null boundary” at all processing
 - Identity prediction
 - Personality labeling
 - Emotional state reconstruction
-- Stereotype-based behaviour categorization
+- Stereotype-based behaviour categorisation
 - Token-level or embedding-level demographic detection
 - Identity re-derivation from OS-patterns
 
@@ -1507,7 +1507,7 @@ M1E begins every new session in OS-Null Mode. This mode is:
 
 - Fully structure-neutral
 - Non-adaptive
-- Bias-minimized
+- Bias-minimised
 - Free of inferred heuristics
 
 OS-Null uses fixed, conservative defaults:
@@ -1583,7 +1583,7 @@ Cold Start architecture ensures:
 - Consistent user experience during first 2–5 turns
 - Transparent, auditable mode transitions
 
-OS-Null Mode is not a persona—it’s a mathematically constrained stabilization zone preventing bias, drift, and premature interpretation.
+OS-Null Mode is not a persona—it’s a mathematically constrained stabilisation zone preventing bias, drift, and premature interpretation.
 
 -----
 
@@ -1993,9 +1993,9 @@ OS-profiles must remain extremely compact to avoid:
 **Maximum size of full M1E state:**  
 **≤ 512 bytes** (target), **≤ 1 KB** (hard limit).
 
-### Real-Time Profiling Optimizations
+### Real-Time Profiling Optimisations
 
-To support consumer-grade hardware, these optimizations are mandatory:
+To support consumer-grade hardware, these optimisations are mandatory:
 
 **(O1) Incremental Signal Extraction**  
 Profiler only re-evaluates changed structural markers per turn.

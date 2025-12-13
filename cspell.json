@@ -109,7 +109,11 @@
     "Licence",
     "licence",
     "personalised",
-    "minimising"
+    "minimising",
+    "categorisation",
+    "stabilisation",
+    "optimisations",
+    "minimised"
   ],
   "ignorePaths": [
     ".git",
@@ -153,6 +157,10 @@
     "license",
     "personalized",
     "minimizing",
-    "seatbelt"
+    "seatbelt",
+    "categorization",
+    "stabilization",
+    "optimizations",
+    "minimized"
   ]
 }
