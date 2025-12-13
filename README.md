@@ -48,6 +48,12 @@ Contributions from researchers, engineers, and practitioners interested in post-
 ➡️ **Documentation hub:** [docs/index.md](docs/index.md)  
 ➡️ **References & citations:** [docs/references.md](docs/references.md)
 
+### Raw File Links (Fallback)
+If GitHub's web interface fails to load documentation, you can access raw files directly:
+- **README:** [raw](https://raw.githubusercontent.com/CLGallant/MindFirst-Engine-M1E/main/README.md)
+- **Repository Map:** [raw](https://raw.githubusercontent.com/CLGallant/MindFirst-Engine-M1E/main/Repo_Map.md)
+- **Public Overview:** [raw](https://raw.githubusercontent.com/CLGallant/MindFirst-Engine-M1E/main/docs/Public_Overview.md)
+
 ---
 
 ## 🧠 About MindFirst Engine

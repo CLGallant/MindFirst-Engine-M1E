@@ -1,0 +1,56 @@
+name: Spelling Check (UK English)
+
+on:
+  pull_request:
+    paths:
+      - '**.md'
+      - '**.txt'
+      - 'docs/**'
+  push:
+    branches:
+      - main
+    paths:
+      - '**.md'
+      - '**.txt'
+      - 'docs/**'
+
+jobs:
+  spelling:
+    name: Check UK Spelling
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install cspell
+        run: npm install -g cspell
+        
+      - name: Run cspell
+        run: |
+          cspell --config cspell.json "**/*.md" "**/*.txt" \
+            --no-progress \
+            --show-context \
+            --show-suggestions
+          
+      - name: Check for US spellings
+        run: |
+          echo "Checking for US spellings that should be UK spellings..."
+          ERRORS=0
+          
+          # Check for US spellings in markdown files
+          if grep -r -n -E '\b(behavior|behaviors|behavioral|optimize|optimized|optimization|organize|organized|organization|realize|realized|recognize|recognized|analyze|analyzed|categorize|categorized|personalization|color|favor|flavored|labor|neighbor|honor)\b' \
+            --include="*.md" --include="*.txt" \
+            --exclude-dir=.git --exclude-dir=node_modules . ; then
+            echo "❌ US spellings detected! Please use UK spellings (behaviour, optimise, organise, realise, recognise, analyse, categorise, personalisation, colour, favour, flavour, labour, neighbour, honour)."
+            ERRORS=1
+          else
+            echo "✅ No US spellings detected."
+          fi
+          
+          exit $ERRORS

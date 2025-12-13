@@ -42,4 +42,4 @@ Education applications focus on adaptive learning environments. M1E enhances the
 
 ---
 
-By advancing in these domains, M1E strengthens its position as an essential tool for both individual and group cognitive optimization, building a more equitable and inclusive future for human-AI interaction.
+By advancing in these domains, M1E strengthens its position as an essential tool for both individual and group cognitive optimisation, building a more equitable and inclusive future for human-AI interaction.
