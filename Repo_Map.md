@@ -13,7 +13,7 @@ It helps new contributors understand where each component of the specification l
 ## Documentation Structure
 
 ### **/docs/**
-Main documentation hub with phase-organized content:
+Main documentation hub with phase-organised content:
 
 #### **/docs/phase1/**
 Conceptual foundations and rationale:

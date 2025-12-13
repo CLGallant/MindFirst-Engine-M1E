@@ -65,7 +65,7 @@ This page provides citations and references for factual claims and statistics us
 4. O'Neil, C. (2016). *Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy*. Crown Publishing. ISBN: 978-0553418811
 5. Gebru, T., et al. (2018). "Datasheets for Datasets." arXiv preprint arXiv:1803.09010. Available at: https://arxiv.org/abs/1803.09010
 
-### Cognitive Architecture and Personalization
+### Cognitive Architecture and Personalisation
 1. Mitchell, M., et al. (2019). "Model Cards for Model Reporting." *Proceedings of the Conference on Fairness, Accountability, and Transparency (FAT* '19)*, pp. 220–229. DOI: 10.1145/3287560.3287596
 2. Raji, I.D., et al. (2020). "Closing the AI Accountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing." *Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency (FAT* '20)*, pp. 33–44. DOI: 10.1145/3351095.3372873
 

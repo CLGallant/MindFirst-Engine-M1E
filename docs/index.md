@@ -68,7 +68,7 @@ Technical specification (v0.1) and implementation details:
 
 **Key Components:**
 - **OS-Profiler** — Extracts cognitive communication structure
-- **OS-Interpreter** — Chooses appropriate behavioral strategies  
+- **OS-Interpreter** — Chooses appropriate behavioural strategies  
 - **OS-Stabiliser** — Maintains session continuity  
 - **Response Generator** — Produces tailored responses
 - **M1E API Layer** — Provides programmatic access to OS-map
