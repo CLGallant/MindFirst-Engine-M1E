@@ -7,7 +7,7 @@ It helps new contributors understand where each component of the specification l
 
 - **README.md** — Main entry point for the repository
 - **LICENSE_MindFirst.md** — MindFirst License v1.1 (structural-neutrality and ethical requirements)
-- **MindFirst_Manifesto.md** — Philosophical foundation and core principles
+- **MindFirst_Manifesto.md** — Foundational narrative and core principles
 - **Repo_Map.md** — This document (navigation guide)
 
 ## Documentation Structure

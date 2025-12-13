@@ -3,7 +3,7 @@
 
 ## What This Repository Contains
 
-This repository is the **specification and documentation hub** for the MindFirst Engine (M1E), currently under development.  
+This repository is the **specification and documentation hub** for the MindFirst Engine (M1E), currently in **active development for v0.1**.  
 It includes:
 
 - the formal architecture specification (Profiler, Interpreter, Stabiliser, Response Generator, API Layer)  
@@ -15,8 +15,7 @@ It includes:
 - the MindFirst Manifesto
 - a repository map to help new contributors navigate the structure
 
-M1E is currently in **active specification development** (v0.1).  
-Some documentation sections are complete, while others are being refined and expanded.  
+**Current Status:** M1E v0.1 is in active specification development. Core architectural and governance foundations are complete, while technical specifications and implementation guidance are being refined and expanded.  
 The next stage is prototype implementation and empirical validation.
 
 Contributions from researchers, engineers, and practitioners interested in post-identity interaction are welcomed.
@@ -27,7 +26,7 @@ Contributions from researchers, engineers, and practitioners interested in post-
 
 ### For New Contributors
 1. **Start here:** Read this README for an overview of the project
-2. **Understand the philosophy:** Review the [MindFirst Manifesto](MindFirst_Manifesto.md)
+2. **Understand the vision:** Review the [MindFirst Manifesto](MindFirst_Manifesto.md)
 3. **Get the big picture:** Read the [Public Overview](docs/Public_Overview.md) (non-technical summary)
 4. **Navigate the repository:** See the [Repository Map](Repo_Map.md) for detailed directory structure
 5. **Explore documentation:** Visit [docs/index.md](docs/index.md) for phase-based documentation
@@ -43,7 +42,7 @@ Contributions from researchers, engineers, and practitioners interested in post-
 - **Compliance requirements:** Check `docs/phase4/Metadata_Pack.md`
 
 ### Quick Links
-➡️ **Philosophical foundation:** [MindFirst Manifesto](MindFirst_Manifesto.md)  
+➡️ **Foundational narrative:** [MindFirst Manifesto](MindFirst_Manifesto.md)  
 ➡️ **Repository structure:** [Repository Map](Repo_Map.md)  
 ➡️ **Public overview:** [docs/Public_Overview.md](docs/Public_Overview.md)  
 ➡️ **Documentation hub:** [docs/index.md](docs/index.md)  
@@ -136,4 +135,4 @@ Start at: [Public Overview](docs/Public_Overview.md)
 
 ---
 
-Current status: MindFirst Engine v0.1 — specification in active development; foundations, architecture, and governance established; refinement and expansion underway.
+Current status: **MindFirst Engine v0.1** — Active specification development. Core architectural and governance foundations are established; technical specifications and implementation guidance are being refined and expanded.
