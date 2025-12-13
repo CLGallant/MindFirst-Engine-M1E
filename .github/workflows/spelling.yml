@@ -46,11 +46,16 @@ jobs:
           echo "Checking for US spellings that should be UK spellings..."
           ERRORS=0
           
-          # Check for US spellings in markdown files
-          if grep -r -n -E '\b(behavior|behaviors|behavioral|optimize|optimized|optimization|organize|organized|organization|realize|realized|recognize|recognized|analyze|analyzed|categorize|categorized|personalization|color|favor|flavored|labor|neighbor|honor)\b' \
+          # Check for US spellings in markdown files and format output
+          OUTPUT=$(grep -r -n -o -E '\b(behavior|behaviors|behavioral|optimize|optimized|optimization|organize|organized|organization|realize|realized|recognize|recognized|analyze|analyzed|categorize|categorized|personalization|color|favor|flavored|labor|neighbor|honor)\b' \
             --include="*.md" --include="*.txt" \
-            --exclude-dir=.git --exclude-dir=node_modules . ; then
+            --exclude-dir=.git --exclude-dir=node_modules . 2>/dev/null || true)
+          
+          if [ -n "$OUTPUT" ]; then
             echo "❌ US spellings detected! Please use UK spellings (behaviour, optimise, organise, realise, recognise, analyse, categorise, personalisation, colour, favour, flavour, labour, neighbour, honour)."
+            echo ""
+            echo "Details (format: file:line:word):"
+            echo "$OUTPUT"
             ERRORS=1
           else
             echo "✅ No US spellings detected."
