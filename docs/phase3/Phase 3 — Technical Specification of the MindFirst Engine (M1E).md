@@ -290,7 +290,7 @@ When user behaviour changes significantly (slowdown, emotional load, new domain,
 - Recalculates the OS map
 - Triggers Profiler update
 - Adjusts Interpreter strategy
-- Restabilizes pacing
+- Restabilises pacing
 - Resets tangent-handling model
 - Rebalances recursion depth
 
@@ -1499,7 +1499,7 @@ Content will expand as empirical results and collaborator input become available
 
 ## Section 14 — Cold Start Architecture and Neutral OS-Null Mode
 
-The Cold Start problem describes the period before M1E has sufficient cognitive-structural data to personalize responses. Because M1E is post-identity, Cold Start cannot draw on demographic priors, historical profiles, or long-term memory. All adaptation must emerge strictly from observable structural signals inside the session.
+The Cold Start problem describes the period before M1E has sufficient cognitive-structural data to personalise responses. Because M1E is post-identity, Cold Start cannot draw on demographic priors, historical profiles, or long-term memory. All adaptation must emerge strictly from observable structural signals inside the session.
 
 ### OS-Null Mode (Neutral Baseline)
 
@@ -1550,7 +1550,7 @@ This prevents premature overfitting while improving alignment.
 Full adaptive reasoning begins when:
 
 - recursion_depth trend is stable across ≥ 3 turns
-- compression_factor stabilizes within ±1 tier
+- compression_factor stabilises within ±1 tier
 - tangent_probability shows consistent direction
 - meta_monitoring markers appear at least once
 - volatility_score < volatility_cutoff_V2
@@ -2532,7 +2532,7 @@ Caps recursion scaling, tangent-following, pacing modulation.
 Shrinks stabiliser’s adaptive range, forcing conservative output.
 
 **SAM3 — OS-Profile Suppression**  
-Rejects all anomalous signals until user behaviour stabilizes.
+Rejects all anomalous signals until user behaviour stabilises.
 
 **SAM4 — Output Safe-Mode**  
 Response Generator uses simplified reasoning templates avoiding amplification as leverage vector.
