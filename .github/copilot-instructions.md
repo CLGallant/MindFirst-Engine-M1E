@@ -4,23 +4,23 @@
 
 **Use UK English spelling across all documentation and code comments.**
 
-Required UK spellings (NOT US spellings):
-- behaviour (not behavior)
-- optimise (not optimize)
-- organise (not organize)
-- realise (not realize)
-- recognise (not recognize)
-- analyse (not analyze)
-- categorise (not categorize)
-- personalisation (not personalization)
-- colour (not color)
-- favour (not favor)
-- flavour (not flavor)
-- labour (not labor)
-- neighbour (not neighbor)
-- honour (not honor)
-- stabiliser (not stabilizer)
-- summarise (not summarize)
+Required UK spellings to use (avoid US equivalents):
+- behaviour
+- optimise
+- organise
+- realise
+- recognise
+- analyse
+- categorise
+- personalisation
+- colour
+- favour
+- flavour
+- labour
+- neighbour
+- honour
+- stabiliser
+- summarise
 
 ## Project-Specific Terms
 
