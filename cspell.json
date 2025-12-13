@@ -105,7 +105,15 @@
     "Selbst",
     "Datasheets",
     "underrepresent",
-    "underrepresented"
+    "underrepresented",
+    "Licence",
+    "licence",
+    "personalised",
+    "minimising",
+    "categorisation",
+    "stabilisation",
+    "optimisations",
+    "minimised"
   ],
   "ignorePaths": [
     ".git",
@@ -144,6 +152,15 @@
     "flavored",
     "labor",
     "neighbor",
-    "honor"
+    "honor",
+    "License",
+    "license",
+    "personalized",
+    "minimizing",
+    "seatbelt",
+    "categorization",
+    "stabilization",
+    "optimizations",
+    "minimized"
   ]
 }

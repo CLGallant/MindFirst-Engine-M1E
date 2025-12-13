@@ -1,6 +1,6 @@
-# MindFirst License
+# MindFirst Licence
 
-MindFirst Engine (M1E) License  
+MindFirst Engine (M1E) Licence  
 Version 1.1 — Effective: 2025-12-12  
 Author: C.L. Gallant
 
@@ -22,12 +22,12 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
    Implementers of the Software are encouraged to ensure the tool promotes inclusivity, accessibility, and fairness, particularly for users with underrepresented communication styles. Features strengthening fairness in human-AI interaction should align with this principle.
 
 6. **Compliance and Enforcement**  
-   Violations of the license, including breaches of the Structural-Neutrality Requirement, will result in revocation of permission to use or distribute the Software. Contributors must agree to these terms before submitting modifications.
+   Violations of the licence, including breaches of the Structural-Neutrality Requirement, will result in revocation of permission to use or distribute the Software. Contributors must agree to these terms before submitting modifications.
 
 7. **Disclaimer**  
    THE SOFTWARE IS PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. AUTHORS SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING OUT OF THE USE OF THE SOFTWARE.
 
 8. **Compatibility**  
-   This license remains compatible with MIT-licensed and Apache-licensed software, provided the Structural-Neutrality Requirement and other ethical commitments herein are upheld.
+   This licence remains compatible with MIT-licensed and Apache-licensed software, provided the Structural-Neutrality Requirement and other ethical commitments herein are upheld.
 
-By using, modifying, or distributing this Software, the user accepts and agrees to all terms outlined in this License.
+By using, modifying, or distributing this Software, the user accepts and agrees to all terms outlined in this Licence.

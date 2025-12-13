@@ -15,7 +15,7 @@ Through MindFirst, we aim to reduce cognitive friction and place user understand
 ## Key Principles
 
 ### OS Mapping
-Operating System (OS) Mapping in the M1E framework aligns cognitive processes with optimal workflows. This ensures seamless collaboration between human mental models and system interfaces, minimizing cognitive friction and amplifying intellectual throughput.
+Operating System (OS) Mapping in the M1E framework aligns cognitive processes with optimal workflows. This ensures seamless collaboration between human mental models and system interfaces, minimising cognitive friction and amplifying intellectual throughput.
 
 
 ### Post-Identity Interaction
@@ -32,13 +32,13 @@ MindFirst doesn't just develop technologies—it redefines how technologies are 
 ## Application Domains
 
 ### Mental Health
-M1E offers tools for personalized mental health support, with OS mappings that align with therapeutic practices and emotional seatbelt mechanisms tailored to individual cognitive and emotional profiles.
+M1E offers tools for personalised mental health support, with OS mappings that align with therapeutic practices and stabiliser mechanisms tailored to individual cognitive and emotional profiles.
 
 ### Collaborative Work
 In team settings, the framework fosters better communication, role alignment, and emotional resilience among members. The system dynamically adapts to diverse cognitive styles.
 
 ### Education
-Education applications focus on adaptive learning environments. M1E enhances the learning journey by setting up OS mappings aligned with students' cognitive baselines, while emotional seatbelts ensure a supportive atmosphere, minimizing frustration and enhancing retention.
+Education applications focus on adaptive learning environments. M1E enhances the learning journey by setting up OS mappings aligned with students' cognitive baselines, while stabiliser mechanisms ensure a supportive atmosphere, minimising frustration and enhancing retention.
 
 ---
 
