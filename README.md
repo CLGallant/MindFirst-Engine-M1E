@@ -62,7 +62,7 @@ Located in `docs/phase4/`:
 These documents define permitted use, constraints, and maintenance requirements.
 
 ## Licence
-This project is licensed under the **MindFirst Licence (v1.1)**.  
+This project is licenced under the **MindFirst Licence (v1.1)**.  
 See `LICENSE_MindFirst.md` for terms.
 
 ## Contributing
