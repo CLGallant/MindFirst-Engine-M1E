@@ -113,7 +113,9 @@
     "categorisation",
     "stabilisation",
     "optimisations",
-    "minimised"
+    "minimised",
+    "LICENSE",
+    "LICENSE_MindFirst"
   ],
   "ignorePaths": [
     ".git",
