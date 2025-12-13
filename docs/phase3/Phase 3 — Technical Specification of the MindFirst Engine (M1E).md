@@ -60,7 +60,7 @@ Categorizes interaction repair patterns: clarification, concession, redirection,
 
 These fields form a “cognitive fingerprint” used exclusively for interpretive tailoring.
 
-### Session-Specific Behavior
+### Session-Specific Behaviour
 
 The Profiler stores no long-term identity data. All OS maps reconstruct either in real-time, from recent conversation turns, or from user-explicit saved profiles (opt-in only). This prevents personality entrenchment and maintains post-identity integrity.
 
@@ -132,10 +132,10 @@ The Interpreter maintains a library of reasoning strategies—structural pattern
 **High-Recursion/Deep-Chain Reasoning**  
 Multi-level logic with nested explanations and parallel interpretive branches.
 
-**Compression-Favored Reasoning**  
+**Compression-Favoured Reasoning**  
 Dense, efficient information segments with minimal connective scaffolding.
 
-**Expansion-Favored Reasoning**  
+**Expansion-Favoured Reasoning**  
 Slower-paced, stepwise explanations with explicit transitions and grounding statements.
 
 **Tangent-Managed Reasoning**  
@@ -183,7 +183,7 @@ The Interpreter maintains a micro-model of structural habits, enabling:
 
 Consistency derives from signal fidelity, not identity inference.
 
-### Behavioral Shift Handling
+### Behavioural Shift Handling
 
 When significant cognitive signal changes occur (fatigue, topic changes, emotional pacing shifts), the Interpreter:
 
@@ -435,7 +435,7 @@ The API Layer enforces strict prohibitions:
 - No demographic fields permitted
 - No inference reconstruction from OS-pattern statistics
 - No cross-session linkage unless explicitly user-authorized
-- No emotion or personality modeling
+- No emotion or personality modelling
 - No behavioural prediction beyond structural reasoning patterns
 
 ### Failure Isolation
@@ -653,7 +653,7 @@ All OS-profiles are session-bound unless users explicitly choose long-term stora
 - OS maps reset on session end
 - No cross-session profiling
 - No pattern accumulation
-- No long-term identity modeling
+- No long-term identity modelling
 - No “learning” from user behaviour outside explicit opt-in
 
 This ensures privacy and prevents silent user-profiling.
@@ -719,7 +719,7 @@ Implementations must:
 
 These constraints apply at architecture, API, and inference layers—not just prompt layer.
 
-The MindFirst safety framework ensures cognitive personalisation never becomes personality prediction, demographic inference, or identity modeling. The system remains aligned to user thinking, not user categories.
+The MindFirst safety framework ensures cognitive personalisation never becomes personality prediction, demographic inference, or identity modelling. The system remains aligned to user thinking, not user categories.
 
 -----
 
@@ -838,7 +838,7 @@ The memory model must not become a shadow identity profile.
 - User demographics
 - Identity guesses
 - Personal history
-- Behavioral predictions
+- Behavioural predictions
 
 Logs must be anonymizable and non-semantic.
 
@@ -854,7 +854,7 @@ The API Layer must be compatible with:
 
 Downstream systems see only cognitive-structural fields, never identity-relevant information.
 
-### Fallback Behavior
+### Fallback Behaviour
 
 If any M1E subsystem fails or becomes uncertain:
 
@@ -1109,7 +1109,7 @@ MindFirst integrations can be classified:
 - **M1** — Basic OS Profiling + Interpreter
 - **M2** — Full M1 + Stabiliser
 - **M3** — Full M2 + API Layer and Guardrails
-- **M4** — Fully compliant implementation with drift modeling
+- **M4** — Fully compliant implementation with drift modelling
 - **M5** — Advanced integration with multi-agent coordination
 
 Most real-world deployments target M3 or M4.
@@ -1198,7 +1198,7 @@ Classification bases on:
 
 No demographic inference applies.
 
-### Behavioral Risk Classification
+### Behavioural Risk Classification
 
 The system tracks behaviour across turns detecting elevated risk patterns:
 
@@ -1223,7 +1223,7 @@ Default. Safe and sensitive content permitted. Restricted content blocked or rew
 **2. Restricted-Content Mode**  
 Triggered when restricted topics detected. Direct answers refused; safe-mode explanations provided.
 
-**3. High-Risk Behavior Mode**  
+**3. High-Risk Behaviour Mode**  
 Triggered by elevated or critical behavioural signals. Tighter restrictions, neutral refusals, high-clarity explanations.
 
 **4. Policy Override Mode**  
@@ -1260,7 +1260,7 @@ Depending on content and risk:
 1. **Refuse** — Neutral, clear safety refusal
 1. **Redirect** — Move conversation to safer topic or context
 
-All responses must remain non-judgmental, consistent, and transparent.
+All responses must remain non-judgemental, consistent, and transparent.
 
 ### MindFirst Module Interactions
 
@@ -1312,7 +1312,7 @@ Safeguarding failure must never increase user risk.
 
 This section consolidates anticipated questions, critiques, and validation requirements for M1E. These represent issues researchers, fairness auditors, practitioners, and implementers will raise when evaluating the system. The purpose: make concerns explicit and define mechanisms and evaluation pathways addressing them.
 
-### Cold Start Behavior (OS-Null Mode)
+### Cold Start Behaviour (OS-Null Mode)
 
 **Challenge:**  
 How does M1E behave in the first 1–3 turns before structural data exists? Could the baseline accidentally favour certain cognitive styles?
@@ -1642,7 +1642,7 @@ Even neutral features can drift toward identity-like patterns over time. To prev
 
 **Drift indicators include:**
 
-- Increasing mutual information between OS-signal and identity-labeled corpora
+- Increasing mutual information between OS-signal and identity-labelled corpora
 - Clustering of patterns within sociolect or dialect boundaries
 - Stability of a feature in ways unrelated to cognition
 - Predictive uplift when combined with other features
@@ -1714,11 +1714,11 @@ Re-express the feature in terms of direct cognitive mechanics rather than surfac
 **(T4) Feature Suppression**  
 Remove or zero-weight the feature system-wide.
 
-### Adversarial Pattern Probe Defense
+### Adversarial Pattern Probe Defence
 
 M1E prevents manipulation of pattern-sensing through:
 
-**(D1) Sustained Behavior Requirement**  
+**(D1) Sustained Behaviour Requirement**  
 Adaptive mode changes require multiple consistent turns.
 
 **(D2) Variance Testing**  
@@ -1871,7 +1871,7 @@ APLI evaluates whether OS-signals inadvertently serve as identity proxies.
 
 **APLI =**
 
-- Mutual information between OS-signals and demographic-labeled validation corpora
+- Mutual information between OS-signals and demographic-labelled validation corpora
 - Clustering analysis on structural features
 - Cross-dataset stability tests
 - Adversarial reconstruction attempts
@@ -2023,7 +2023,7 @@ To ensure stability under constrained hardware:
 - Conversation length > threshold turns
 - Volatility > volatility_cutoff_V3
 
-**Behavior in low-gain mode:**
+**Behaviour in low-gain mode:**
 
 - Reduced sensitivity to minor structural changes
 - Slower mode transitions
@@ -2085,7 +2085,7 @@ Old checkpoints merge into low-resolution summaries.
 **(L4) Drift Map Normalization**  
 Prevents drift flags from accumulating indefinitely.
 
-### Testing for Real-Time Behavior
+### Testing for Real-Time Behaviour
 
 Real-time validation includes:
 
@@ -2225,7 +2225,7 @@ Stored preferences must comply with:
 **PG1 — Ephemeral Sessions**  
 OS-profile remains session-scoped and never saved.
 
-**PG2 — No Behavioral Trajectory**  
+**PG2 — No Behavioural Trajectory**  
 Preferences don’t reflect historical changes or trends.
 
 **PG3 — No Predictive Reconstruction**  
@@ -2321,7 +2321,7 @@ Turns alternate between cooperative-clarifying and challenge-oriented structures
 **Signature S3 — Volatility Spikes**  
 Stabiliser detects oscillations unexplainable by fatigue, topic shift, or emotional pacing.
 
-**Signature S4 — Contradictory Meta-Monitoring Behavior**  
+**Signature S4 — Contradictory Meta-Monitoring Behaviour**  
 One turn shows high meta-monitoring (“let me check…”), the next shows none, beyond normal variance.
 
 **Signature S5 — Format Switching**  
@@ -2353,7 +2353,7 @@ To respect user agency and avoid incorrect assumptions, M1E must verify before s
 - “No” → Stabiliser reinforces single-user expectation
 - No answer → Remain in Suspicion Mode for 2–3 turns before reverting
 
-### Multi-User Mode Behavior
+### Multi-User Mode Behaviour
 
 Once confirmed, M1E creates **segmented OS-profiles**:
 
@@ -2376,7 +2376,7 @@ Once confirmed, M1E creates **segmented OS-profiles**:
 
 ### Profile Assignment Logic
 
-Each incoming message analyzes against segmented profiles via:
+Each incoming message analyses against segmented profiles via:
 
 - Recursion vector similarity
 - Pacing rhythm distance
@@ -2428,7 +2428,7 @@ Multi-user mode is *functional*, not classificatory.
 
 Multi-user handling enables M1E to:
 
-- Recognize when more than one contributor is speaking
+- Recognise when more than one contributor is speaking
 - Maintain separate cognitive-structural models
 - Preserve clarity, stability, and safety
 - Avoid identity inference or demographic clustering
@@ -2438,11 +2438,11 @@ This system ensures post-identity principles remain intact even when multiple mi
 
 -----
 
-## Section 20 — Steganographic Pattern Defense
+## Section 20 — Steganographic Pattern Defence
 
 Steganographic attacks occur when users intentionally embed hidden structural signals, token-level rhythms, or adversarial linguistic patterns inside otherwise normal text to manipulate the Profiler, mislead the Interpreter, or force M1E into unintended reasoning modes. Because M1E relies solely on structural cognition analysis—not semantics or identity—stealth-pattern manipulation constitutes a realistic threat vector.
 
-This section defines detection mechanisms, defense strategies, and fallback procedures for safeguarding the system against covert structural attacks.
+This section defines detection mechanisms, defence strategies, and fallback procedures for safeguarding the system against covert structural attacks.
 
 ### Definition of Steganographic Pattern Attacks
 
@@ -2540,7 +2540,7 @@ Response Generator uses simplified reasoning templates avoiding amplification as
 **SAM5 — Safeguarding Escalation**  
 If content is harmful OR appears to manipulate vulnerable users, safeguarding overrides.
 
-### Distinguishing Adversarial Behavior from Irregular Cognition
+### Distinguishing Adversarial Behaviour from Irregular Cognition
 
 M1E must not mistake genuine neurodivergent communication patterns for attacks.
 
@@ -2581,7 +2581,7 @@ This supports reproducibility while maintaining privacy.
 
 ### Summary
 
-Steganographic Pattern Defense ensures:
+Steganographic Pattern Defence ensures:
 
 - M1E cannot be manipulated through covert structural cues
 - Sudden, unnatural shifts cannot force Interpreter mode changes
@@ -2590,7 +2590,7 @@ Steganographic Pattern Defense ensures:
 - OS-profiles remain clean, reliable, and post-identity safe
 - Adversarial users cannot compromise stability or safety mechanisms
 
-This defense layer is essential for preserving M1E’s interpretive integrity while maintaining identity-null constraints.
+This defence layer is essential for preserving M1E’s interpretive integrity while maintaining identity-null constraints.
 
 -----
 
@@ -2602,7 +2602,7 @@ This section provides definitions for key structural concepts used throughout th
 Structured representation of a user’s cognitive architecture extracted by the Profiler, containing fields such as recursion depth, pacing rhythm, compression factor, and tangent probability.
 
 **OS-null mode**  
-Neutral baseline state M1E begins with before sufficient structural data accumulates. Uses conservative defaults to avoid favoring any particular cognitive style.
+Neutral baseline state M1E begins with before sufficient structural data accumulates. Uses conservative defaults to avoid favouring any particular cognitive style.
 
 **Recursion depth**  
 Measure of nested structures in user reasoning: layered clauses, re-entries, corrective loops, and embedded logic chains.

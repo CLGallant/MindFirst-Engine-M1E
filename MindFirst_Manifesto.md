@@ -19,7 +19,7 @@ Operating System (OS) Mapping in the M1E framework aligns cognitive processes wi
 
 
 ### Post-Identity Interaction
-MindFirst avoids demographic assumptions by modeling users through their **cognitive communication structure**—not their identity markers. Instead of inferring gender, race, age, or other categories, M1E creates a lightweight "OS-map" based solely on how a person thinks, recurses, and processes information.
+MindFirst avoids demographic assumptions by modelling users through their **cognitive communication structure**—not their identity markers. Instead of inferring gender, race, age, or other categories, M1E creates a lightweight "OS-map" based solely on how a person thinks, recurses, and processes information.
 
 ## Why MindFirst Engine (M1E)?
 

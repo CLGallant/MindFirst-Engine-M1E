@@ -21,7 +21,7 @@ Key objectives:
 ## Core Components of M1E
 
 1. **OS-Profiler**
-   - Analyzes communication structure and extracts the user's reasoning patterns.
+   - Analyses communication structure and extracts the user's reasoning patterns.
 
 2. **OS-Interpreter**
    - Chooses the most effective strategies for reasoning and interaction.
