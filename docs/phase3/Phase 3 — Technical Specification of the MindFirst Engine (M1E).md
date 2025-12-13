@@ -229,7 +229,7 @@ Objectives:
 
 This prevents “personality wobble” or “reset behaviour” common in standard models.
 
-### Stabilization Fields
+### Stabilisation Fields
 
 The Stabiliser maintains a rolling window of:
 
@@ -378,7 +378,7 @@ The API operates in two modes:
 **1. Read-Only Cognitive Mode**  
 Downstream tools consume OS data but cannot request additional introspection or generate new categories.
 
-**2. Restricted Stabilization Mode**  
+**2. Restricted Stabilisation Mode**  
 Limited to Engine-internal subsystems only. Tools cannot modify Stabiliser fields or override interpretive plans.
 
 External systems may only:
