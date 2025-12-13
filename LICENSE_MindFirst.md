@@ -28,6 +28,6 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
    THE SOFTWARE IS PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. AUTHORS SHALL NOT BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING OUT OF THE USE OF THE SOFTWARE.
 
 8. **Compatibility**  
-   This licence remains compatible with MIT-licensed and Apache-licensed software, provided the Structural-Neutrality Requirement and other ethical commitments herein are upheld.
+   This licence remains compatible with MIT-licenced and Apache-licenced software, provided the Structural-Neutrality Requirement and other ethical commitments herein are upheld.
 
 By using, modifying, or distributing this Software, the user accepts and agrees to all terms outlined in this Licence.

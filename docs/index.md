@@ -141,7 +141,7 @@ Contributions from researchers, engineers, and practitioners interested in post-
 
 ## Licence
 
-This project is licensed under the **MindFirst Licence (Version 1.1)**.  
+This project is licenced under the **MindFirst Licence (Version 1.1)**.  
 See [LICENSE_MindFirst.md](../LICENSE_MindFirst.md) for full terms.
 
 The MindFirst Licence ensures:
