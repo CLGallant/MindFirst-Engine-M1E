@@ -1,0 +1,1 @@
+LICENSE_MindFirst.md has been renamed to correct spelling as LICENCE_MindFirst.md.
