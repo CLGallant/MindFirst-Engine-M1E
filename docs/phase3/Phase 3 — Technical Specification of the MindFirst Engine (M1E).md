@@ -1995,7 +1995,7 @@ OS-profiles must remain extremely compact to avoid:
 
 ### Real-Time Profiling Optimizations
 
-To support consumer-grade hardware, these optimizations are mandatory:
+To support consumer-grade hardware, these optimisations are mandatory:
 
 **(O1) Incremental Signal Extraction**  
 Profiler only re-evaluates changed structural markers per turn.
@@ -2371,7 +2371,7 @@ Once confirmed, M1E creates **segmented OS-profiles**:
    Interpreter mode recalculates per message, not per session.
 1. **No cross-profile blending**  
    Profiles must remain independent to avoid identity inference.
-1. **Safeguarding prioritized**  
+1. **Safeguarding prioritised**  
    If any profile triggers safeguarding, entire session enters safeguarding mode.
 
 ### Profile Assignment Logic
@@ -2407,9 +2407,9 @@ This prevents one contributor’s structure from destabilizing responses to anot
 If safeguarding conditions activate:
 
 - Session enters Safeguarding Mode
-- Multi-user detection deprioritizes
+- Multi-user detection deprioritises
 - Stabiliser switches to high-constraint state
-- Interpreter prioritizes clarity and safety over structural alignment
+- Interpreter prioritises clarity and safety over structural alignment
 
 This prevents unsafe outputs when vulnerable users are involved.
 
