@@ -6,7 +6,7 @@ It helps new contributors understand where each component of the specification l
 ## Root Directory
 
 - **README.md** — Main entry point for the repository
-- **LICENSE_MindFirst.md** — MindFirst License v1.1 (structural-neutrality and ethical requirements)
+- **LICENSE_MindFirst.md** — MindFirst Licence v1.1 (structural-neutrality and ethical requirements)
 - **MindFirst_Manifesto.md** — Foundational narrative and core principles
 - **Repo_Map.md** — This document (navigation guide)
 
