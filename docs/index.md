@@ -139,12 +139,12 @@ Contributions from researchers, engineers, and practitioners interested in post-
 
 ---
 
-## License
+## Licence
 
-This project is licensed under the **MindFirst License (Version 1.1)**.  
+This project is licenced under the **MindFirst Licence (Version 1.1)**.  
 See [LICENSE_MindFirst.md](../LICENSE_MindFirst.md) for full terms.
 
-The MindFirst License ensures:
+The MindFirst Licence ensures:
 - Structural-neutrality requirement (no demographic inference)
 - No user profiling based on identity characteristics
 - Preservation of transparency in all modifications

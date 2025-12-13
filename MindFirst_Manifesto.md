@@ -1,16 +1,16 @@
 # MindFirst Manifesto
 
-The MindFirst Engine (M1E) is built on the fundamental philosophy of MindFirst Design—a framework that prioritizes human cognition and workflow needs above all else.
+The MindFirst Engine (M1E) is built on the fundamental philosophy of MindFirst Design—a framework that prioritises human cognition and workflow needs above all else.
 
 ## Core Philosophy
 
 MindFirst emphasizes:
 - **Simplicity** — Reducing cognitive load at every interaction point
 - **Clarity** — Ensuring transparency in design and operation
-- **Cognitive Efficiency** — Optimizing for human understanding and processing
+- **Cognitive Efficiency** — Optimising for human understanding and processing
 - **Post-Identity Principles** — Focusing on cognitive structure rather than demographic categories
 
-Through MindFirst, we aim to reduce cognitive friction and place user understanding at the center of every decision.
+Through MindFirst, we aim to reduce cognitive friction and place user understanding at the centre of every decision.
 
 ## Key Principles
 
@@ -23,7 +23,7 @@ MindFirst avoids demographic assumptions by modelling users through their **cogn
 
 ## Why MindFirst Engine (M1E)?
 
-MindFirst doesn't just develop technologies—it redefines how technologies are perceived. By prioritizing end-users' cognitive patterns, the MindFirst Engine (M1E) revolutionizes human-AI interactions to be:
+MindFirst doesn't just develop technologies—it redefines how technologies are perceived. By prioritising end-users' cognitive patterns, the MindFirst Engine (M1E) revolutionizes human-AI interactions to be:
 - Free from demographic inference and stereotype-weighting
 - Fair and precise in their responses
 - Adaptive to each individual's reasoning pattern
