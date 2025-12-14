@@ -682,9 +682,10 @@ When the system attempts identity inference, stereotyping, or demographic recons
 All MindFirst modules must operate:
 
 - Inspectably
-- Auditability
+- Auditably
 - Explainably
 - Deterministically in constraint enforcement
+#
 
 This prevents opaque, emergent demographic pattern development.
 
@@ -1476,21 +1477,7 @@ M1E’s approach is novel, but challenge profiles it faces are known and solvabl
 
 -----
 
-## Section 13 — Future Work and Extensions
-
-This section outlines areas of continued development beyond Phase 3’s scope, serving as a placeholder for planned extensions explored in later stages:
-
-- Refinement of OS-null baselines
-- Extended validations across structural diversity
-- Formal differential privacy integration
-- Prototype-level implementation studies
-- API extensions for controlled downstream tooling
-
-Content will expand as empirical results and collaborator input become available.
-
------
-
-## Section 14 — Cold Start Architecture and Neutral OS-Null Mode
+## Section 13 — Cold Start Architecture and Neutral OS-Null Mode
 
 The Cold Start problem describes the period before M1E has sufficient cognitive-structural data to personalise responses. Because M1E is post-identity, Cold Start cannot draw on demographic priors, historical profiles, or long-term memory. All adaptation must emerge strictly from observable structural signals inside the session.
 
@@ -1580,7 +1567,7 @@ OS-Null Mode is not a persona—it’s a mathematically constrained stabilisatio
 
 -----
 
-## Section 15 — Structural Pattern Validity and Anti-Correlation Framework
+## Section 14 — Structural Pattern Validity and Anti-Correlation Framework
 
 This section defines mechanisms ensuring M1E’s cognitive-structural signals cannot become indirect proxies for demographic attributes, educational background, cultural grouping, or protected characteristics. Because M1E is post-identity, structural signals must be rigorously validated to ensure they remain *functionally descriptive* rather than *demographically predictive*.
 
@@ -1750,7 +1737,7 @@ Structural features exist only to understand *how* users think, not *who* they a
 
 -----
 
-## Section 16 — Evaluation Metrics for Post-Identity Systems
+## Section 15 — Evaluation Metrics for Post-Identity Systems
 
 Traditional fairness metrics (demographic parity, equalized odds) cannot apply in post-identity systems because M1E has no demographic information access. Instead, M1E uses structural, behavioural, and cognitive-quality metrics evaluating fairness, stability, and adaptiveness without referencing identity categories.
 
@@ -1934,7 +1921,7 @@ These metrics allow rigorous post-identity system validation without violating t
 
 -----
 
-## Section 17 — Efficiency Scaling and Real-Time Constraints
+## Section 16 — Efficiency Scaling and Real-Time Constraints
 
 M1E must operate efficiently across a wide hardware range, including local consumer-grade GPUs (8–12GB VRAM), mid-range cloud instances, and high-throughput distributed systems. This section defines computational requirements, optimisation strategies, latency constraints, and real-time safeguards necessary for stable deployment.
 
@@ -2110,7 +2097,7 @@ By constraining complexity and defining deterministic runtime behaviour, M1E bec
 
 -----
 
-## Section 18 — Preference Persistence and User-Controlled Profiles
+## Section 17 — Preference Persistence and User-Controlled Profiles
 
 M1E forbids demographic inference and long-term behavioural profiling. However, some users may wish to persist *non-identity-bearing preferences* such as explanation depth, recursion levels, pacing, or formatting style. This section defines a strict, post-identity-safe mechanism for storing user preferences without creating identity anchors, leakage vectors, or long-term behavioural profiles.
 
@@ -2285,7 +2272,7 @@ Persistent preferences improve usability while preserving fundamental post-ident
 
 -----
 
-## Section 19 — Multi-User Session Handling
+## Section 18 — Multi-User Session Handling
 
 M1E must detect and correctly manage situations where more than one person contributes input within a single session. Traditional LLMs treat all messages as originating from a single speaker, leading to misalignment, drift, or unsafe interpretive behaviour. Multi-user handling requires structural detection, stabiliser segmentation, and explicit user confirmation—all while maintaining post-identity constraints.
 
@@ -2431,7 +2418,7 @@ This system ensures post-identity principles remain intact even when multiple mi
 
 -----
 
-## Section 20 — Steganographic Pattern Defence
+## Section 19 — Steganographic Pattern Defence
 
 Steganographic attacks occur when users intentionally embed hidden structural signals, token-level rhythms, or adversarial linguistic patterns inside otherwise normal text to manipulate the Profiler, mislead the Interpreter, or force M1E into unintended reasoning modes. Because M1E relies solely on structural cognition analysis—not semantics or identity—stealth-pattern manipulation constitutes a realistic threat vector.
 
@@ -2587,7 +2574,7 @@ This defence layer is essential for preserving M1E’s interpretive integrity wh
 
 -----
 
-## Section 21 — Glossary of Core Terms
+## Section 20 — Glossary of Core Terms
 
 This section provides definitions for key structural concepts used throughout the MindFirst Engine specification.
 
@@ -2635,7 +2622,7 @@ Metric measuring whether the neutral baseline behaves equivalently across divers
 
 -----
 
-## Section 22 — Conclusion
+## Section 21 — Conclusion
 
 The MindFirst Engine (M1E) provides a formal, technical method for shifting AI interaction away from demographic inference toward cognitive-structural interpretation. The framework achieves this without modifying underlying model weights, requiring user metadata, or relying on identity categories. Its modules operate as an attachable reasoning architecture shaping interaction through OS-signals alone.
 
@@ -2656,6 +2643,20 @@ MindFirst does not attempt correcting demographic bias through patching or compe
 The result is an interaction framework that is not only more equitable but also more precise. Minds are understood according to how they work, not according to categories inherited from the past. As AI becomes a core communication medium across daily life, MindFirst offers a scalable method for ensuring models interpret people with clarity, fairness, fidelity, and respect for human individuality.
 
 -----
+
+## Section 22 — Future Work and Extensions
+
+This section outlines areas of continued development beyond Phase 3’s scope, serving as a placeholder for planned extensions explored in later stages:
+
+- Long-term empirical refinement of OS-null baselines
+- Extended validations across structural diversity
+- Formal differential privacy integration
+- Prototype-level implementation studies
+- API extensions for controlled downstream tooling
+
+Content will expand as empirical results and collaborator input become available.
+
+____
 
 **Phase 3 — Technical Specification Complete**
 
