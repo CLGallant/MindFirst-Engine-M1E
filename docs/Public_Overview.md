@@ -46,6 +46,6 @@ The project is in the conceptual stage. The core architecture is defined, and th
 ## For More Information
 
 - [Full Documentation Hub](./index.md)
-- [Technical Specification (Phase 3)](./phase3/MindFirst%20Phase%203%20—%20Technical%20Specification%20of%20the%20MindFirst%20Engine%20(M1E).md)
+- [Technical Specification (Phase 3)](./phase3/Phase%203%20—%20Technical%20Specification%20of%20the%20MindFirst%20Engine%20(M1E).md)
 - [References & Citations](./references.md)
 - [Back to Repository Root](../README.md)
