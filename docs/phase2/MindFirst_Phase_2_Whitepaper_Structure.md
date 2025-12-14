@@ -107,8 +107,6 @@ MindFirst is built on a simple belief about humanity. We can do better than the 
 
 TRANSITION OUT OF PHASE 1
 
-With the conceptual and historical foundation established, the next step is to describe how MindFirst operates at a technical level. The MindFirst Engine (M1E) translates these principles into an operational architecture with four core modules: the OS Profiler, OS Interpreter, OS Stabiliser, and API Layer. These components work together to extract cognitive signals, adapt reasoning strategies, maintain continuity, and ensure post-identity safety at every stage.
-
 The following sections introduce M1E's high-level design and specify how the framework integrates into real systems.
 
 With the conceptual and historical rationale established, the next step is to describe how MindFirst operates at a technical level. The following section introduces the architecture of the MindFirst Engine, or M1E, and explains how cognitive mapping, interpretation and stabilisation functions work together to create post-identity interaction in practice.
