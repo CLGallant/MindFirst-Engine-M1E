@@ -1,155 +1,41 @@
-# MindFirst Engine (M1E) — Documentation Hub
-*A post-identity cognitive interaction framework*
+# MindFirst Documentation Hub
+
+Welcome to the full documentation for the **MindFirst Engine (M1E)**.
+This index organizes the specification into its four development phases, foundational manifesto, and reference materials.
 
 ---
 
-## Overview
+## 🏗 Core Specification
 
-MindFirst Engine (M1E) is a post-identity interaction architecture that models a user's **structural communication patterns**, not their demographic categories.
+The M1E specification is divided into four sequential phases:
 
-It focuses exclusively on how a person:
-- thinks,  
-- processes,  
-- recurses,  
-- and communicates,
+### [Phase 1: Conceptual Rationale](./phase1/)
+**The "Why".** Explains the historical and ethical necessity of moving from identity-based AI to cognitive-structural AI.
+* *Focus: Philosophy, History, The Post-Identity Paradigm.*
 
-creating an OS-style cognitive profile that adapts the system's reasoning to match the structure of the user's mind.
+### [Phase 2: Whitepaper Structure](./phase2/)
+**The "What".** Defines the architectural framing and the core concepts of the "OS-Map" (Operating System of the Mind).
+* *Focus: System Architecture, Cognitive Signals, The "OS" Metaphor.*
 
-M1E prohibits all demographic inference and instead maintains a transparent, auditable cognitive-signal pipeline.
+### [Phase 3: Technical Specification (v0.1)](./phase3/Phase%203%20—%20Technical%20Specification%20of%20the%20MindFirst%20Engine%20(M1E).md)
+**The "How".** The detailed engineering specification.
+* *Focus: OS-Profiler, OS-Interpreter, OS-Stabiliser, API Layer, Data Structures, and Drift Detection.*
 
----
-
-## Quick Navigation
-
-- 🏠 **[Back to Repository Root](../README.md)**  
-  Main repository overview and getting started guide
-
-- 🗺️ **[Repository Map](../Repo_Map.md)**  
-  Detailed directory structure and file locations
-
-- 📘 **[Public Overview](./Public_Overview.md)** (non-technical summary)  
-  Accessible introduction for general audience
-
-- 🧭 **[MindFirst Manifesto](../MindFirst_Manifesto.md)**  
-  Foundational narrative and core principles
-
-- 📚 **[References & Bibliography](./references.md)**  
-  Citations and sources for factual claims
+### [Phase 4: Governance & Ethics](./phase4/MindFirst%20Phase%204%20—%20Governance%20and%20Ethical%20Framework.md)
+**The "Rules".** The consolidated framework for ethics and governance.
+* *Focus: Identity Firewall, Privacy, Deployment Guidelines, and Compliance.*
 
 ---
 
-## Documentation by Phase
+## 📚 Supporting Documents
 
-### Phase 1: Foundations and Rationale
-**Location:** `./phase1/`
+* **[Public Overview](./Public_Overview.md)** A high-level summary of the project for non-technical readers.
 
-Conceptual foundations of the MindFirst approach:
-- [MindFirst_Phase_1_Foundations_and_Rationale.md](./phase1/MindFirst_Phase_1_Foundations_and_Rationale.md)
+* **[References & Bibliography](./references.md)** Academic and technical citations supporting the MindFirst approach.
 
-**Purpose:** Establishes the philosophical and conceptual basis for post-identity AI interaction.
+* **[MindFirst Manifesto](../MindFirst_Manifesto.md)** The founding vision statement of the project.
 
 ---
 
-### Phase 2: Architecture and Design
-**Location:** `./phase2/`
-
-Technical architecture planning and whitepaper structure:
-- [MindFirst_Phase_2_Whitepaper_Structure.md](./phase2/MindFirst_Phase_2_Whitepaper_Structure.md)
-
-**Purpose:** Outlines the structural design and architectural approach.
-
----
-
-### Phase 3: Technical Specification
-**Location:** `./phase3/`
-
-Technical specification (v0.1) and implementation details:
-- [Phase 3 — Technical Specification of the MindFirst Engine (M1E).md](./phase3/Phase%203%20—%20Technical%20Specification%20of%20the%20MindFirst%20Engine%20(M1E).md)
-
-**Key Components:**
-- **OS-Profiler** — Extracts cognitive communication structure
-- **OS-Interpreter** — Chooses appropriate behavioural strategies  
-- **OS-Stabiliser** — Maintains session continuity  
-- **Response Generator** — Produces tailored responses
-- **M1E API Layer** — Provides programmatic access to OS-map
-
-**Also Includes:**
-- Post-Identity Safety Mechanisms
-- System Requirements & Constraints
-- Cognitive-Signal Pipeline (end-to-end flow)
-- Safeguarding Layer
-- Challenges & Validation Roadmap
-- Future Work & Research Directions
-- Glossary of Core Terms
-
-**Purpose:** Provides complete implementation guidance for developers and researchers.
-
----
-
-### Phase 4: Governance, Ethics, and Compliance
-**Location:** `./phase4/`
-
-Governance framework and ethical requirements:
-
-- **[Governance_Charter.md](./phase4/Governance_Charter.md)**  
-  Governance framework and decision-making structure
-
-- **[Ethical_Use_Policy.md](./phase4/Ethical_Use_Policy.md)**  
-  Ethical guidelines and usage requirements
-
-- **[Metadata_Pack.md](./phase4/Metadata_Pack.md)**  
-  Metadata standards and documentation requirements
-
-- **[Phase 4 — Governancet.md](./phase4/Phase%204%20—%20Governancet.md)**  
-  Governance overview and principles
-
-**Purpose:** Defines how MindFirst must be used, expanded, and maintained in alignment with post-identity principles.
-
----
-
-## What This Repository Contains
-
-This repository includes all technical, conceptual, and governance materials for the MindFirst Engine:
-
-- The **formal architecture**  
-  (OS-Profiler, OS-Interpreter, OS-Stabiliser, Response Generator, M1E API Layer)
-
-- The **post-identity safety constraints**
-
-- The **safeguarding & compliance framework**
-
-- The **evaluation & validation plan**
-
-- The **public, non-technical overview**
-
-M1E is currently in **active specification development** (v0.1). Core architectural and governance foundations are complete, while technical specifications and implementation guidance are being refined and expanded.  
-The next stage is prototype implementation and empirical validation.
-
-Contributions from researchers, engineers, and practitioners interested in post-identity interaction are welcomed.
-
----
-
-## Getting Help
-
-- **For general questions:** Start with the [Public Overview](./Public_Overview.md)
-- **For technical details:** See Phase 3 documentation
-- **For governance questions:** See Phase 4 documentation
-- **For repository navigation:** See the [Repository Map](../Repo_Map.md)
-- **To contribute:** See the [README](../README.md) Getting Started section
-
----
-
-## Licence
-
-This project is licensed under the **MindFirst Licence (Version 1.1)**.  
-See [LICENSE_MindFirst.md](../LICENSE_MindFirst.md) for full terms.
-
-The MindFirst Licence ensures:
-- Structural-neutrality requirement (no demographic inference)
-- No user profiling based on identity characteristics
-- Preservation of transparency in all modifications
-- Ethics alignment with post-identity principles
-
----
-
-*Current Status: MindFirst Engine v0.1 — Active specification development. Core architectural and governance foundations are established; technical specifications and implementation guidance are being refined and expanded.*
+## Navigation
+[⬅️ Back to Repository Root](../README.md)
