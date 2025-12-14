@@ -689,7 +689,6 @@ All MindFirst modules must operate:
 - Auditably
 - Explainably
 - Deterministically in constraint enforcement
-#
 
 This prevents opaque, emergent demographic pattern development.
 
