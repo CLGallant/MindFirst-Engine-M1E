@@ -1,3 +1,7 @@
+# MindFirst Phase 3 — Technical Specification of the MindFirst Engine (M1E)
+
+___
+
 ## Section 1 — System Overview and Design Philosophy
 
 The MindFirst Engine (M1E) is a post-identity cognitive-interpretation system that operates independently of demographic inference at every processing layer. This phase outlines the engineering structure enabling predictable, consistent, and transparent user interaction.
