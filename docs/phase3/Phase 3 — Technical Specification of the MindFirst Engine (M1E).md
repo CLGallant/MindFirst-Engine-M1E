@@ -2626,12 +2626,15 @@ Metric measuring whether the neutral baseline behaves equivalently across divers
 -----
 
 ## Section 21 — Future Work and Extensions
+
 This section outlines areas of continued development beyond Phase 3’s scope, serving as a placeholder for planned extensions explored in later stages:
-• Long-term empirical refinement of OS-null baselines
-• Extended validations across structural diversity
-• Formal differential privacy integration
-• Prototype-level implementation studies
-• API extensions for controlled downstream tooling
+
+- Long-term empirical refinement of OS-null baselines
+- Extended validations across structural diversity
+- Formal differential privacy integration
+- Prototype-level implementation studies
+- API extensions for controlled downstream tooling
+
 Content will expand as empirical results and collaborator input become available.
 
 _____
