@@ -1,6 +1,6 @@
 # MindFirst Phase 3 — Technical Specification of the MindFirst Engine (M1E)
 
-___
+---
 
 ## Section 1 — System Overview and Design Philosophy
 
