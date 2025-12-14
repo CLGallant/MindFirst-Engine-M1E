@@ -37,7 +37,7 @@ MindFirst-Engine-M1E/
 │   ├── index.md         # Documentation index
 │   ├── Public_Overview.md  # High-level project summary
 │   └── references.md    # Bibliography & citations
-├── LICENSE_MindFirst.md # MindFirst Licence v1.1
+├── LICENSE              # MindFirst Licence v1.1
 ├── MindFirst_Manifesto.md  # Framework manifesto
 └── README.md            # This file
 ```
@@ -108,7 +108,7 @@ These documents define permitted use, constraints, and maintenance requirements.
 
 ## Licence
 This project is licensed under the **MindFirst Licence (v1.1)**.  
-See `LICENSE_MindFirst.md` for terms.
+See `LICENSE` for terms.
 
 ## Contributing
 Contributions are welcome (research, engineering, evaluation, governance).  
