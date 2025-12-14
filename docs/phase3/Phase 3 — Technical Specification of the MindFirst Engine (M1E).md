@@ -2622,40 +2622,30 @@ Metric measuring whether the neutral baseline behaves equivalently across divers
 
 -----
 
-## Section 21 — Conclusion
-
-The MindFirst Engine (M1E) provides a formal, technical method for shifting AI interaction away from demographic inference toward cognitive-structural interpretation. The framework achieves this without modifying underlying model weights, requiring user metadata, or relying on identity categories. Its modules operate as an attachable reasoning architecture shaping interaction through OS-signals alone.
-
-Phase 3 establishes:
-
-- How the OS Profiler, Interpreter, Stabiliser, and API Layer operate
-- How they exchange information
-- How they maintain post-identity constraints
-- How stability and drift management function
-- How developers should evaluate and debug integrations
-- How guardrails and safety boundaries enforce
-- How implementations remain compatible with models as small as 7B parameters
-
-These components form a complete, modular interface between users and model internal reasoning pathways.
-
-MindFirst does not attempt correcting demographic bias through patching or compensatory layers. Instead, it bypasses the entire category system by defining users through their OS: the observable structure of their reasoning, pacing, recursion, and communication style. This makes the system resilient to cultural change, demographic imbalance, or historical distortions embedded in training data.
-
-The result is an interaction framework that is not only more equitable but also more precise. Minds are understood according to how they work, not according to categories inherited from the past. As AI becomes a core communication medium across daily life, MindFirst offers a scalable method for ensuring models interpret people with clarity, fairness, fidelity, and respect for human individuality.
-
------
-
-## Section 22 — Future Work and Extensions
-
+## Section 21 — Future Work and Extensions
 This section outlines areas of continued development beyond Phase 3’s scope, serving as a placeholder for planned extensions explored in later stages:
-
-- Long-term empirical refinement of OS-null baselines
-- Extended validations across structural diversity
-- Formal differential privacy integration
-- Prototype-level implementation studies
-- API extensions for controlled downstream tooling
-
+• Long-term empirical refinement of OS-null baselines
+• Extended validations across structural diversity
+• Formal differential privacy integration
+• Prototype-level implementation studies
+• API extensions for controlled downstream tooling
 Content will expand as empirical results and collaborator input become available.
 
+_____
+
+## Section 22 — Conclusion
+The MindFirst Engine (M1E) provides a formal, technical method for shifting AI interaction away from demographic inference toward cognitive-structural interpretation. The framework achieves this without modifying underlying model weights, requiring user metadata, or relying on identity categories. Its modules operate as an attachable reasoning architecture shaping interaction through OS-signals alone.
+Phase 3 establishes:
+• How the OS Profiler, Interpreter, Stabiliser, and API Layer operate
+• How they exchange information
+• How they maintain post-identity constraints
+• How stability and drift management function
+• How developers should evaluate and debug integrations
+• How guardrails and safety boundaries enforce
+• How implementations remain compatible with models as small as 7B parameters
+These components form a complete, modular interface between users and model internal reasoning pathways.
+MindFirst does not attempt correcting demographic bias through patching or compensatory layers. Instead, it bypasses the entire category system by defining users through their OS: the observable structure of their reasoning, pacing, recursion, and communication style. This makes the system resilient to cultural change, demographic imbalance, or historical distortions embedded in training data.
+The result is an interaction framework that is not only more equitable but also more precise. Minds are understood according to how they work, not according to categories inherited from the past. As AI becomes a core communication medium across daily life, MindFirst offers a scalable method for ensuring models interpret people with clarity, fairness, fidelity, and respect for human individuality.
 ____
 
 **Phase 3 — Technical Specification Complete**
