@@ -9,11 +9,11 @@ This index organizes the specification into its four development phases, foundat
 
 The M1E specification is divided into four sequential phases:
 
-### [Phase 1: Conceptual Rationale](./phase1/)
+### [Phase 1: Conceptual Rationale](./phase1/MindFirst%20Phase%201%20%E2%80%94%20Foundations%20and%20Rationale.md)
 **The "Why".** Explains the historical and ethical necessity of moving from identity-based AI to cognitive-structural AI.
 * *Focus: Philosophy, History, The Post-Identity Paradigm.*
 
-### [Phase 2: Whitepaper Structure](./phase2/)
+### [Phase 2: Whitepaper Structure](./phase2/MindFirst%20Phase%202%20%E2%80%94%20Whitepaper%20Structure.md)
 **The "What".** Defines the architectural framing and the core concepts of the "OS-Map" (Operating System of the Mind).
 * *Focus: System Architecture, Cognitive Signals, The "OS" Metaphor.*
 
