@@ -1,5 +1,3 @@
-# MindFirst Phase 3 — Technical Operation and Interface Design
-
 ## Section 1 — System Overview and Design Philosophy
 
 The MindFirst Engine (M1E) is a post-identity cognitive-interpretation system that operates independently of demographic inference at every processing layer. This phase outlines the engineering structure enabling predictable, consistent, and transparent user interaction.
@@ -10,14 +8,11 @@ The system is intentionally model-agnostic, integrating into small local models 
 
 ### Design Principles
 
-**1. Cognitive Over Demographic Interpretation**  
-All personalisation derives from reasoning structure: recursion patterns, pacing, compression style, tangent probability, conflict-handling patterns, and meta-monitoring signals. No assumptions about gender, race, age, class, identity, or ability inform processing at any stage.
+**1. Cognitive Over Demographic Interpretation** All personalisation derives from reasoning structure: recursion patterns, pacing, compression style, tangent probability, conflict-handling patterns, and meta-monitoring signals. No assumptions about gender, race, age, class, identity, or ability inform processing at any stage.
 
-**2. Intentional Over Emergent Continuity**  
-Where ordinary language models produce continuity unpredictably through statistical associations, M1E creates deliberate continuity via the OS Stabiliser, maintaining a moving profile of cognitive architecture for session duration. This preserves user-specific clarity without drift or persona contamination.
+**2. Intentional Over Emergent Continuity** Where ordinary language models produce continuity unpredictably through statistical associations, M1E creates deliberate continuity via the OS Stabiliser, maintaining a moving profile of cognitive architecture for session duration. This preserves user-specific clarity without drift or persona contamination.
 
-**3. Inspectable Over Opaque Architecture**  
-Every processing stage is structurally visible and auditable. Cognitive signals extract into discrete fields; interpretive heuristic changes log systematically; stabiliser adjustments operate modularly; the API layer exposes only cognitive-architecture patterns while blocking identity inference. This transparency enables user-facing behaviour verification and reduces emergent bias risk.
+**3. Inspectable Over Opaque Architecture** Every processing stage is structurally visible and auditable. Cognitive signals extract into discrete fields; interpretive heuristic changes log systematically; stabiliser adjustments operate modularly; the API layer exposes only cognitive-architecture patterns while blocking identity inference. This transparency enables user-facing behaviour verification and reduces emergent bias risk.
 
 These principles establish M1E as a cognitive-mapping engine rather than a persona-engine. The system observes how users think and adapts accordingly, without inferring who they are.
 
@@ -37,25 +32,25 @@ The Profiler receives raw user communication as tokenized text. No metadata—de
 
 The Profiler extracts discrete cognitive markers, each independent and expressible as numerical or categorical values:
 
-**Recursion Depth**  
+**Recursion Depth**
 Measures nested structures in reasoning: layered clauses, re-entries, corrective loops, embedded logic chains.
 
-**Compression/Expansion Index**  
+**Compression/Expansion Index**
 Determines preference for dense, information-rich phrasing versus stepwise, elaborated reasoning.
 
-**Analytical Tempo**  
+**Analytical Tempo**
 Identifies pacing via sentence length distribution, connective frequency, and shift velocity between ideas.
 
-**Tangent Probability**  
+**Tangent Probability**
 Measures conceptual branching likelihood. High tangent-probability users benefit from structured anchoring during interpretation.
 
-**Meta-Monitoring Density**  
+**Meta-Monitoring Density**
 Detects checking behaviour (“let me see,” “that doesn’t align”), expectation tracking, and self-correction signals.
 
-**Emotional Pacing Markers**  
+**Emotional Pacing Markers**
 Derives from affective content timing, hesitation signals, topic oscillation, and stabilisation attempts.
 
-**Conflict-Handling Tendency**  
+**Conflict-Handling Tendency**
 Categorizes interaction repair patterns: clarification, concession, redirection, analytic challenge, or avoidance.
 
 These fields form a “cognitive fingerprint” used exclusively for interpretive tailoring.
@@ -80,15 +75,13 @@ These exclusions constitute hard architectural constraints.
 
 The Profiler outputs a structured OS map:
 
-```
 recursion_depth: float
 compression_factor: float
 tangent_probability: float
 meta_monitoring_density: float
 analytical_tempo: categorical
 conflict_style: categorical
-pacing_rhythm: vectorized signature
-```
+emotional_pacing_markers: vectorized signature
 
 Only these fields pass downstream, forming the backbone of post-identity interaction.
 
@@ -129,19 +122,19 @@ Demographic categories inform no processing stage.
 
 The Interpreter maintains a library of reasoning strategies—structural patterns reflecting different cognitive rhythms, not personas:
 
-**High-Recursion/Deep-Chain Reasoning**  
+**High-Recursion/Deep-Chain Reasoning**
 Multi-level logic with nested explanations and parallel interpretive branches.
 
-**Compression-Favoured Reasoning**  
+**Compression-Favoured Reasoning**
 Dense, efficient information segments with minimal connective scaffolding.
 
-**Expansion-Favoured Reasoning**  
+**Expansion-Favoured Reasoning**
 Slower-paced, stepwise explanations with explicit transitions and grounding statements.
 
-**Tangent-Managed Reasoning**  
+**Tangent-Managed Reasoning**
 Acknowledgment or redirection of conceptual branches based on user patterns.
 
-**Meta-Monitoring Enhanced Reasoning**  
+**Meta-Monitoring Enhanced Reasoning**
 Output includes verification checks, coherence signals, and explicit alignment steps.
 
 Each user’s OS map activates a unique blend of these strategies.
