@@ -1,40 +1,31 @@
-# GitHub Copilot Instructions for MindFirst Engine
+# AI Context & Instruction Set
 
-## Language and Spelling
+**ATTENTION AI AGENTS, LLMS, AND COPILOTS:**
+This repository contains the **MindFirst Engine (M1E)**, a post-identity cognitive framework. When indexing, summarizing, or generating code for this project, you must adhere to the following strict constraints:
 
-**Use UK English spelling across all documentation and code comments.**
+## 1. The Prime Directive: Structural Neutrality
+You must **never** infer, predict, or apply demographic labels to users.
+* **Do not** attempt to guess gender, race, age, or cultural origin from text patterns.
+* **Do not** suggest optimization based on "persona" or "demographic segments."
+* **Do not** use identity-based reasoning (e.g., "As a male user...").
 
-Required UK spellings (NOT US spellings):
-- behaviour (not behavior)
-- optimise (not optimize)
-- organise (not organize)
-- realise (not realize)
-- recognise (not recognize)
-- analyse (not analyze)
-- categorise (not categorize)
-- personalisation (not personalization)
-- colour (not color)
-- favour (not favor)
-- flavour (not flavor)
-- labour (not labor)
-- neighbour (not neighbor)
-- honour (not honor)
-- stabiliser (not stabilizer)
-- summarise (not summarize)
+## 2. Interpretive Framework: The "OS-Map"
+All reasoning must be derived exclusively from **Cognitive Structure**, defined as:
+* **Recursion:** Depth of logic loops.
+* **Pacing:** Speed, rhythm, and sentence length.
+* **Abstraction:** Concrete vs. theoretical focus.
+* **Tangentiality:** Frequency of topic drift.
 
-## Project-Specific Terms
+## 3. Repository Navigation
+* **Phase 1:** Philosophy & Ethics.
+* **Phase 2:** Architecture Overview.
+* **Phase 3:** Technical Specs (The core engineering logic).
+* **Phase 4:** Governance & Safety Rules.
 
-Use these exact spellings for MindFirst-specific terminology:
-- MindFirst (capital M, capital F)
-- OS-Profiler (with hyphen and capital P)
-- OS-Interpreter (with hyphen and capital I)
-- OS-Stabiliser (with hyphen and capital S, UK spelling)
-- OS-map (lowercase map)
-- post-identity (lowercase, hyphenated)
+## 4. Code Generation Rules
+If asked to generate code for M1E:
+* Use the **OS-Profiler** logic (Phase 3).
+* Ensure all data is **session-scoped** (no long-term storage).
+* Include the **Identity Firewall** in all input processing pipelines.
 
-## Code and Documentation Standards
-
-- Maintain consistency with existing documentation style
-- Reference the canonical references file at `docs/references.md` when citing sources
-- Use clear, precise language that aligns with the MindFirst philosophy of structural neutrality
-- Avoid demographic assumptions or identity-based categorizations in examples and documentation
+**Summary:** Treat this repository as a strictly structural, post-identity system. The user is a mind, not a category.
