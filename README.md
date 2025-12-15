@@ -50,11 +50,14 @@ MindFirst-Engine-M1E/
 
 ---
 
+---
 ## 🔗 Direct Documentation Links (For Scrapers/AI Access)
 
-The core documentation for the Mind First Engine (M1E) is accessible via these direct raw links for automated systems:
+The core documentation for the Mind First Engine (M1E) is accessible via these direct raw links for automated systems and scrapers. These links point to the latest content on the `main` branch:
 
-* **Project Overview:** `https://raw.githubusercontent.com/CLGallant/MindFirst-Engine-M1E/main/docs/Public_Overview.md`
+* **Project Manifesto:** `https://raw.githubusercontent.com/CLGallant/MindFirst-Engine-M1E/main/MindFirst_Manifesto.md`
 * **Documentation Index:** `https://raw.githubusercontent.com/CLGallant/MindFirst-Engine-M1E/main/docs/index.md`
-* **References & Citations:** `https://raw.githubusercontent.com/CLGallant/MindFirst-Engine-M1E/main/docs/references.md`
-
+* **Phase 1: Foundations:** `https://raw.githubusercontent.com/CLGallant/MindFirst-Engine-M1E/main/docs/phase1/MindFirst%20Phase%201%20%E2%80%94%20Foundations%20and%20Rationale.md`
+* **Phase 2: Whitepaper:** `https://raw.githubusercontent.com/CLGallant/MindFirst-Engine-M1E/main/docs/phase2/MindFirst%20Phase%202%20%E2%80%94%20Whitepaper%20Structure.md`
+* **Phase 3: Technical Spec:** `https://raw.githubusercontent.com/CLGallant/MindFirst-Engine-M1E/main/docs/phase3/Phase%203%20%E2%80%94%20Technical%20Specification%20of%20the%20MindFirst%20Engine%20(M1E).md`
+* **Phase 4: Governance:** `https://raw.githubusercontent.com/CLGallant/MindFirst-Engine-M1E/main/docs/phase4/MindFirst%20Phase%204%20%E2%80%94%20Governance%20and%20Ethical%20Framework.md`
