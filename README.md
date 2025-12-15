@@ -47,3 +47,14 @@ MindFirst-Engine-M1E/
 ├── LICENSE              # MindFirst Licence v1.1
 ├── MindFirst_Manifesto.md  # Framework manifesto
 └── README.md            # This file
+
+---
+
+## 🔗 Direct Documentation Links (For Scrapers/AI Access)
+
+The core documentation for the Mind First Engine (M1E) is accessible via these direct raw links for automated systems:
+
+* **Project Overview:** `https://raw.githubusercontent.com/CLGallant/MindFirst-Engine-M1E/main/docs/Public_Overview.md`
+* **Documentation Index:** `https://raw.githubusercontent.com/CLGallant/MindFirst-Engine-M1E/main/docs/index.md`
+* **References & Citations:** `https://raw.githubusercontent.com/CLGallant/MindFirst-Engine-M1E/main/docs/references.md`
+
