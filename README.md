@@ -3,7 +3,9 @@
 > A post-identity cognitive interaction framework that models **structural communication patterns** rather than demographics.
 
 ## Status
-**v0.1 — Specification in Progress** Core architecture and governance foundations are defined. Implementation and validation are the next stages.
+**### v0.1 — Specification in Progress
+* Core architecture and governance foundations are defined.
+* Implementation and validation are the next stages.
 
 ---
 
