@@ -7,11 +7,11 @@ For decades, technology has been built on a dangerous premise: that to understan
 
 ### The Foundation: MindFirst Design
 
-The MindFirst Engine (M1E) is built on the fundamental philosophy of **MindFirst Design**—a framework that prioritizes human cognition and individual needs above all else. We define a new contract between human and machine based on respect for the unique, structural reality of the mind.
+The MindFirst Engine (M1E) is built on the fundamental philosophy of **MindFirst Design**—a framework that prioritises human cognition and individual needs above all else. We define a new contract between human and machine based on respect for the unique, structural reality of the mind.
 
 ## Core Philosophy
 
-MindFirst emphasizes:
+MindFirst emphasises:
 * **Structural Neutrality** — The absolute prohibition of all demographic inference.
 * **Cognitive Efficiency** — Optimizing for human understanding and processing speed.
 * **Clarity** — Ensuring transparency in design and auditable operation.
@@ -30,7 +30,7 @@ M1E is built to protect user autonomy. It enforces **session-scoped privacy**—
 
 ## Why MindFirst Engine (M1E)?
 
-MindFirst doesn't just develop technologies—it redefines how technologies are perceived. By prioritizing end-users' cognitive patterns, the MindFirst Engine (M1E) revolutionizes human-AI interactions to be:
+MindFirst doesn't just develop technologies—it redefines how technologies are perceived. By prioritizing end-users' cognitive patterns, the MindFirst Engine (M1E) revolutionises human-AI interactions to be:
 * Fair and precise, delivering responses tailored to your unique reasoning pattern.
 * Adaptive to diverse cognitive styles and communication patterns.
 * Free from the burden of demographic inference and stereotype-weighting.
